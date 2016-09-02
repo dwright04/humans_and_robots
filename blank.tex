@@ -10,8 +10,9 @@
 Daryll Wright,$^{1}$\thanks{E-mail: daryll@zooniverse.org}
 Chris Lintott,$^{1}$
 Ken Smith,$^{2}$
-
+\\
 $^{1}$Department of Physics, University of Oxford, Denys Wilkinson Building, Keble Road, Oxford, OX1 3RH
+$^{2}$QUBs
 }
 
 \date{Accepted XXX. Received YYY; in original form ZZZ}
@@ -38,20 +39,29 @@ keyword1 -- keyword2 -- keyword3
 
 \section{Introduction}
 
+\textbf{CJL}
+
 The detection and identification of transient sources has long been an important part of astronomical observation. New surveys such as LSST (XXXXXX CITE XXXXX) will increase the number of transient candidates detected by many orders of magnitude, leading to renewed attention being paid to the methods used by transit searches. 
+
+
+
 
 \section{Method}
 \subsection{Pan-STARRS}
-Presumably can be grabbed from elsewhere
+Presumably can be grabbed from elsewhere - \textbf{DW}
 
-Using data from MJD57570 and MJD 57586 for the original experiemnt, then MJD 57587 and MJD 57607 for the SVN.
+Using data from MJD57570 and MJD 57586 for the original experiemnt, then 
 
 \subsection{Convolutional Neural Network}
+
+\textbf{DW}
 
 Explain how this was trained (9000 hand-labelled) 
 \subsection{Citizen Science Platform}
 
-How many people and speed 
+\textbf{CL}
+
+XXXXX How many people and speed ? Screenshot XXXX \text{DW}
 
 \section{Performance}
 
@@ -72,7 +82,7 @@ These data were additionally reviewed by at least one expert members of the team
 
 Candidates with high probability as assigned by the machine are more likely to be real. However, although the machine successfully rejects the majority of bogus candidates, the sample produced by the simple cut on probability is far from pure; XXXXX real candidates from XXXXXX in the sample. Higher cutoffs run the risk of rejecting an increasing number of real candidates; requiring a 1\% false positive rate will result in a missed detection rate of XXXX. 
 
-An obvious solution to this problem is to improve the performance of the neural network, which, very broadly, is a function of the size of training set. Increasing the training set both directly improves performance but also allows for deeper, more complex networks to be built. However, it is obvious already that obtaining large, clean training sets is expensive, requiring the review of many candidates by experts. In order to reduce the burden on the science team, candidates which exceed this threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in fig \ref{fig:human_dis}. 
+An obvious solution to this problem is to improve the performance of the neural network, which, very broadly, is a function of the size of training set. Increasing the training set both directly improves performance but also allows for deeper, more complex networks to be built. However, it is obvious already that obtaining large, clean training sets is expensive, requiring the review of many candidates by experts. In order to reduce the burden on the science team, candidates which exceed this threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in fig \ref{fig:human_dist}. 
 
 \begin{figure}
    %\vspace{200pt}
@@ -84,6 +94,14 @@ An obvious solution to this problem is to improve the performance of the neural 
    \label{fig:human_dist} 
 \end{figure}
 
+Volunteer classifications were combined using the simplest possible metric; the fraction of volunteers who identified a potential transient is assumed to be an estimate of the probability of that candidate being real. Despite this simple procedure, the results show that volunteers could effectively distinguish between real and bogus classifications. However, the structure of the resulting distribution is strikingly different. Whereas for machine classification, a threshold could be chosen to give a complete but not pure sample, with volunteer classification it is easier to construct a pure sample of candidates which are highly likely to be supernovae, but this sample is far from complete. There are candidates judged `real' by experts even at low probabilities. 
+
+Much work has been done in other projects to improve on this naive combination of volunteer votes. (XXXX Examples XXXX). However, such solutions have not yet shown to be generalisable between projects, and so require substantial effort in data analysis. They may also depend on large numbers of volunteers classifying each subject. Instead of pursuing this route, therefore, we combine human and machine classifications hoping to benefit from the different capabilities of both sets of classifiers. 
+
+\subsection{Combining human and machines} 
+
+Figure \ref{fig:combo_train} shows the combination of human and machine classifications. It is immediately apparent from the figure that no single threshold on either machine or human classification can outperform the combination of the two. This is an important result; it is the first time that the benefits of combining classification from both machines and volunteers has been clearly demonstrated using data from a real astronomical system. 
+
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/human_v_machine_train.pdf}
@@ -91,9 +109,16 @@ An obvious solution to this problem is to improve the performance of the neural 
             objects between MJD 57570 and MJD 57586.  Objects with machine $P(real) < 0.436$ are
             not uploaded to Supernova Hunters.  The background colour map shows 
             the $P(real)$ to that point in feature space by a linear SVM trained on the 
-            examples shown.}
+            examples shown. XXXX UPDATE GRAYSCALE XXXXX}
    \label{fig:combo_train} 
 \end{figure}
+
+How should the two independent classifications be combined? We use a linear support vector machine (SVM) with inputs consisting of both classifications, trained by the expert-labelled data. 
+
+[XXXX put some equations XXXX]
+
+The SVM  maximises the distance between populations of first `real' (and `asteroid') classifications and second `bogus' classifications, using only probability estimates from humans and machines as input. It was trained on the data discussed above, and the resulting score displayed as grayscale in figure \ref{fig:combo_train}. It was then tested on data processedsed between MJD 57587 and MJD 57607, with results shown in \ref{fig:combo:test}. This test shows that the combined classification performs well, and figures \ref{fig:roc} shows a comparison of the combined results for this test dataset with machine and human classifications on their own.
+
 
 \begin{figure}
    %\vspace{200pt}
@@ -111,6 +136,24 @@ An obvious solution to this problem is to improve the performance of the neural 
             plots show that the combination is always as good as or outperforms humans or the machine individually.} 
    \label{fig:roc} 
 \end{figure}
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|}
+False Positive Rate & Human & Machine & Combination\\
+1\% & 65.7\% & 91.1 \% & 55.1 \% \\
+5\% & 49.4\% & 64.6 \% & 32.2 \% \\
+10\% & 38.3\% & 44.9 \% & 22.7 \%\\
+\end{tabular}
+\caption{Missed detection rate recorded for a choice of false positive rates, based on expert classifications.}\label{tab:roc}
+\end{table}
+
+XXXXXXXX Calculate FPR for a variety of missed detection rates XXXXXX
+
+For any choice of false positive rate, the combination of classifications produced a lower missed detection rate. Equally, for any required purity or completeness the combination produced a better dataset. 
+
+\section{Conclusions}
+
+\textbf{CJL}
 
 \bsp	% typesetting comment
 \label{lastpage}
