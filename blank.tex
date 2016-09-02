@@ -49,13 +49,11 @@ Presumably can be grabbed from elsewhere
 
 How did this perform? What was found?
 
-
-
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/machine_hist.pdf}
    \caption{The distribution of $P(real)$ from the current 3$\pi$ machine classifier 
-            for detections between MJD 57570 and MJD 57586.  The light green shows the distribution of 
+            for detected objects between MJD 57570 and MJD 57586.  The light green shows the distribution of 
             objects with $P(real) < 0.436$ which are automatically rejected.  The remaining 
             objects promoted for human screening even at high values of $P(real)$ contains
             many false positives.} 
@@ -66,42 +64,40 @@ How did this perform? What was found?
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/human_hist.pdf}
-   \caption{The distribution of $P(real)$ from Supernova Hunters for detections between 
+   \caption{The distribution of $P(real)$ from Supernova Hunters for objects detected between 
             MJD 57570 and MJD 57586.  Compared with the machine $P(real)$ in ~\ref{fig:machine_dist}
             the objects at the extremes are pure.  There are very few real detections with 
             $P(real) < 0.04$ and few bogus detections above 0.92.} 
    \label{fig:human_dist} 
 \end{figure}
 
-\subsection{Combining human and machine classifiers}
-
-This is a good idea.
-
-
-
-
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/human_v_machine_train.pdf}
-   \caption{} 
+   \caption{The $P(real)$ from Supernova Hunters against the machine $P(real)$ for detected 
+            objects between MJD 57570 and MJD 57586.  Objects with machine $P(real) < 0.436$ are
+            not uploaded to Supernova Hunters.  The background colour map shows 
+            the $P(real)$ to that point in feature space by a linear SVM trained on the 
+            examples shown.}
    \label{fig:combo_train} 
 \end{figure}
 
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/human_v_machine_test.pdf}
-   \caption{} 
+   \caption{The same as ~\ref{fig:combo_train} but on a test sample of 4058 objects detected between
+            MJD 57587 and MJD 57607 and held out during training of the linear SVM.} 
    \label{fig:combo_test} 
 \end{figure}
 
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/roc.pdf}
-   \caption{} 
+   \caption{left: ROC curve showing performance measured on the test data in ~\ref{fig:combo_test} for human (red), machine (yellow) and
+            the linear SVM combination of human and machine classifications (blue).  right: The equivalent Purity-Completeness curve.  Both
+            plots show that the combination is always as good as or outperforms humans or the machine individually.} 
    \label{fig:roc} 
 \end{figure}
-
-\section{Conclusions}
 
 \bsp	% typesetting comment
 \label{lastpage}
