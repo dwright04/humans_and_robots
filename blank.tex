@@ -6,9 +6,10 @@
 
 \title[Human and machine classifications]{A transient search using combined human and machine classifications}
 
-\author[D. Wright, C. Lintott et al.]{
+\author[D. Wright, C. Lintott, K. Smith et al.]{
 Daryll Wright,$^{1}$\thanks{E-mail: daryll@zooniverse.org}
-Chris Lintott,$^{2}$
+Chris Lintott,$^{1}$
+Ken Smith,$^{2}$
 
 $^{1}$Department of Physics, University of Oxford, Denys Wilkinson Building, Keble Road, Oxford, OX1 3RH
 }
@@ -42,12 +43,21 @@ The detection and identification of transient sources has long been an important
 \section{Method}
 \subsection{Pan-STARRS}
 Presumably can be grabbed from elsewhere
+
+Using data from MJD57570 and MJD 57586 for the original experiemnt, then MJD 57587 and MJD 57607 for the SVN.
+
 \subsection{Convolutional Neural Network}
+
+Explain how this was trained (9000 hand-labelled) 
 \subsection{Citizen Science Platform}
+
+How many people and speed 
 
 \section{Performance}
 
-How did this perform? What was found?
+The machine is used to identify a cutoff above which candidates are presented to human classifiers; this cutoff is chosen so that a 5\% false positive rate is acheived. This threshold involves a missed detection rate of 5.2\%. We present the results of this machine classification in figure \ref{fig:machine_dist}. A major contaminant is the presence of asteroids; they appear in the dataset as supernovae but are identified here via cross-matching with the Minor Planet Centre ephemaris database (XXXXXX). 
+
+These data were additionally reviewed by at least one expert members of the team (normally DW or KS) to identify genuine supernovae. Candidates were divided into `real' and `bogus' categories based on these expert classifications. 
 
 \begin{figure}
    %\vspace{200pt}
@@ -60,6 +70,9 @@ How did this perform? What was found?
    \label{fig:machine_dist} 
 \end{figure}
 
+Candidates with high probability as assigned by the machine are more likely to be real. However, although the machine successfully rejects the majority of bogus candidates, the sample produced by the simple cut on probability is far from pure; XXXXX real candidates from XXXXXX in the sample. Higher cutoffs run the risk of rejecting an increasing number of real candidates; requiring a 1\% false positive rate will result in a missed detection rate of XXXX. 
+
+An obvious solution to this problem is to improve the performance of the neural network, which, very broadly, is a function of the size of training set. Increasing the training set both directly improves performance but also allows for deeper, more complex networks to be built. However, it is obvious already that obtaining large, clean training sets is expensive, requiring the review of many candidates by experts. In order to reduce the burden on the science team, candidates which exceed this threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in fig \ref{fig:human_dis}. 
 
 \begin{figure}
    %\vspace{200pt}
