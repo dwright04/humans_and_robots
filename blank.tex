@@ -38,13 +38,48 @@ keyword1 -- keyword2 -- keyword3
 \section{Introduction}
 
 
-\begin{figure*}
+\begin{figure}
    %\vspace{200pt}
-   \includegraphics[width=164mm]{figs/.png}
-   \caption{} 
+   \includegraphics[width=84mm]{figs/machine_hist.pdf}
+   \caption{The distribution of $P(real)$ from the current 3$\pi$ machine classifier 
+            for detections between MJD 57570 and MJD 57586.  The light green shows the distribution of 
+            objects with $P(real) < 0.436$ which are automatically rejected.  The remaining 
+            objects promoted for human screening even at high values of $P(real)$ contains
+            many false positives.} 
    \label{fig:machine_dist} 
-\end{figure*}
+\end{figure}
 
+
+\begin{figure}
+   %\vspace{200pt}
+   \includegraphics[width=84mm]{figs/human_hist.pdf}
+   \caption{The distribution of $P(real)$ from Supernova Hunters for detections between 
+            MJD 57570 and MJD 57586.  Compared with the machine $P(real)$ in ~\ref{fig:machine_dist}
+            the objects at the extremes are pure.  There are very few real detections with 
+            $P(real) < 0.04$ and few bogus detections above 0.92.} 
+   \label{fig:human_dist} 
+\end{figure}
+
+\begin{figure}
+   %\vspace{200pt}
+   \includegraphics[width=84mm]{figs/human_v_machine_train.pdf}
+   \caption{} 
+   \label{fig:combo_train} 
+\end{figure}
+
+\begin{figure}
+   %\vspace{200pt}
+   \includegraphics[width=84mm]{figs/human_v_machine_test.pdf}
+   \caption{} 
+   \label{fig:combo_test} 
+\end{figure}
+
+\begin{figure}
+   %\vspace{200pt}
+   \includegraphics[width=84mm]{figs/roc.pdf}
+   \caption{} 
+   \label{fig:roc} 
+\end{figure}
 
 \bsp	% typesetting comment
 \label{lastpage}
