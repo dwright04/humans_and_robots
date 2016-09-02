@@ -1,0 +1,55 @@
+\documentclass[a4paper,fleqn,usenatbib]{mnras}
+
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commands
+\usepackage{amssymb}	% Extra maths symbols
+
+\title[Short title, max. 45 characters]{MNRAS \LaTeXe\ template -- title goes here}
+
+\author[K. T. Smith et al.]{
+Keith T. Smith,$^{1}$\thanks{E-mail: mn@ras.org.uk (KTS)}
+A. N. Other,$^{2}$
+Third Author$^{2,3}$
+and Fourth Author$^{3}$
+
+$^{1}$Royal Astronomical Society, Burlington House, Piccadilly, London W1J 0BQ, UK\\
+$^{2}$Department, Institution, Street Address, City Postal Code, Country\\
+$^{3}$Another Department, Different Institution, Street Address, City Postal Code, Country
+}
+
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+\pubyear{2015}
+
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+% Abstract of the paper
+\begin{abstract}
+pass
+\end{abstract}
+
+\begin{keywords}
+keyword1 -- keyword2 -- keyword3
+\end{keywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+
+\begin{figure*}
+   %\vspace{200pt}
+   \includegraphics[width=164mm]{figs/.png}
+   \caption{} 
+   \label{fig:machine_dist} 
+\end{figure*}
+
+
+\bsp	% typesetting comment
+\label{lastpage}
+\end{document}
