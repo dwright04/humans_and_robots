@@ -7,7 +7,7 @@
 \title[Human and machine classifications]{A transient search using combined human and machine classifications}
 
 \author[D. Wright, C. Lintott, K. Smith et al.]{
-Daryll Wright,$^{1}$\thanks{E-mail: daryll@zooniverse.org}
+Darryl Wright,$^{1}$\thanks{E-mail: daryll@zooniverse.org}
 Chris Lintott,$^{1}$
 Ken Smith,$^{2}$
 \\
@@ -48,6 +48,7 @@ The detection and identification of transient sources has long been an important
 
 \section{Method}
 \subsection{Pan-STARRS}
+\ref{sec:ps1}
 Presumably can be grabbed from elsewhere - \textbf{DW}
 
 Using data from MJD57570 and MJD 57586 for the original experiemnt, then 
@@ -62,7 +63,7 @@ Explain how this was trained (9000 hand-labelled)
 \textbf{CL}
 
 XXXXX How many people and speed ? Screenshot XXXX \text{DW}
-
+Supernova Hunters began with a beta test on 13th June 2016 and launched on the 12th July 2016 (MJD 57581).  As of the 3rd September 2016 the project has accumulated 426481 classifications from 3158 citizen scientists.  So far citizen scientists have classified 52291 individual subjects corresponding to TTI observations (see Section~\ref{sec:ps1}) of 18838 PS1 objects.  Every Tuesday $\sim5200$ new subjects are uploaded to the project consisting of the previous week's detections that pass our machine cuts.  We require at least 7 citizen scientist classifications before a subject is considered classified and each week's data takes about two days to fully classify.  High confidence (typically $P(real)>0.8$) supernova candidates are screened by experts to remove a small number of false positives before the targets are submitted to the Transient Name Server (TNS).  To date citizen scientists have discovered two hundred supernova candidates submitted to the TNS and two confirmed Supernovae including SN 2016els; a superluminous supernova Type I [XXXXX cite Gal-Yam?? XXXXX].  The classification spectra were obtained by PESSTO [XXXXX cite Smartt XXXXX].
 \section{Performance}
 
 The machine is used to identify a cutoff above which candidates are presented to human classifiers; this cutoff is chosen so that a 5\% false positive rate is acheived. This threshold involves a missed detection rate of 5.2\%. We present the results of this machine classification in figure \ref{fig:machine_dist}. A major contaminant is the presence of asteroids; they appear in the dataset as supernovae but are identified here via cross-matching with the Minor Planet Centre ephemaris database (XXXXXX). 
@@ -80,7 +81,7 @@ These data were additionally reviewed by at least one expert members of the team
    \label{fig:machine_dist} 
 \end{figure}
 
-Candidates with high probability as assigned by the machine are more likely to be real. However, although the machine successfully rejects the majority of bogus candidates, the sample produced by the simple cut on probability is far from pure; XXXXX real candidates from XXXXXX in the sample. Higher cutoffs run the risk of rejecting an increasing number of real candidates; requiring a 1\% false positive rate will result in a missed detection rate of XXXX. 
+Candidates with high probability as assigned by the machine are more likely to be real. However, although the machine successfully rejects the majority of bogus candidates, the sample produced by the simple cut on probability is far from pure; 1403 real candidates from 3384 in the sample. Higher cutoffs run the risk of rejecting an increasing number of real candidates; requiring a 1\% false positive rate will result in a missed detection rate of 60.3\%. 
 
 An obvious solution to this problem is to improve the performance of the neural network, which, very broadly, is a function of the size of training set. Increasing the training set both directly improves performance but also allows for deeper, more complex networks to be built. However, it is obvious already that obtaining large, clean training sets is expensive, requiring the review of many candidates by experts. In order to reduce the burden on the science team, candidates which exceed this threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in fig \ref{fig:human_dist}. 
 
@@ -148,6 +149,16 @@ False Positive Rate & Human & Machine & Combination\\
 \end{table}
 
 XXXXXXXX Calculate FPR for a variety of missed detection rates XXXXXX
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|}
+Missed Detection Rate & Human & Machine & Combination\\
+1\% & 100\% & 94.3\% & 84.9\% \\
+5\% & 73.0\% & 65.4\% & 42.4\% \\
+10\% & 60.8\% & 39.2\% & 23.7\%\\
+\end{tabular}
+\caption{False positive rate recorded for a choice of missed detection rates, based on expert classifications.}\label{tab:roc}
+\end{table}
 
 For any choice of false positive rate, the combination of classifications produced a lower missed detection rate. Equally, for any required purity or completeness the combination produced a better dataset. 
 
