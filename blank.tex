@@ -3,11 +3,11 @@
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
-
+\usepackage{hyperref}
 \title[Human and machine classifications]{A transient search using combined human and machine classifications}
 
 \author[D. Wright, C. Lintott, K. Smith et al.]{
-Darryl Wright,$^{1}$\thanks{E-mail: daryll@zooniverse.org}
+Darryl Wright,$^{1}$\thanks{E-mail: darryl@zooniverse.org}
 Chris Lintott,$^{1}$
 Ken Smith,$^{2}$
 \\
@@ -47,23 +47,43 @@ The detection and identification of transient sources has long been an important
 
 
 \section{Method}
-\subsection{Pan-STARRS}
+\subsection{Pan-STARRS1}
 \ref{sec:ps1}
+
 Presumably can be grabbed from elsewhere - \textbf{DW}
 
 Using data from MJD57570 and MJD 57586 for the original experiemnt, then 
 
+Pan-STARRS1 comprises a 1.8m primary mirror \citep{Kaiser10} and 60 $4800\time 4800$ pixel detectors, constructed from $10\mu m$ pixels subtending 0.258 arcsec \citep{Magnier13} and a field-of-view of 3.3 deg.  The filter set consists of $g_{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$ (similar to SDSS \textit{griz} \citep{York00}), $y_{P1}$ extending
+redward of $z_{P1}$ and the ``wide'' $w_{P1}$-band filter extending over $g_{P1}$ to $i_{P1}$ \citep{Tonry12b}.  Between 2010 and 2014 Pan-STARRS1 was operated by the PS1 Science Consortium (PS1SC) performing 2 major surveys.  The Medium Deep Survey (MDS) was allocated 25\% of observing time for high cadence observations of the 10 Medium Deep fields and the $3\pi$ survey allocated 56\% observing time to observe the entire sky north of -30 degrees declination with 4 exposures per year in each of $g_{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$ and $y_{P1}$ for each pointing.
+
+The $3\pi$ survey was completed in mid-2014 and since then the telescope has been carrying out a NASA funded wide-field survey for near earth objects through the NEO Observation Program operated by the Pan-STARRS Near Earth Object Science Consortium (PSNSC).  The NASA PSNSC survey is similar to the $3\pi$ survey optimised for NEO discoveries.  Observations are in $w_{P1}$ in dark time and combinations of $i_{P!}$, $z_{P1}$ and $y_{P1}$ during bright time.  The Pan-STARRS Survey for Transients (PSST) \citep{Huber15a} searching for the data for static transients and releasing these publicly within 12 to 24 hours.
+
+Typically a single field is imaged 4 times in a night with exposures separated by 10-20mins called Transient Time Interval (TTI) exposures to allow for the discovery of moving objects.  The quads of exposures are not dithered or stacked, meaning that cross-talk ghosts, readout artefacts and problems of fill-factor are inherent in the data (see \citet{Denneau13} for some examples).  Individual exposures are differenced with the $3\pi$ all-sky reference stack and sources in the resulting difference images are catalogued.
+
+A series of pre-ingest cuts are performed before the catalogues are ingested into a MySQL database at Queen's University Belfast (QUB).  These cuts are based on the detection of saturated, masked or suspected defective pixels within the PSF area in addition to flag checks for ghost detections and rejecting detections within $\pm 5$ degrees galactic latitiude. Detections passing these cuts are grouped into transient candidates if they are spatially coincident within 0.5 arcsec and the rms scatter is $<$ 0.25 arcsec.  Post-ingest cuts are applied on detection quality, convolution checks and a check for proximity to brights objects.  Additional cross-talk rules have been identified and implemented at QUB to reject ghosts
+not flagged at the pre-ingest stage.  Remaining detections are cross-matched with the Minor Planets Centre Ephemeris database [XXXXX citation XXXXX] to identify any asteroids not 
+removed by the rms cut.  Remaining transient candidates are passed to our machine classifier described in the next section.
+
 \subsection{Convolutional Neural Network}
 
 \textbf{DW}
-
 Explain how this was trained (9000 hand-labelled) 
+
+In [XXXX Wright 2016 in prep. XXXXX] we show that the approach to training a machine classsifier described in \citet{Wright15} was found to be inadequate for PSST, likely due to the larger variety of artefact types (a consquence of differencing individual exposures) and expense of obtaining a large sample of labelled training data.  Instead we turn to Convolutional Neural Networks (CNNs) that maintain the advantages of operating solely on the pixel data but at a higher computational cost in deployment.  
+
+The training set for this classifiers was drawn from $3\pi$ survey data between 1st June 2013 and 20th June 2014.  The sample of real detections are taken from spectroscopically confirmed real transients or that have been labelled by a human as high probability real detections and bogus detections a random subsample of detections discarded by post-ingest cuts or human eyeballing.  The training set consists of 6916 examples with an additional 2303 detections held out for testing with both data sets containing twice as many bogus detections to real.
+
+Given the small data set, to avoid overfitting we limit the the CNN to single convolution layer with 400 kernels and a pooling layer followed by a binary softmax classifier.  We also perform unsupervised pre-training with sparse filtering \citet{Ngiam11} using unlabelled images from the STL-10 \citep{Coates11} data set.  The classifier is applied to nightly PSST data producing a score between 0 and 1 for each TTI exposure for every candidate passing the cuts in the previous section.  For each candidate we simply combine the TTI exposure scores by taking the median, leaving a single real-bogus factor for each transient candidate which we take as the machine $P(real)$ below.  Candidates scoring $< 0.436$ are automatically rejected with the remaining objects promoted for human screening.  The decision boundary was chosen such that for a 5\% false positive rate (FPR) we expect a missed detection rate (MDR) of $\sim5.2$\% based on
+the test set.
+
 \subsection{Citizen Science Platform}
 
 \textbf{CL}
 
 XXXXX How many people and speed ? Screenshot XXXX \text{DW}
-Supernova Hunters began with a beta test on 13th June 2016 and launched on the 12th July 2016 (MJD 57581).  As of the 3rd September 2016 the project has accumulated 426481 classifications from 3158 citizen scientists.  So far citizen scientists have classified 52291 individual subjects corresponding to TTI observations (see Section~\ref{sec:ps1}) of 18838 PS1 objects.  Every Tuesday $\sim5200$ new subjects are uploaded to the project consisting of the previous week's detections that pass our machine cuts.  We require at least 7 citizen scientist classifications before a subject is considered classified and each week's data takes about two days to fully classify.  High confidence (typically $P(real)>0.8$) supernova candidates are screened by experts to remove a small number of false positives before the targets are submitted to the Transient Name Server (TNS).  To date citizen scientists have discovered two hundred supernova candidates submitted to the TNS and two confirmed Supernovae including SN 2016els; a superluminous supernova Type I [XXXXX cite Gal-Yam?? XXXXX].  The classification spectra were obtained by PESSTO [XXXXX cite Smartt XXXXX].
+Supernova Hunters began with a beta test on 13th June 2016 and launched on the 12th July 2016 (MJD 57581).  As of the 3rd September 2016 the project has accumulated 426481 classifications from 3158 citizen scientists.  So far citizen scientists have classified 52291 individual subjects corresponding to TTI observations (see Section~\ref{sec:ps1}) of 18838 PS1 objects.  Every Tuesday $\sim5200$ new subjects are uploaded to the project consisting of the previous week's detections that pass our machine cuts.  We require at least 7 citizen scientist classifications before a subject is considered classified and retired from the project.  Since launch the project averages $\sim23000$ classifications in the first 24 hours after the data is released and $\sim8300$ classifications in the following 24 hours by which time all subjects are normally retired. High confidence (typically $P(real)>0.8$) supernova candidates are screened by experts to remove a small number of false positives before the targets are submitted to the Transient Name Server (TNS).  To date citizen scientists have discovered two hundred supernova candidates submitted to the TNS and two confirmed Supernovae including SN 2016els; a superluminous supernova Type I [XXXXX cite Gal-Yam?? XXXXX].  The classification spectra were obtained by PESSTO [XXXXX cite Smartt XXXXX].
+
 \section{Performance}
 
 The machine is used to identify a cutoff above which candidates are presented to human classifiers; this cutoff is chosen so that a 5\% false positive rate is acheived. This threshold involves a missed detection rate of 5.2\%. We present the results of this machine classification in figure \ref{fig:machine_dist}. A major contaminant is the presence of asteroids; they appear in the dataset as supernovae but are identified here via cross-matching with the Minor Planet Centre ephemaris database (XXXXXX). 
@@ -134,30 +154,30 @@ The SVM  maximises the distance between populations of first `real' (and `astero
    \includegraphics[width=84mm]{figs/roc.pdf}
    \caption{left: ROC curve showing performance measured on the test data in ~\ref{fig:combo_test} for human (red), machine (yellow) and
             the linear SVM combination of human and machine classifications (blue).  right: The equivalent Purity-Completeness curve.  Both
-            plots show that the combination is always as good as or outperforms humans or the machine individually.} 
+            plots show that the combination always outperforms humans or the machine individually.} 
    \label{fig:roc} 
 \end{figure}
 
 \begin{table}
 \begin{tabular}{|c|c|c|c|}
-False Positive Rate & Human & Machine & Combination\\
-1\% & 65.7\% & 91.1 \% & 55.1 \% \\
-5\% & 49.4\% & 64.6 \% & 32.2 \% \\
-10\% & 38.3\% & 44.9 \% & 22.7 \%\\
+FPR & Human & Machine & Combination\\
+1\% & 65.7\% (38.3\%) & 91.1\% (49.6\%) & 55.1\% (23.8\%)\\
+5\% & 49.4\% (12.5\%) & 64.6\% (6.8\%) & 32.2\% (4.1\%)\\
+10\% & 38.3\% (1.1\%) & 44.9\% (1.0\%) & 22.7\% (0.2\%)\\
 \end{tabular}
-\caption{Missed detection rate recorded for a choice of false positive rates, based on expert classifications.}\label{tab:roc}
+\caption{Missed detection rate recorded for a choice of false positive rates, based on expert classifications.  Figures in brackets take detections automatically rejected by the machine classifier into account and assuming that all real detections are promoted which is approximately true.}\label{tab:roc}
 \end{table}
 
 XXXXXXXX Calculate FPR for a variety of missed detection rates XXXXXX
 
 \begin{table}
 \begin{tabular}{|c|c|c|c|}
-Missed Detection Rate & Human & Machine & Combination\\
-1\% & 100\% & 94.3\% & 84.9\% \\
-5\% & 73.0\% & 65.4\% & 42.4\% \\
-10\% & 60.8\% & 39.2\% & 23.7\%\\
+MDR & Human & Machine & Combination\\
+1\% & 100.0\% (10.3\%)& 94.3\% (9.7\%) & 84.9\% (8.8\%) \\
+5\% & 73.0\% (7.5\%) & 65.4\% (6.8\%) & 42.4\% (4.4\%) \\
+10\% & 60.8\% (6.3\%) & 39.2\% (4.0\%) & 23.7\% (2.4\%) \\
 \end{tabular}
-\caption{False positive rate recorded for a choice of missed detection rates, based on expert classifications.}\label{tab:roc}
+\caption{False positive rate recorded for a choice of missed detection rates, based on expert classifications.  Figures in brackets take detections automatically rejected by the machine classifier into account.}\label{tab:roc}
 \end{table}
 
 For any choice of false positive rate, the combination of classifications produced a lower missed detection rate. Equally, for any required purity or completeness the combination produced a better dataset. 
@@ -166,6 +186,8 @@ For any choice of false positive rate, the combination of classifications produc
 
 \textbf{CJL}
 
-\bsp	% typesetting comment
+\bibliographystyle{mnras} 
+\bibliography{ps1_real_bogus}
+
+\end{document}\bsp	% typesetting comment
 \label{lastpage}
-\end{document}
