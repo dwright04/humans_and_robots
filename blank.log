@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.7.8)  17 SEP 2016 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.7.8)  21 SEP 2016 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,163 +397,174 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 3439) in paragraph at lines 57--59
-[]\OT1/cmr/m/n/9 Pan-STARRS1 com-prises a 1.8m pri-mary mir-ror
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 67.
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 51.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<figs/sn_hunters.png, id=84, 1465.475pt x 493.845pt>
+
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 85.
+
+[2] <figs/sn_hunters.png, id=131, 1465.475pt x 493.845pt>
 File: figs/sn_hunters.png Graphic file (type png)
- <use figs/sn_hunters.png>
-Package pdftex.def Info: figs/sn_hunters.png used on input line 89.
+
+<use figs/sn_hunters.png>
+Package pdftex.def Info: figs/sn_hunters.png used on input line 95.
 (pdftex.def)             Requested size: 398.33858pt x 134.22911pt.
 
-<figs/machine_hist.pdf, id=90, 540.78912pt x 401.46863pt>
+<figs/machine_hist.pdf, id=137, 540.78912pt x 401.46863pt>
 File: figs/machine_hist.pdf Graphic file (type pdf)
 
 <use figs/machine_hist.pdf>
-Package pdftex.def Info: figs/machine_hist.pdf used on input line 106.
+Package pdftex.def Info: figs/machine_hist.pdf used on input line 113.
 (pdftex.def)             Requested size: 239.00314pt x 177.43086pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
 [][]
  []
 
-<figs/human_hist.pdf, id=92, 530.56342pt x 409.23985pt>
+<figs/human_hist.pdf, id=139, 530.56342pt x 409.23985pt>
 File: figs/human_hist.pdf Graphic file (type pdf)
 
 <use figs/human_hist.pdf>
-Package pdftex.def Info: figs/human_hist.pdf used on input line 121.
+Package pdftex.def Info: figs/human_hist.pdf used on input line 128.
 (pdftex.def)             Requested size: 239.00314pt x 184.34981pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
 [][]
  []
 
 
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 130.
-
-[2]
-<figs/human_v_machine_20160712-20160718.pdf, id=108, 501.37941pt x 409.23985pt>
+<figs/human_v_machine_20160712-20160718.pdf, id=143, 501.37941pt x 409.23985pt>
 File: figs/human_v_machine_20160712-20160718.pdf Graphic file (type pdf)
 <use figs/human_v_machine_20160712-20160718.pdf>
 Package pdftex.def Info: figs/human_v_machine_20160712-20160718.pdf used on inp
-ut line 140.
+ut line 147.
 (pdftex.def)             Requested size: 239.00314pt x 195.07784pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--145
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
+[][]
+ []
+
+<figs/combo_hist.pdf, id=150, 530.56342pt x 409.23985pt>
+File: figs/combo_hist.pdf Graphic file (type pdf)
+
+<use figs/combo_hist.pdf>
+Package pdftex.def Info: figs/combo_hist.pdf used on input line 168.
+(pdftex.def)             Requested size: 239.00314pt x 184.34981pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 [][]
  []
 
 
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 157.
+<figs/human_v_machine_20160725-20160829.pdf, id=151, 501.37941pt x 409.23985pt>
+File: figs/human_v_machine_20160725-20160829.pdf Graphic file (type pdf)
+<use figs/human_v_machine_20160725-20160829.pdf>
+Package pdftex.def Info: figs/human_v_machine_20160725-20160829.pdf used on inp
+ut line 176.
+(pdftex.def)             Requested size: 239.00314pt x 195.07784pt.
 
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+[][]
+ []
+
+<figs/roc.png, id=156, 981.4266pt x 477.7047pt>
+File: figs/roc.png Graphic file (type png)
+ <use figs/roc.png>
+Package pdftex.def Info: figs/roc.png used on input line 185.
+(pdftex.def)             Requested size: 426.79134pt x 220.52676pt.
+
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 185--188
+[][]
+ []
+
+
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 234.
+
+[3]
+
+LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 240.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.157 
+l.240 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.157 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.157 
-       <./figs/sn_hunters.png> <./figs/machine_hist.pdf> <./figs/human_hist.pdf
-
-
-pdfTeX warning: pdflatex (file ./figs/human_hist.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->] <figs/combo_hist.pdf, id=192, 530.56342pt x 409.23985pt>
-File: figs/combo_hist.pdf Graphic file (type pdf)
-
-<use figs/combo_hist.pdf>
-Package pdftex.def Info: figs/combo_hist.pdf used on input line 161.
-(pdftex.def)             Requested size: 239.00314pt x 184.34981pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-[][]
- []
-
-
-<figs/human_v_machine_20160725-20160829.pdf, id=193, 501.37941pt x 409.23985pt>
-File: figs/human_v_machine_20160725-20160829.pdf Graphic file (type pdf)
-<use figs/human_v_machine_20160725-20160829.pdf>
-Package pdftex.def Info: figs/human_v_machine_20160725-20160829.pdf used on inp
-ut line 169.
-(pdftex.def)             Requested size: 239.00314pt x 195.07784pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
-[][]
- []
-
-<figs/roc.png, id=198, 981.4266pt x 477.7047pt>
-File: figs/roc.png Graphic file (type png)
- <use figs/roc.png>
-Package pdftex.def Info: figs/roc.png used on input line 178.
-(pdftex.def)             Requested size: 426.79134pt x 220.52676pt.
-
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 178--181
-[][]
- []
-
-
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 233.
-
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.233 
+l.240 
       pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.233 
+l.240 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.240 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.233 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
+l.240 
+       <./figs/sn_hunters.png> <./figs/machine_hist.pdf> <./figs/human_hist.pdf
+
+
+pdfTeX warning: pdflatex (file ./figs/human_hist.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>] (./blank.bbl
+Underfull \hbox (badness 2689) in paragraph at lines 73--75
+[]\OT1/cmr/m/n/8 Kaiser N., et al., 2010, in So-ci-ety of Photo-Optical In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+\OT1/cmr/m/n/8 stru-men-ta-tion En-gi-neers (SPIE) Con-fer-ence Se-ries. ,
+ []
+
+
+LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 114.
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.233 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6}) has been already used, duplicate ignored
+l.114   et~al.}{2015}]{Wright15}
+                                pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.233 
-       <./figs/human_v_machine_20160712-20160718.pdf> <./figs/combo_hist.pdf
+l.114   et~al.}{2015}]{Wright15}
+                                pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.114   et~al.}{2015}]{Wright15}
+                                 <./figs/human_v_machine_20160712-20160718.pdf>
+ <./figs/combo_hist.pdf
 
 pdfTeX warning: pdflatex (file ./figs/combo_hist.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -561,55 +572,41 @@ pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./figs/human_v_machine_20160725-20160829.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] (./blank.bbl
-
-Package hyperref Warning: Suppressing empty link on input line 44.
-
-
-Underfull \hbox (badness 2689) in paragraph at lines 54--56
-[]\OT1/cmr/m/n/8 Kaiser N., et al., 2010, in So-ci-ety of Photo-Optical In-
- []
+>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
-\OT1/cmr/m/n/8 stru-men-ta-tion En-gi-neers (SPIE) Con-fer-ence Se-ries. ,
- []
+LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 250.
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
-
-
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 241.
-
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.241 \end{document}
+l.250 \end{document}
                     \bsp	% typesetting comment
 
  <./figs/roc.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (./blank.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `blank.out' has not changed.
 (rerunfilecheck)             Checksum: DEBF154E588608FE8754F0E77B2F1C85;467.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
- 7176 strings out of 493089
- 101065 string characters out of 6134843
- 208938 words of memory out of 5000000
- 10531 multiletter control sequences out of 15000+600000
+ 7212 strings out of 493089
+ 101597 string characters out of 6134843
+ 220732 words of memory out of 5000000
+ 10558 multiletter control sequences out of 15000+600000
  17729 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,34p,1551b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,34p,1551b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -633,10 +630,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on blank.pdf (5 pages, 1635232 bytes).
+Output written on blank.pdf (6 pages, 1643004 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 36 named destinations out of 1000 (max. 500000)
+ 510 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 45 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

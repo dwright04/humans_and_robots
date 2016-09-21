@@ -1,4 +1,4 @@
-\documentclass[a4paper,fleqn,usenatbib]{mnras}
+\message{ !name(blank.tex)}\documentclass[a4paper,fleqn,usenatbib]{mnras}
 
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
@@ -20,6 +20,9 @@ $^{2}$QUBs
 \pubyear{2016}
 
 \begin{document}
+
+\message{ !name(blank.tex) !offset(-3) }
+
 \label{firstpage}
 \pagerange{\pageref{firstpage}--\pageref{lastpage}}
 \maketitle
@@ -49,10 +52,7 @@ Large quantities of labelled data can be time consuming to generate for small sc
 
 For classification tasks humans and machines have complimentary strengths - humans are good at making abstract connections given a small number of examples that they can apply in general while machines can consume large quantities of data and make more systematic judgements based on complex relationships between the features provided.  Humans can quickly learn that magnitude has little influence or a real or bogus classification, while a machine must learn this from the data.  But a machine can learn the typical relationship between the Point Spread Function (PSF) and magnitude to make systematic (though probably biased) classifications whereas humans are likely to use this information differently and in a more XXXX haphazard XXXX way.  It remains to be seen whether classifications from a machine can be successfully combined with classifications from citizen scientists to produce more pure and complete samples from astronomical data.  Of course we expect that combining machine classifications with those of experts will no doubt improve performance, the assumption here is that a small number of experts can not review all the data promoted by a machine classifier - the problem expected from LSST.  It is unclear if the classifications of citizen scientists, which tend to be noisier can be added to improve the overall performance or if they are limited to providing a small but pure sample of the target class.
 
-In this paper we report some initial findings from the \textit{Supernova Hunters} project, a new citizen science project similar in spirit to those mentioned above but applied to the PanSTARRS Survey for Transients (PSST).  In Section~\ref{sec:method} we describe the PanSTARRS-1 telescope, PSST survey and the Supernova Hunters project and the citizen science platform.  Section~\ref{sec:perform} shows the relative performance of humans and machines on data uploaded to Supernova Hunters during the first two months of the project.  We also describe and measure the performance of a simple method for combining the classifications of citizen scientists and the current PSST machine classifier.  In Section~\ref{sec:conclusions} we conclude and discuss potential avenues for future improvements.
-
 \section{Method}
-\label{sec:method}
 \subsection{Pan-STARRS1}
 \label{sec:ps1}
 
@@ -102,7 +102,6 @@ detection of a real transient.}
 Supernova Hunters was launched on the 12th July 2016 (MJD 57581).  As of the 3rd September 2016 the project has accumulated 426481 classifications from 3158 citizen scientists.  Citizen scientists are presented with the interface shown in Figure.~\ref{fig:sn_hunters} and have classified 52291 individual subjects corresponding to TTI observations (see Section~\ref{sec:ps1}) of 18838 PS1 objects. As guidance we provide a ``Field Guide'' that provides a desciption and examples of the different artefact types we expect.  Every Tuesday $\sim5200$ new subjects are uploaded to the project consisting of the previous week's detections that pass our machine cuts.  We require at least 7 citizen scientist classifications before a subject is considered classified and subsequently  retired from the project.  Since launch the project averages $\sim23000$ classifications in the first 24 hours after the data is released and $\sim8300$ classifications in the following 24 hours by which time all subjects are normally retired. High confidence (typically $P(real)>0.8$) supernova candidates are screened by experts to remove a small number of false positives before the targets are submitted to the Transient Name Server (TNS).  To date citizen scientists have discovered two hundred supernova candidates submitted to the TNS and two confirmed Supernovae including SN 2016els; a superluminous supernova Type I [XXXXX cite Gal-Yam?? XXXXX].  The classification spectra were obtained by PESSTO [XXXXX cite Smartt XXXXX].
 
 \section{Performance}
-\label{sec:perform}
 
 We present the results of our machine classifier (Section~\ref{sec:cnn}) in Figure~\ref{fig:machine_dist} on PS1 data between MJD 57570 and MJD 57586. A major contaminant is the presence of asteroids; they appear in the difference image as supernovae but are identified here via cross-matching with the Minor Planet Centre ephemaris database (XXXXXX). 
 
@@ -239,7 +238,6 @@ We have chosen to implement one of the simplest methods for combining human and 
 gain from the added information.
 
 \section{Conclusions}
-\label{sec:conclusions}
 \textbf{CJL}
 
 XXXXXXX I guess one of the worries for LSST is that the data stream is too vast to be processed even by crowdsourcing citizen scientists (I've seen this in a paper somewhere...).  But here we are already demonstrating that using a machine to throw away
@@ -249,3 +247,5 @@ most of the data and then combining the classifications with those of citizen sc
 
 \end{document}\bsp	% typesetting comment
 \label{lastpage}
+
+\message{ !name(blank.tex) !offset(-251) }

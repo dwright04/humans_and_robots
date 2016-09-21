@@ -17,6 +17,12 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
+\bibitem[\protect\citeauthoryear{{Bailey}, {Aragon}, {Romano}, {Thomas},
+  {Weaver}  \& {Wong}}{{Bailey} et~al.}{2007}]{Bailey07}
+{Bailey} S.,  {Aragon} C.,  {Romano} R.,  {Thomas} R.~C.,  {Weaver} B.~A.,
+  {Wong} D.,  2007, \mn@doi [ApJ] {10.1086/519832}, \href
+  {http://adsabs.harvard.edu/abs/2007ApJ...665.1246B} {665, 1246}
+
 \bibitem[\protect\citeauthoryear{{Bloom} et~al.,}{{Bloom}
   et~al.}{2012}]{Bloom12}
 {Bloom} J.~S.,  et~al., 2012, \mn@doi [PASP] {10.1086/668468}, \href
@@ -29,6 +35,11 @@
   {10.1093/mnras/stt1306}, \href
   {http://adsabs.harvard.edu/abs/2013MNRAS.435.1047B} {435, 1047}
 
+\bibitem[\protect\citeauthoryear{{Campbell} et~al.,}{{Campbell}
+  et~al.}{2015}]{Campbell15}
+{Campbell} H.,  et~al., 2015, The Astronomer's Telegram, \href
+  {http://adsabs.harvard.edu/abs/2015ATel.7254....1C} {7254}
+
 \bibitem[\protect\citeauthoryear{{Coates}, {Lee}  \& {Ng}}{{Coates}
   et~al.}{2011}]{Coates11}
 {Coates} A.,  {Lee} H.,   {Ng} A.~Y.,  2011, in AISTATS 2011.
@@ -38,11 +49,19 @@
 {Denneau} L.,  et~al., 2013, \mn@doi [\pasp] {10.1086/670337}, \href
   {http://adsabs.harvard.edu/abs/2013PASP..125..357D} {125, 357}
 
+\bibitem[\protect\citeauthoryear{{Donalek}, {Mahabal}, {Djorgovski}, {Marney},
+  {Drake}, {Glikman}, {Graham}  \& {Williams}}{{Donalek}
+  et~al.}{2008}]{Donalek08}
+{Donalek} C.,  {Mahabal} A.,  {Djorgovski} S.~G.,  {Marney} S.,  {Drake} A.,
+  {Glikman} E.,  {Graham} M.~J.,   {Williams} R.,  2008, in {Bailer-Jones}
+  C.~A.~L.,  ed.,  American Institute of Physics Conference Series Vol. 1082,
+  American Institute of Physics Conference Series. pp 252--256 (\mn@eprint
+  {arXiv} {0810.4945}), \mn@doi{10.1063/1.3059057}
+
 \bibitem[\protect\citeauthoryear{{Goldstein} et~al.,}{{Goldstein}
   et~al.}{2015}]{Goldstein15}
-{Goldstein} D.~A.,  et~al., 2015, preprint, \href
-  {http://adsabs.harvard.edu/abs/2015arXiv150402936G} {} (\mn@eprint {arXiv}
-  {1504.02936})
+{Goldstein} D.~A.,  et~al., 2015, \mn@doi [\aj] {10.1088/0004-6256/150/3/82},
+  \href {http://adsabs.harvard.edu/abs/2015AJ....150...82G} {150, 82}
 
 \bibitem[\protect\citeauthoryear{{Huber} et~al.,}{{Huber}
   et~al.}{2015}]{Huber15a}
@@ -53,6 +72,10 @@
   et~al.}{2010}]{Kaiser10}
 {Kaiser} N.,  et~al., 2010, in Society of Photo-Optical Instrumentation
   Engineers (SPIE) Conference Series. , \mn@doi{10.1117/12.859188}
+
+\bibitem[\protect\citeauthoryear{{Law} et~al.,}{{Law} et~al.}{2009}]{Law09}
+{Law} N.~M.,  et~al., 2009, \mn@doi [PASP] {10.1086/648598}, \href
+  {http://adsabs.harvard.edu/abs/2009PASP..121.1395L} {121, 1395}
 
 \bibitem[\protect\citeauthoryear{{Magnier} et~al.,}{{Magnier}
   et~al.}{2013}]{Magnier13}
@@ -67,6 +90,21 @@
 Curran Associates, Inc., pp 1125--1133, \url
   {http://papers.nips.cc/paper/4334-sparse-filtering.pdf}
 
+\bibitem[\protect\citeauthoryear{{Rau} et~al.,}{{Rau} et~al.}{2009}]{Rau09}
+{Rau} A.,  et~al., 2009, \mn@doi [PASP] {10.1086/605911}, \href
+  {http://adsabs.harvard.edu/abs/2009PASP..121.1334R} {121, 1334}
+
+\bibitem[\protect\citeauthoryear{{Romano}, {Aragon}  \& {Ding}}{{Romano}
+  et~al.}{2006}]{Romano06}
+{Romano} R.~A.,  {Aragon} C.~R.,   {Ding} C.,  2006, in Machine Learning and
+  Applications, 2006. ICMLA'06. 5th International Conference on. pp 77--82
+
+\bibitem[\protect\citeauthoryear{{Smith} et~al.,}{{Smith}
+  et~al.}{2011}]{Smith11}
+{Smith} A.~M.,  et~al., 2011, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2010.17994.x}, \href
+  {http://adsabs.harvard.edu/abs/2011MNRAS.412.1309S} {412, 1309}
+
 \bibitem[\protect\citeauthoryear{{Tonry} et~al.,}{{Tonry}
   et~al.}{2012}]{Tonry12b}
 {Tonry} J.~L.,  et~al., 2012, \mn@doi [ApJ] {10.1088/0004-637X/750/2/99}, \href
@@ -80,6 +118,12 @@ Curran Associates, Inc., pp 1125--1133, \url
 \bibitem[\protect\citeauthoryear{{York} et~al.,}{{York} et~al.}{2000}]{York00}
 {York} D.~G.,  et~al., 2000, \mn@doi [AJ] {10.1086/301513}, \href
   {http://adsabs.harvard.edu/abs/2000AJ....120.1579Y} {120, 1579}
+
+\bibitem[\protect\citeauthoryear{{du Buisson}, {Sivanandam}, {Bassett}  \&
+  {Smith}}{{du Buisson} et~al.}{2015}]{duBuisson15}
+{du Buisson} L.,  {Sivanandam} N.,  {Bassett} B.~A.,   {Smith} M.,  2015,
+  \mn@doi [\mnras] {10.1093/mnras/stv2041}, \href
+  {http://adsabs.harvard.edu/abs/2015MNRAS.454.2026D} {454, 2026}
 
 \makeatother
 \end{thebibliography}
