@@ -82,6 +82,11 @@
 {Magnier} E.~A.,  et~al., 2013, \mn@doi [ApJS] {10.1088/0067-0049/205/2/20},
   \href {http://adsabs.harvard.edu/abs/2013ApJS..205...20M} {205, 20}
 
+\bibitem[\protect\citeauthoryear{{Marshall} et~al.,}{{Marshall}
+  et~al.}{2016}]{Marshall16}
+{Marshall} P.~J.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stv2009},
+  \href {http://adsabs.harvard.edu/abs/2016MNRAS.455.1171M} {455, 1171}
+
 \bibitem[\protect\citeauthoryear{{Ngiam}, {Chen}, {Bhaskar}, Koh  \&
   Ng}{{Ngiam} et~al.}{2011}]{Ngiam11}
 {Ngiam} J.,  {Chen} Z.,  {Bhaskar} S.~A.,  Koh P.~W.,   Ng A.~Y.,  2011, in
@@ -93,6 +98,12 @@ Curran Associates, Inc., pp 1125--1133, \url
 \bibitem[\protect\citeauthoryear{{Rau} et~al.,}{{Rau} et~al.}{2009}]{Rau09}
 {Rau} A.,  et~al., 2009, \mn@doi [PASP] {10.1086/605911}, \href
   {http://adsabs.harvard.edu/abs/2009PASP..121.1334R} {121, 1334}
+
+\bibitem[\protect\citeauthoryear{{Ridgway}, {Matheson}, {Mighell}, {Olsen}  \&
+  {Howell}}{{Ridgway} et~al.}{2014}]{Ridgway14}
+{Ridgway} S.~T.,  {Matheson} T.,  {Mighell} K.~J.,  {Olsen} K.~A.,   {Howell}
+  S.~B.,  2014, \mn@doi [ApJ] {10.1088/0004-637X/796/1/53}, \href
+  {http://adsabs.harvard.edu/abs/2014ApJ...796...53R} {796, 53}
 
 \bibitem[\protect\citeauthoryear{{Romano}, {Aragon}  \& {Ding}}{{Romano}
   et~al.}{2006}]{Romano06}
@@ -118,6 +129,12 @@ Curran Associates, Inc., pp 1125--1133, \url
 \bibitem[\protect\citeauthoryear{{York} et~al.,}{{York} et~al.}{2000}]{York00}
 {York} D.~G.,  et~al., 2000, \mn@doi [AJ] {10.1086/301513}, \href
   {http://adsabs.harvard.edu/abs/2000AJ....120.1579Y} {120, 1579}
+
+\bibitem[\protect\citeauthoryear{{Zackay}, {Ofek}  \& {Gal-Yam}}{{Zackay}
+  et~al.}{2016}]{Zackay16}
+{Zackay} B.,  {Ofek} E.~O.,   {Gal-Yam} A.,  2016, preprint, \href
+  {http://adsabs.harvard.edu/abs/2016arXiv160102655Z} {} (\mn@eprint {arXiv}
+  {1601.02655})
 
 \bibitem[\protect\citeauthoryear{{du Buisson}, {Sivanandam}, {Bassett}  \&
   {Smith}}{{du Buisson} et~al.}{2015}]{duBuisson15}

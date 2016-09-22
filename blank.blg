@@ -3,46 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: blank.aux
 The style file: mnras.bst
 Database file #1: ps1_real_bogus.bib
+Warning--I didn't find a database entry for "Ridgway"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 20 entries,
+You've used 23 entries,
             2881 wiz_defined-function locations,
-            901 strings with 18685 characters,
-and the built_in function-call counts, 9385 in all, are:
-= -- 779
-> -- 617
-< -- 21
-+ -- 282
-- -- 78
-* -- 1207
-:= -- 1380
+            929 strings with 19735 characters,
+and the built_in function-call counts, 10762 in all, are:
+= -- 880
+> -- 728
+< -- 25
++ -- 333
+- -- 94
+* -- 1393
+:= -- 1600
 add.period$ -- 0
-call.type$ -- 20
-change.case$ -- 40
-chr.to.int$ -- 20
-cite$ -- 20
-duplicate$ -- 485
-empty$ -- 536
-format.name$ -- 144
-if$ -- 1658
+call.type$ -- 23
+change.case$ -- 46
+chr.to.int$ -- 23
+cite$ -- 23
+duplicate$ -- 552
+empty$ -- 604
+format.name$ -- 168
+if$ -- 1885
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 74
-num.names$ -- 115
-pop$ -- 133
+missing$ -- 23
+newline$ -- 83
+num.names$ -- 135
+pop$ -- 150
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 92
 quote$ -- 0
-skip$ -- 280
+skip$ -- 316
 stack$ -- 0
-substring$ -- 566
-swap$ -- 215
-text.length$ -- 85
+substring$ -- 628
+swap$ -- 253
+text.length$ -- 97
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 180
+type$ -- 207
 warning$ -- 0
-while$ -- 133
+while$ -- 153
 width$ -- 0
-write$ -- 215
+write$ -- 246
+(There was 1 warning)
