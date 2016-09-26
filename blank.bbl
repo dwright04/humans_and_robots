@@ -23,6 +23,12 @@
   {Wong} D.,  2007, \mn@doi [ApJ] {10.1086/519832}, \href
   {http://adsabs.harvard.edu/abs/2007ApJ...665.1246B} {665, 1246}
 
+\bibitem[\protect\citeauthoryear{{Becker}, {Krughoff}, {Connolly}
+  et~al.}{{Becker} et~al.}{2013}]{Becker13}
+{Becker} A.,  {Krughoff} S.,  {Connolly} A.,   et~al., 2013, in {Report on Late
+  Winter 2013 Production: Image Differencing (Tucson, AZ: LSST)}. \url
+  {https://dev.lsstcorp.org/trac/attachment/wiki/DC/Winter2013/W13report_V1-02.pdf}
+
 \bibitem[\protect\citeauthoryear{{Bloom} et~al.,}{{Bloom}
   et~al.}{2012}]{Bloom12}
 {Bloom} J.~S.,  et~al., 2012, \mn@doi [PASP] {10.1086/668468}, \href
@@ -67,6 +73,12 @@
   et~al.}{2015}]{Huber15a}
 {Huber} M.,  et~al., 2015, The Astronomer's Telegram, \href
   {http://adsabs.harvard.edu/abs/2015ATel.7153....1H} {7153}
+
+\bibitem[\protect\citeauthoryear{{Ivezi{\'c}} et~al.,}{{Ivezi{\'c}}
+  et~al.}{2008}]{Ivezic08}
+{Ivezi{\'c}} Z.,  et~al., 2008, preprint, \href
+  {http://adsabs.harvard.edu/abs/2008arXiv0805.2366I} {} (\mn@eprint {arXiv}
+  {0805.2366})
 
 \bibitem[\protect\citeauthoryear{{Kaiser} et~al.,}{{Kaiser}
   et~al.}{2010}]{Kaiser10}
