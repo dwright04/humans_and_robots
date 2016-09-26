@@ -100,9 +100,9 @@ Supernova Hunters was launched on the 12th July 2016 (MJD 57581).  As of the 3rd
 \section{Performance}
 \label{sec:perform}
 
-We present the results of our machine classifier (Section~\ref{sec:cnn}) in Figure~\ref{fig:machine_dist} on PS1 data between MJD 57570 and MJD 57586. A major contaminant is the presence of asteroids; they appear in the difference image as supernovae but are identified here via cross-matching with the Minor Planet Centre ephemaris database (XXXXXX). 
+We present the results of our machine classifier (Section~\ref{sec:cnn}) in Figure~\ref{fig:machine_dist} on PS1 data between MJD 57570 and MJD 57586. A major contaminant is the presence of asteroids. These appear in the difference image as  supernovae, and are in that sense 'correctly classified' but are identified here via cross-matching with the Minor Planet Centre ephemaris database (XXXXXX)
 
-These data were additionally reviewed by at least one expert members of the team (normally DW or KS) to identify genuine supernovae. Candidates were divided into `real' and `bogus' categories based on these expert classifications. 
+The results of the machine learning were additionally reviewed by at least one expert members of the team (normally DW or KS) to identify genuine supernovae. Candidates were divided into `real' and `bogus' categories based on these expert classifications. There were no real candidates assigned a probability of $P(real) < 0.04$. 
 
 \begin{figure}
    %\vspace{200pt}
@@ -117,7 +117,7 @@ These data were additionally reviewed by at least one expert members of the team
 
 Candidates with high probability as assigned by the machine are more likely to be real. However, although the machine successfully rejects the majority of bogus candidates, the sample produced by the simple cut on hypothesis is far from pure; 1403 real candidates from 3384 in the sample. Higher cutoffs run the risk of rejecting an increasing number of real candidates; requiring a 1\% false positive rate will result in a missed detection rate of 60.3\%. 
 
-An obvious solution to improve the performance of the neural network is to increase the size of the training set. This is expected to both directly improve performance but also allow for deeper, more complex networks to be trained. However, it is obvious already that obtaining large, clean training sets is expensive, requiring the review of many candidates by experts. In order to reduce the burden on the science team, candidates which exceed this threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in fig \ref{fig:human_dist}. 
+In order to improve this performance, candidates which exceed the $P(real) = 0.04$ threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in fig \ref{fig:human_dist}. 
 
 \begin{figure}
    %\vspace{200pt}
@@ -129,9 +129,9 @@ An obvious solution to improve the performance of the neural network is to incre
    \label{fig:human_dist} 
 \end{figure}
 
-Volunteer classifications were combined using the simplest possible metric; the fraction of volunteers who identified a potential transient is assumed to be an estimate of the probability of that candidate being real. Despite this simple procedure, the results show that volunteers could effectively distinguish between real and bogus classifications. However, the structure of the resulting distribution is strikingly different. Whereas for machine classification, a threshold could be chosen to give a complete but not pure sample, with volunteer classification it is easier to construct a pure sample of candidates which are highly likely to be supernovae, but this sample is far from complete. There are candidates judged `real' by experts even at low probabilities. 
+Volunteer classifications were combined using the simplest possible metric; the fraction of volunteers who identified a potential transient is assumed to be an estimate of the probability of that candidate being real. Despite this simple procedure, the results show that volunteers could effectively distinguish between real and bogus classifications. However, the structure of the resulting distribution is strikingly different from that of the machine classifier. Whereas for machine classification, a threshold could be chosen to give a complete but not pure sample, with volunteer classification it is easier to construct a pure sample of candidates which are highly likely to be supernovae, but this sample is far from complete. There are candidates judged `real' by experts even at low probabilities. 
 
-Much work has been done in other projects to improve on this naive combination of volunteer votes. (XXXX Examples XXXX). However, such solutions have not yet shown to be generalisable between projects, and so require substantial effort in data analysis. They may also depend on large numbers of volunteers classifying each subject. Instead of pursuing this route, therefore, we combine human and machine classifications hoping to benefit from the different capabilities of both sets of classifiers. 
+There are two routes which might be expected to improve this performance. We should expect the accuracy to increase with the number of classifications, though this may not be possible if the goal is rapid transient detection. Much work has been done in other projects to improve on this naive combination of volunteer votes (see, for example, \citet{Schwamb12, Marshall16}). However, such solutions have not yet been shown to be generalisable between projects, and so each requires substantial effort in data analysis. They may also depend on large numbers of volunteers classifying each subject. Instead of pursuing this route, therefore, we combine human and machine classifications hoping to benefit from the different capabilities of both sets of classifiers. 
 
 \subsection{Combining human and machines} 
 
