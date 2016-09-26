@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.7.8)  22 SEP 2016 13:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.7.8)  24 SEP 2016 19:14
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **\input blank.tex
 (./blank.tex (./mnras.cls
@@ -282,20 +283,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (./blank.aux)
 \openout1 = `blank.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -340,7 +341,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 22.
+Package hyperref Info: Link coloring ON on input line 35.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -350,9 +351,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count113
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (./blank.out) (./blank.out)
 \@outlinefile=\write3
@@ -387,50 +388,54 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Missing character: There is no â in font cmti8!
+Missing character: There is no € in font cmti8!
+Missing character: There is no ™ in font cmti8!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 51.
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 62.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 85.
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 95.
 
 [2] <figs/sn_hunters.png, id=131, 1465.475pt x 493.845pt>
 File: figs/sn_hunters.png Graphic file (type png)
 
 <use figs/sn_hunters.png>
-Package pdftex.def Info: figs/sn_hunters.png used on input line 95.
+Package pdftex.def Info: figs/sn_hunters.png used on input line 108.
 (pdftex.def)             Requested size: 398.33858pt x 134.22911pt.
 
 <figs/machine_hist.pdf, id=137, 540.78912pt x 401.46863pt>
 File: figs/machine_hist.pdf Graphic file (type pdf)
 
 <use figs/machine_hist.pdf>
-Package pdftex.def Info: figs/machine_hist.pdf used on input line 113.
+Package pdftex.def Info: figs/machine_hist.pdf used on input line 126.
 (pdftex.def)             Requested size: 239.00314pt x 177.43086pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--118
+Underfull \hbox (badness 10000) in paragraph at lines 126--131
 [][]
  []
 
@@ -438,10 +443,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--118
 File: figs/human_hist.pdf Graphic file (type pdf)
 
 <use figs/human_hist.pdf>
-Package pdftex.def Info: figs/human_hist.pdf used on input line 128.
+Package pdftex.def Info: figs/human_hist.pdf used on input line 141.
 (pdftex.def)             Requested size: 239.00314pt x 184.34981pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
+Underfull \hbox (badness 10000) in paragraph at lines 141--145
 [][]
  []
 
@@ -450,109 +455,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--132
 File: figs/human_v_machine_20160712-20160718.pdf Graphic file (type pdf)
 <use figs/human_v_machine_20160712-20160718.pdf>
 Package pdftex.def Info: figs/human_v_machine_20160712-20160718.pdf used on inp
-ut line 147.
+ut line 160.
 (pdftex.def)             Requested size: 239.00314pt x 195.07784pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--152
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
 [][]
  []
 
-<figs/combo_hist.pdf, id=150, 530.56342pt x 409.23985pt>
+
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 177.
+
+[3] <figs/combo_hist.pdf, id=161, 530.56342pt x 409.23985pt>
 File: figs/combo_hist.pdf Graphic file (type pdf)
 
 <use figs/combo_hist.pdf>
-Package pdftex.def Info: figs/combo_hist.pdf used on input line 168.
+Package pdftex.def Info: figs/combo_hist.pdf used on input line 181.
 (pdftex.def)             Requested size: 239.00314pt x 184.34981pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 [][]
  []
 
 
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 171.
-
-[3]
-<figs/human_v_machine_20160725-20160829.pdf, id=165, 501.37941pt x 409.23985pt>
+<figs/human_v_machine_20160725-20160829.pdf, id=162, 501.37941pt x 409.23985pt>
 File: figs/human_v_machine_20160725-20160829.pdf Graphic file (type pdf)
 <use figs/human_v_machine_20160725-20160829.pdf>
 Package pdftex.def Info: figs/human_v_machine_20160725-20160829.pdf used on inp
-ut line 176.
+ut line 189.
 (pdftex.def)             Requested size: 239.00314pt x 195.07784pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
 [][]
  []
 
-<figs/roc.png, id=170, 981.4266pt x 477.7047pt>
+<figs/roc.png, id=167, 981.4266pt x 477.7047pt>
 File: figs/roc.png Graphic file (type png)
  <use figs/roc.png>
-Package pdftex.def Info: figs/roc.png used on input line 185.
+Package pdftex.def Info: figs/roc.png used on input line 198.
 (pdftex.def)             Requested size: 426.79134pt x 220.52676pt.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 185--188
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 198--201
 [][]
  []
 
 
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 239.
+LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 252.
 
 [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 
+l.252 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.239 
+l.252 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.2
+l.252 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 
+l.252 
        <./figs/sn_hunters.png> <./figs/machine_hist.pdf> <./figs/human_hist.pdf
 
 
 pdfTeX warning: pdflatex (file ./figs/human_hist.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 248.
+
+
+LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 258.
 
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.248 
+l.258 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.248 
+l.258 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.258 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.248 
+l.258 
        <./figs/human_v_machine_20160712-20160718.pdf> <./figs/combo_hist.pdf
 
 pdfTeX warning: pdflatex (file ./figs/combo_hist.pdf): PDF inclusion: multiple 
@@ -561,66 +569,71 @@ pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./figs/human_v_machine_20160725-20160829.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] (./blank.bbl
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 73--75
-[]\OT1/cmr/m/n/8 Kaiser N., et al., 2010, in So-ci-ety of Photo-Optical In-
- []
+(./blank.bbl
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
-\OT1/cmr/m/n/8 stru-men-ta-tion En-gi-neers (SPIE) Con-fer-ence Se-ries. ,
- []
-
-
-LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 120.
+LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 45.
 
 [6pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.120   et~al.}{2012}]{Tonry12b}
-                                 <./figs/roc.png>]
+l.45   et~al.}{2015}]{Campbell15}
+                                  <./figs/roc.png>]
 
-Package hyperref Warning: Suppressing empty link on input line 136.
+Package hyperref Warning: Suppressing empty link on input line 80.
 
 
-Underfull \hbox (badness 7685) in paragraph at lines 135--138
+Underfull \hbox (badness 2689) in paragraph at lines 85--87
+[]\OT1/cmr/m/n/8 Kaiser N., et al., 2010, in So-ci-ety of Photo-Optical In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+\OT1/cmr/m/n/8 stru-men-ta-tion En-gi-neers (SPIE) Con-fer-ence Se-ries. ,
+ []
+
+
+Package hyperref Warning: Suppressing empty link on input line 148.
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 147--150
 []\OT1/cmr/m/n/8 Zackay B., Ofek E. O., Gal-Yam A., 2016, preprint,
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
 
 
-LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 254.
+LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 267.
 
 [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (./blank.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
 Package rerunfilecheck Info: File `blank.out' has not changed.
 (rerunfilecheck)             Checksum: DEBF154E588608FE8754F0E77B2F1C85;467.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
  ) 
 Here is how much of TeX's memory you used:
- 7225 strings out of 493089
- 101798 string characters out of 6134843
- 211270 words of memory out of 5000000
- 10567 multiletter control sequences out of 15000+600000
+ 7234 strings out of 493089
+ 101928 string characters out of 6134843
+ 214172 words of memory out of 5000000
+ 10574 multiletter control sequences out of 15000+600000
  17729 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,34p,1701b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,34p,1737b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -644,10 +657,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on blank.pdf (7 pages, 1649485 bytes).
+Output written on blank.pdf (7 pages, 1660448 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 51 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
