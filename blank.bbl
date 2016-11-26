@@ -23,6 +23,14 @@
   {Wong} D.,  2007, \mn@doi [ApJ] {10.1086/519832}, \href
   {http://adsabs.harvard.edu/abs/2007ApJ...665.1246B} {665, 1246}
 
+\bibitem[\protect\citeauthoryear{Banko \& Brill}{Banko \&
+  Brill}{2001}]{Banko01}
+Banko M.,  Brill E.,  2001, in Proceedings of the 39th Annual Meeting on
+  Association for Computational Linguistics. ACL '01.
+Association for Computational Linguistics, Stroudsburg, PA, USA, pp 26--33,
+  \mn@doi{10.3115/1073012.1073017}, \url
+  {http://dx.doi.org/10.3115/1073012.1073017}
+
 \bibitem[\protect\citeauthoryear{{Becker}, {Krughoff}, {Connolly}
   et~al.}{{Becker} et~al.}{2013}]{Becker13}
 {Becker} A.,  {Krughoff} S.,  {Connolly} A.,   et~al., 2013, in {Report on Late
@@ -64,15 +72,28 @@
   American Institute of Physics Conference Series. pp 252--256 (\mn@eprint
   {arXiv} {0810.4945}), \mn@doi{10.1063/1.3059057}
 
+\bibitem[\protect\citeauthoryear{{Gal-Yam}}{{Gal-Yam}}{2012}]{Gal-Yam12}
+{Gal-Yam} A.,  2012, \mn@doi [Science] {10.1126/science.1203601}, \href
+  {http://adsabs.harvard.edu/abs/2012Sci...337..927G} {337, 927}
+
 \bibitem[\protect\citeauthoryear{{Goldstein} et~al.,}{{Goldstein}
   et~al.}{2015}]{Goldstein15}
 {Goldstein} D.~A.,  et~al., 2015, \mn@doi [\aj] {10.1088/0004-6256/150/3/82},
   \href {http://adsabs.harvard.edu/abs/2015AJ....150...82G} {150, 82}
 
+\bibitem[\protect\citeauthoryear{{Gwyn}}{{Gwyn}}{2012}]{Gwyn12}
+{Gwyn} S.~D.~J.,  2012, \mn@doi [\aj] {10.1088/0004-6256/143/2/38}, \href
+  {http://adsabs.harvard.edu/abs/2012AJ....143...38G} {143, 38}
+
 \bibitem[\protect\citeauthoryear{{Huber} et~al.,}{{Huber}
   et~al.}{2015}]{Huber15a}
 {Huber} M.,  et~al., 2015, The Astronomer's Telegram, \href
   {http://adsabs.harvard.edu/abs/2015ATel.7153....1H} {7153}
+
+\bibitem[\protect\citeauthoryear{{Inserra} et~al.,}{{Inserra}
+  et~al.}{2013}]{Inserra13}
+{Inserra} C.,  et~al., 2013, \mn@doi [\apj] {10.1088/0004-637X/770/2/128},
+  \href {http://adsabs.harvard.edu/abs/2013ApJ...770..128I} {770, 128}
 
 \bibitem[\protect\citeauthoryear{{Ivezi{\'c}} et~al.,}{{Ivezi{\'c}}
   et~al.}{2008}]{Ivezic08}
@@ -84,6 +105,11 @@
   et~al.}{2010}]{Kaiser10}
 {Kaiser} N.,  et~al., 2010, in Society of Photo-Optical Instrumentation
   Engineers (SPIE) Conference Series. , \mn@doi{10.1117/12.859188}
+
+\bibitem[\protect\citeauthoryear{{Keller} et~al.,}{{Keller}
+  et~al.}{2007}]{Keller07}
+{Keller} S.~C.,  et~al., 2007, \mn@doi [PASA] {10.1071/AS07001}, \href
+  {http://adsabs.harvard.edu/abs/2007PASA...24....1K} {24, 1}
 
 \bibitem[\protect\citeauthoryear{{Law} et~al.,}{{Law} et~al.}{2009}]{Law09}
 {Law} N.~M.,  et~al., 2009, \mn@doi [PASP] {10.1086/648598}, \href
@@ -98,6 +124,11 @@
   et~al.}{2016}]{Marshall16}
 {Marshall} P.~J.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stv2009},
   \href {http://adsabs.harvard.edu/abs/2016MNRAS.455.1171M} {455, 1171}
+
+\bibitem[\protect\citeauthoryear{{Mattila} et~al.,}{{Mattila}
+  et~al.}{2016}]{Mattila16}
+{Mattila} S.,  et~al., 2016, The Astronomer's Telegram, \href
+  {http://adsabs.harvard.edu/abs/2016ATel.9308....1M} {9308}
 
 \bibitem[\protect\citeauthoryear{{Ngiam}, {Chen}, {Bhaskar}, Koh  \&
   Ng}{{Ngiam} et~al.}{2011}]{Ngiam11}
@@ -122,6 +153,16 @@ Curran Associates, Inc., pp 1125--1133, \url
 {Romano} R.~A.,  {Aragon} C.~R.,   {Ding} C.,  2006, in Machine Learning and
   Applications, 2006. ICMLA'06. 5th International Conference on. pp 77--82
 
+\bibitem[\protect\citeauthoryear{{Schwamb} et~al.,}{{Schwamb}
+  et~al.}{2012}]{Schwamb12}
+{Schwamb} M.~E.,  et~al., 2012, \mn@doi [\apj] {10.1088/0004-637X/754/2/129},
+  \href {http://adsabs.harvard.edu/abs/2012ApJ...754..129S} {754, 129}
+
+\bibitem[\protect\citeauthoryear{{Smartt} et~al.,}{{Smartt}
+  et~al.}{2015}]{Smartt15}
+{Smartt} S.~J.,  et~al., 2015, \mn@doi [\aap] {10.1051/0004-6361/201425237},
+  \href {http://adsabs.harvard.edu/abs/2015A%26A...579A..40S} {579, A40}
+
 \bibitem[\protect\citeauthoryear{{Smith} et~al.,}{{Smith}
   et~al.}{2011}]{Smith11}
 {Smith} A.~M.,  et~al., 2011, \mn@doi [\mnras]
@@ -133,10 +174,20 @@ Curran Associates, Inc., pp 1125--1133, \url
 {Tonry} J.~L.,  et~al., 2012, \mn@doi [ApJ] {10.1088/0004-637X/750/2/99}, \href
   {http://adsabs.harvard.edu/abs/2012ApJ...750...99T} {750, 99}
 
+\bibitem[\protect\citeauthoryear{{Tonry}, {Denneau}, {Stalder}, {Heinze},
+  {Sherstyuk}, {Rest}, {Smith}  \& {Smartt}}{{Tonry} et~al.}{2016}]{Tonry16}
+{Tonry} J.,  {Denneau} L.,  {Stalder} B.,  {Heinze} A.,  {Sherstyuk} A.,
+  {Rest} A.,  {Smith} K.~W.,   {Smartt} S.~J.,  2016, The Astronomer's
+  Telegram, \href {http://adsabs.harvard.edu/abs/2016ATel.8680....1T} {8680}
+
 \bibitem[\protect\citeauthoryear{{Wright} et~al.,}{{Wright}
   et~al.}{2015}]{Wright15}
 {Wright} D.~E.,  et~al., 2015, \mn@doi [MNRAS] {10.1093/mnras/stv292}, \href
   {http://adsabs.harvard.edu/abs/2015MNRAS.449..451W} {449, 451}
+
+\bibitem[\protect\citeauthoryear{{Wright} et~al.,}{{Wright}
+  et~al.}{prep}]{Wright16}
+{Wright} D.~E.,  et~al., in prep.
 
 \bibitem[\protect\citeauthoryear{{York} et~al.,}{{York} et~al.}{2000}]{York00}
 {York} D.~G.,  et~al., 2000, \mn@doi [AJ] {10.1086/301513}, \href

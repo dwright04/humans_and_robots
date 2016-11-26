@@ -11,17 +11,18 @@
 Chris J. Lintott,$^{1}$
 Stephen J. Smartt,$^{2}$
 Ken W. Smith,$^{2}$\newauthor
+Grant Miller,$^{1}$
 Ken C. Chambers,$^{3}$
 Heather Flewelling,$^{3}$
-Mark E. Huber,$^{3}$
-Eugene A. Magnier,$^{3}$\newauthor
+Mark E. Huber,$^{3}$\newauthor
+Eugene A. Magnier,$^{3}$
 Natalia Primak,$^{3}$
 Angie S.B. Schultz,$^{3}$
-John L. Tonry,$^{3}$
-Richard J. Wainscoat,$^{3}$\newauthor
+John L. Tonry,$^{3}$\newauthor
+Richard J. Wainscoat,$^{3}$
 Chris Waters,$^{3}$
 Mark Willman,$^{3}$
-Dave R.  Young,$^{2}$
+Dave R.  Young$^{2}$\newauthor
 + Zooniverse Builders\\
 \\
 $^{1}$Department of Physics, University of Oxford, Denys Wilkinson Building, Keble Road, Oxford, OX1 3RH, UK \\
@@ -53,17 +54,17 @@ keyword1 -- keyword2 -- keyword3
 
 \section{Introduction}
 
-The detection and identification of transient sources has long been an important part of astronomical observation. New surveys such as LSST \citep{Ivezic08} will increase the number of transient candidates detected by many orders of magnitude, leading to renewed attention being paid to the methods used by transient searches.  To extract the most scientific value from surveys, we want to follow the entire evolution of transients from the time of outburst to the point at which they fade below the detection limit.  This requires a rapid processing of data to enable a fast decision on whether or not to expend valuable followup resources for each potential candidate extracted by a transient survey's image processing pipeline.  The first problem is deciding if a source, flagged by the pipeline, is a detection with real astrophysical significance or an artefact of the detector or image processing.  We want to promote the former for a decision on whether to follow and to reject the latter without further consideration.  In preparation for LSST and to deal with the data volumes of present surveys, much effort has been invested to automatically reject false positives with supervised learning. Using large volumes of past observations that have been ground truthed as real or ``bogus'', the aim is to train a machine to make predictions about future observations \citep{Bloom12, Brink13, Goldstein15, duBuisson15, Donalek08, Romano06, Bailey07}.
+The detection and identification of transient sources has long been an important part of astronomical observation. New surveys such as LSST (Large Synoptic Survey Telescope)\citep{Ivezic08} will increase the number of transient candidates detected by many orders of magnitude, leading to renewed attention being paid to the methods used by transient searches.  To extract the most scientific value from surveys, we want to follow the entire evolution of transients from the time of outburst to the point at which they fade below the detection limit.  This requires a rapid processing of data to enable a fast decision on whether or not to expend valuable followup resources for each potential candidate extracted by a transient survey's image processing pipeline.  The first problem is deciding if a source, flagged by the pipeline, is a detection with real astrophysical significance or an artefact of the detector or image processing.  We want to promote the former for a decision on whether to followup  and to reject the latter without further consideration.  In preparation for LSST and to deal with the data volumes of present surveys, much effort has been invested to automatically reject false positives with supervised learning. Using large volumes of past observations that have been ground truthed as real or ``bogus'', the aim is to train a machine to make predictions about future observations \citep{Bloom12, Brink13, Goldstein15, duBuisson15, Donalek08, Romano06, Bailey07}.  Ground-truthing this data typically requires manual inspection of individual detections by human experts to mitigate label contamination that would confound the learning algorithm.  This quickly becomes unwieldy given that performance of a machine learning solution has been shown to depend on the quantity of labelled training data \citep{Banko01}.
 
 
 %Obtaining a large sample of labelled data is time consuming for a small science team.  One possibility is to inject fake sources into the survey data and use these to boost the number of lablled real detections.  To limit or at least quantify label contamination still requires some level of human screening of the potential bogus candidates.
 
-The requirement for large training sets is prohibitive for the largest surveys or for small research teams, and is particularly problematic for rarer classes of transient.  An alternative to machine learning is therefore to expand the population providing labels, crowd sourcing classifications of potential transient detections.  \textit{Galaxy Zoo Supernovae} \citep{Smith11} and \textit{Snapshot Supernova} \citep{Campbell15} are two projects to have taken this approach, for the Palomar Transient Factory (PTF) \citep{Rau09, Law09} and SkyMapper respectively.  Both projects were facilitated through the \textit{Zooniverse} Citizen Science platform (see description in \citet{Marshall15}).  Both projects asked volunteers to assess the target, reference and difference images for each detection and answer a series of questions that lead to a classification of real or bogus.  
+The requirement for large training sets is prohibitive for the largest surveys or for small research teams, and is particularly problematic for rarer classes of transients.  An alternative to relying on expert labelled training sets for machine learning is therefore to expand the population providing labels, crowd sourcing classifications of potential transient detections.  \textit{Galaxy Zoo Supernovae} \citep{Smith11} and \textit{Snapshot Supernova} \citep{Campbell15} are two projects to have taken this approach, for the Palomar Transient Factory (PTF) \citep{Rau09, Law09} and SkyMapper \citep{Keller07} respectively.  Both projects were facilitated through the \textit{Zooniverse} Citizen Science platform (see description in \citet{Marshall16}).  Both projects asked volunteers to assess the target, reference and difference images for each detection and answer a series of questions that led to a classification of real or bogus.  
 
-<<<<<<< HEAD
-For classification tasks, humans and machines have complimentary strengths. Human classifiers are good at rapidly making abstract judgements about data, allowing them to go from a small number of examples to make decisions about novel images. Machines can consume large quantities of data and make more systematic judgements based on complex relationships between the features provided.  Humans can quickly learn, for example, that magnitude has little influence for a real or bogus classification, while a machine must be given enough varied training date to produce a classification scheme which reflects this. On the other hand, computer vision techniques allow images to be examined systematically, with correlations between different features utilized for classification. Combining machine classifications with those of experts will trivially be expected to improve performance, but the situation in which classifications from volunteers are used is less clear. If the noisier datasets provided by citizen science are combined with machines, is performance of the system improved? If machines are included in classification, does an efficiency saving for citizen scientists result? Answering these questions is critically important for surveys where even a substantial number of experts will not be able to review all the data promoted by a machine classifier. 
+%<<<<<<< HEAD
+For classification tasks, humans and machines have complementary strengths. Human classifiers are good at rapidly making abstract judgments about data, allowing them to see only a small number of examples before making decisions about novel images.  Machines can consume large quantities of data and make more systematic judgements based on complex relationships between the features provided.  Humans can quickly learn, for example, that magnitude has little influence for a real or bogus classification, while a machine must be given enough varied training data to produce a classification scheme which reflects this. On the other hand, computer vision techniques allow images to be examined systematically, with correlations between different features utilised for classification. Combining machine classifications with those of experts will trivially be expected to improve performance, but the situation in which classifications from volunteers are used is less clear. If the noisier data sets provided by citizen science are combined with machines, is performance of the system improved? If machines are included in classification, does it relieve some of the burden on citizen scientists? Answering these questions is critically important for surveys where even a substantial number of experts will not be able to review all the data promoted by a machine classifier. 
 
-In this paper we report some initial findings from the \textit{Supernova Hunters} project, a new citizen science project similar in spirit to those mentioned above but applied to the PanSTARRS Survey for Transients (PSST).  In Section~\ref{sec:method} we describe the PanSTARRS-1 telescope, PSST survey and the Supernova Hunters project and citizen science platform.  Section~\ref{sec:perform} shows the relative performance of humans and machines on data uploaded to Supernova Hunters during the first two months of the project.  We also describe and measure the performance of a simple method for combining the classifications of citizen scientists and the current PSST machine classifier.  In Section~\ref{sec:conclusions} we conclude and discuss potential avenues for future improvements. This paper therefore represents the first study of human and machine classification within a working astronomical system. 
+In this paper we report some initial findings from the \textit{Supernova Hunters} project, a new citizen science project similar in spirit to those mentioned above but applied to the Pan-STARRS Survey for Transients (PSST).  In Section~\ref{sec:method} we describe the Pan-STARRS1 telescope, PSST survey and the Supernova Hunters project and citizen science platform.  Section~\ref{sec:perform} shows the relative performance of humans and machines on data uploaded to Supernova Hunters during the first two months of the project.  We also describe and measure the performance of a simple method for combining the classifications of citizen scientists and the current PSST machine classifier.  In Section~\ref{sec:conclusions} we conclude and discuss potential avenues for future improvements. This paper therefore represents the first study of combined human and machine classification within a live astronomical survey. 
 
 
 \section{Method}
@@ -75,15 +76,15 @@ In this paper we report some initial findings from the \textit{Supernova Hunters
 
 %Using data from MJD57570 and MJD 57586 for the original experiemnt, then 
 
-Pan-STARRS1 comprises a 1.8m primary mirror \citep{Kaiser10} and 60 $4800\time 4800$ pixel detectors, constructed from $10\mu m$ pixels subtending 0.258 arcsec \citep{Magnier13} and a field-of-view of 3.3 deg.  The filter set consists of $g_{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$ (similar to SDSS \textit{griz} \citep{York00}), $y_{P1}$ extending
+Pan-STARRS1 comprises a 1.8m primary mirror \citep{Kaiser10} and 60 detectors with $4800\time 4800$ pixels, constructed from $10\mu m$ pixels subtending 0.258 arcsec \citep{Magnier13} and a field-of-view of 3.3 deg.  The filter set consists of $g_{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$ (similar to SDSS \textit{griz} \citep{York00}), $y_{P1}$ extending
 redward of $z_{P1}$ and the ``wide'' $w_{P1}$-band filter extending over $g_{P1}$ to $i_{P1}$ \citep{Tonry12b}.  Between 2010 and 2014 Pan-STARRS1 was operated by the PS1 Science Consortium (PS1SC) performing 2 major surveys.  The Medium Deep Survey (MDS) was allocated 25\% of observing time for high cadence observations of the 10 Medium Deep fields and the $3\pi$ survey allocated 56\% observing time to observe the entire sky north of -30 degrees declination with 4 exposures per year in each of $g_{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$ and $y_{P1}$ for each pointing.
 
-The $3\pi$ survey was completed in mid-2014 and since then the telescope has been carrying out a NASA funded wide-field survey for near earth objects through the NEO Observation Program operated by the Pan-STARRS Near Earth Object Science Consortium (PSNSC).  The NASA PSNSC survey is similar to the $3\pi$ survey but optimised for NEO discoveries.  Observations are in $w_{P1}$ in dark time and combinations of $i_{P!}$, $z_{P1}$ and $y_{P1}$ during bright time.  The Pan-STARRS Survey for Transients (PSST) \citep{Huber15a} searches the data for static transients, releasing these publicly within 12 to 24 hours.
+The $3\pi$ survey was completed in mid-2014 and since then the telescope has been carrying out a NASA funded wide-field survey for near earth objects through the NEO Observation Program operated by the Pan-STARRS Near Earth Object Science Consortium (PSNSC).  The NASA PSNSC survey is similar to the $3\pi$ survey but optimised for NEO discoveries.  Observations are in $w_{P1}$ in dark time and combinations of $i_{P1}$, $z_{P1}$ and $y_{P1}$ during bright time.  The PanSTARRS Survey for Transients (PSST) \citep{Huber15a, Inserra13} searches the data for static transients, releasing these publicly within 12 to 24 hours.
 
 Typically a single field is imaged 4 times in a night with exposures separated by 10-20mins called Transient Time Interval (TTI) exposures to allow for the discovery of moving objects.  The quads of exposures are not dithered or stacked, meaning that cross-talk ghosts, readout artefacts and problems of fill-factor are inherent in the data (see \citet{Denneau13} for some examples).  Individual exposures are differenced with the $3\pi$ all-sky reference stack and sources in the resulting difference images are catalogued.
 
-A series of pre-ingest cuts are performed before the catalogues are ingested into a MySQL database at Queen's University Belfast (QUB).  These cuts are based on the detection of saturated, masked or suspected defective pixels within the PSF area in addition to flag checks for ghost detections and rejecting detections within $\pm 5$ degrees galactic latitiude. Detections passing these cuts are grouped into transient candidates if they are spatially coincident within 0.5 arcsec and the rms scatter is $<$ 0.25 arcsec.  Post-ingest cuts are applied on detection quality, convolution checks and a check for proximity to brights objects.  Additional cross-talk rules have been identified and implemented at QUB to reject ghosts
-not flagged at the pre-ingest stage.  Remaining detections are cross-matched with the Minor Planets Centre ephemeris database [XXXXX citation XXXXX] to identify any asteroids not 
+A series of pre-ingest cuts are performed before the catalogues are ingested into a MySQL database at Queen's University Belfast (QUB).  These cuts are based on the detection of saturated, masked or suspected defective pixels within the PSF area in addition to flag checks for ghost detections and rejecting detections within $\pm 5$ degrees galactic latitude. Detections passing these cuts are grouped into transient candidates if they are spatially coincident within 0.5 arcsec and the rms scatter is $<$ 0.25 arcsec.  Post-ingest cuts are applied on detection quality, convolution checks and a check for proximity to bright objects.  Additional cross-talk rules have been identified and implemented at QUB to reject ghosts
+not flagged at the pre-ingest stage.  Remaining detections are cross-matched with the Minor Planets Center ephemeris database to identify any asteroids not 
 removed by the rms cut.  Remaining transient candidates are passed to our machine classifier described in the next section.
 
 \subsection{Convolutional Neural Network}
@@ -91,11 +92,11 @@ removed by the rms cut.  Remaining transient candidates are passed to our machin
 %\textbf{DW}
 %Explain how this was trained (9000 hand-labelled) 
 
-In \citet{Wright16} we show that the approach to training a machine classsifier described in \citet{Wright15} was found to be inadequate for PSST, likely due to the larger variety of artefact types (a consquence of differencing individual exposures) and the difficulty  of obtaining a large sample of labelled training data at the beginning of a new survey.  Instead we turned to Convolutional Neural Networks (CNNs) that maintain the advantages of operating solely on the pixel data but at a higher computational cost in deployment.  
+In \citet{Wright16} we show that the approach to training a machine classifier described in \citet{Wright15} was found to be inadequate for PSST, likely due to the larger variety of artefact types (a consequence of differencing individual exposures) and the difficulty  of obtaining a large sample of labelled training data at the beginning of a new survey.  Instead we turned to Convolutional Neural Networks (CNNs) that maintain the advantages of operating solely on the pixel data but at a higher computational cost in deployment.  
 
-The training set for this classifier was drawn from $3\pi$ survey data between 1st June 2013 and 20th June 2014.  The sample of real detections are taken from spectroscopically confirmed real transients or detections of objects that have been labelled by experts as high probability real transients.  Bogus detections are taken from a random subsample of detections discarded by post-ingest cuts or human eyeballing.  The training set consists of 6916 examples with an additional 2303 detections held out for testing with both data sets containing twice as many bogus detections to real. Each example was manually inspected in order to limit label contamination; not all detections associated with a spectroscopically confirmed transient are necessarily real for example.
+The training set for this classifier was drawn from $3\pi$ survey data between 1st June 2013 and 20th June 2014.  The sample of real detections are taken from spectroscopically confirmed transients or detections of objects that have been labelled by experts as high probability real transients.  Bogus detections are taken from a random subsample of detections discarded by post-ingest cuts or human eyeballing.  The training set consists of 6916 examples with an additional 2303 detections held out for testing with both data sets containing twice as many bogus detections to real. Each example was manually inspected in order to limit label contamination; not all detections associated with a spectroscopically confirmed transient are necessarily real for example.
 
-Given the small data set, to avoid overfitting we limit the CNN to a single convolution layer with 400 kernels and a pooling layer followed by a binary softmax classifier.  We also perform unsupervised pre-training with sparse filtering \citet{Ngiam11} using unlabelled images from the STL-10 \citep{Coates11} data set.  The classifier is applied to nightly PSST data producing a score for each TTI exposure for every candidate passing the cuts in the previous section.  The score or \textit{hypothesis} is a function $h(x)$ of the input feature representation, $x$ (the output of the convolution and pooling layers).  For each candidate we simply combine the TTI exposure hypotheses by taking the median, leaving a single real-bogus factor for each transient candidate which we take as the machine equivalent of $P(real)$ below.  Candidates scoring $\leq 0.436$ are automatically rejected with the remaining objects promoted for human screening.  The decision boundary on $h(x)$ was chosen such that for a 5\% false positive rate (FPR) we expect a missed detection rate (MDR) of $\sim5.2$\% based on
+Given the small data set, to avoid overfitting we limit the CNN to a single convolution layer with 400 kernels and a pooling layer followed by a binary softmax classifier.  We also perform unsupervised pre-training with sparse filtering \citep{Ngiam11} using unlabelled images from the STL-10 \citep{Coates11} data set.  The classifier is applied to nightly PSST data producing a score for each TTI exposure for every candidate passing the cuts in the previous section.  The score or \textit{hypothesis} is a function $h(x)$ of the input feature representation, $x$ (the output of the convolution and pooling layers).  For each candidate we simply combine the TTI exposure hypotheses by taking the median, resulting in a single real-bogus factor for each transient candidate which we take as the machine equivalent of $P(real)$ below.  Candidates scoring $\leq 0.436$ are automatically rejected with the remaining objects promoted for human screening.  The decision boundary on $h(x)$ was chosen such that for a 5\% false positive rate (FPR) we expect a missed detection rate (MDR) of $\sim5.2$\% based on
 the 2303 test set examples.
 
 \subsection{Citizen Science Platform}
@@ -106,66 +107,64 @@ the 2303 test set examples.
    \begin{minipage}{140mm}
    %\vspace{200pt}
    \includegraphics[width=140mm]{figs/sn_hunters.png}
-   \caption{Screenshot showing the classification interface presented to citizen scientists.  The left most image is the new \textit{target} image taken recently.  In the centre is the equivalent $3\pi$ \textit{reference} image and on the right is the \textit{difference} image.  Volunteers are asked to decide whether or not they think the detection in the green crosshairs in the difference image is a
-detection of a real transient.} 
+   \caption{The classification interface presented to citizen scientists.  The left most image is the \textit{target} image taken during the previous week.  In the centre is the equivalent $3\pi$ \textit{reference} image and on the right is the \textit{difference} image.  Volunteers are asked to decide whether or not they think the detection in the green crosshairs in the difference image is a
+detection of a real transient.}
    \label{fig:sn_hunters}
    \end{minipage}
 \end{figure*}
 
-Supernova Hunters was launched on the 12th July 2016 (MJD 57581).  As of the 3rd September 2016 the project has accumulated 426481 classifications from 3158 citizen scientists with a few tens of ``super users'' submitting thousands of classifications.  Citizen scientists are presented with the interface shown in Figure.~\ref{fig:sn_hunters} and have classified 52291 individual subjects corresponding to TTI observations (see Section~\ref{sec:ps1}) of 18838 PS1 objects. As guidance we provide a ``Field Guide'' that provides a desciption and examples of the different artefact types we expect.  Every Tuesday $\sim5200$ new subjects are uploaded to the project consisting of the previous week's detections that pass our machine cuts. The arrival of the data is announced to existing volunteers via email\footnote{Though enthusiasm for the project is such that traffic to the site now increases significantly \emph{ahead} of this email alert!} We require at least 7 citizen scientist classifications before a subject is considered classified and subsequently  retired from the project.  Since launch the project averages $\sim23000$ classifications in the first 24 hours after the data is released and $\sim8300$ classifications in the following 24 hours by which time all subjects are normally retired. High confidence (typically $P(real)>0.8$) supernova candidates are screened by experts to remove a small number of false positives before the targets are submitted to the Transient Name Server (TNS).  To date citizen scientists have discovered two hundred supernova candidates submitted to the TNS and two confirmed Supernovae including SN 2016els; a superluminous supernova Type I \citep{Gal-Yam12}.  The classification spectra were obtained by PESSTO \citep{Smartt15}.
-
+Supernova Hunters was launched on the 12th July 2016 (MJD 57581).  As of the 3rd September 2016 the project has accumulated 426481 classifications from 3158 citizen scientists with a few tens of ``super users'' submitting thousands of classifications.  Citizen scientists are presented with the interface shown in Figure~\ref{fig:sn_hunters} and asked to classify individual TTI observations (see Section~\ref{sec:ps1}).  So far volunteers have classified 52291 individual images of 18838 individual PS1 objects. As guidance we provide a ``Field Guide'' that provides a description and examples of the different artefact types we expect.  Once a week $\sim5200$ new subjects are uploaded to the project consisting of the previous week's detections that pass our machine cuts. The arrival of the data is announced to existing volunteers via email\footnote{Though enthusiasm for the project is such that traffic to the site now increases significantly \emph{ahead} of this email alert!}. We require at least seven citizen scientist classifications before a subject is considered classified and subsequently  retired from the project.  Since launch the project averages $\sim23000$ classifications in the first 24 hours after the data is released and $\sim8300$ classifications in the following 24 hours by which time all subjects are normally retired. High confidence (typically $P(real)>0.8$) supernova candidates are screened by experts to remove a small number of false positives ($\sim10\%$) before the targets are submitted to the Transient Name Server (TNS).  To date citizen scientists have discovered two hundred supernova candidates submitted to the TNS and two confirmed Supernovae including SN 2016els \citep{Mattila16}; a superluminous supernova Type I \citep{Gal-Yam12}.  The classification spectra were obtained by PESSTO \citep{Smartt15}.
 
 \section{Performance}
 \label{sec:perform}
 
-We present the results of our machine classifier (Section~\ref{sec:cnn}) in Figure~\ref{fig:machine_dist} on PS1 data between MJD 57570 and MJD 57586. A major contaminant is the presence of asteroids. These appear in the difference image as  supernovae, and are in that sense ``correctly classified'' but are identified here via cross-matching with the Minor Planet Centre.
+We present the results of our machine classifier (Section~\ref{sec:cnn}) in Figure~\ref{fig:machine_dist} on PS1 data uploaded to Supernova Hunters between MJD 57570 and MJD 57586. This data set includes classifications from an initial beta test of the project prior to launch on MJD 57581.  A major contaminant is the presence of asteroids. These appear in the difference image as  supernovae, and are in that sense ``correctly classified'' but are identified here via cross-matching with the Minor Planet Center.
 
 
-The results of the machine learning were additionally reviewed by at least one expert members of the team (normally DEW or KWS) to identify genuine supernovae. Candidates were divided into `real' and `bogus' categories based on these expert classifications.
+The results of the machine learning were additionally reviewed by at least one expert member of the team (normally DEW or KWS) to identify genuine supernovae. Candidates were divided into `real' and `bogus' categories based on these expert classifications.
 
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/machine_hist.pdf}
    \caption{The distribution of hypotheses, $h(x)$ from the current 3$\pi$ machine classifier 
             for detected objects between MJD 57570 and MJD 57586.  The light green shows the distribution of 
-            objects with $P(real) \leq 0.436$ which are automatically rejected.  The remaining 
+            objects with $h(x) \leq 0.436$ which are automatically rejected.  The remaining 
             objects promoted for human screening even at high values of $h(x)$ contains
-            many false positives.} 
+            many false positives.  The first interval has a frequency of 12428, but the plot is truncated for clarity.} 
    \label{fig:machine_dist} 
 \end{figure}
 
 Candidates with high scores as assigned by the machine are more likely to be real. However, although the machine successfully rejects the majority of bogus candidates, the sample produced by the simple cut on hypothesis is far from pure; 1403 real candidates from 3384 in the sample. Higher cutoffs run the risk of rejecting an increasing number of real candidates; requiring a 1\% false positive rate will result in a missed detection rate of 60.3\%. 
 
-In order to improve this performance, candidates which exceed the $h(x) = 0.436$ threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in fig \ref{fig:human_dist}. 
+In order to improve this performance, candidates which exceed the $h(x) = 0.436$ threshold were also classified by volunteers via the \emph{Supernova Hunters} project. The results of this analysis are shown in Figure~\ref{fig:human_dist}. 
 
 \begin{figure}
    %\vspace{200pt}
    \includegraphics[width=84mm]{figs/human_hist.pdf}
    \caption{The distribution of $P(real)$ from Supernova Hunters for objects detected between 
-            MJD 57570 and MJD 57586.  Compared with the machine $P(real)$ in ~\ref{fig:machine_dist}
-            the objects at the extremes are pure.  There are very few real detections with 
+            MJD 57570 and MJD 57586.  Compared with the machine $h(x)$ in Figure~\ref{fig:machine_dist}
+            the objects at the extremes are pure.  There are no real detections with 
             $P(real) < 0.04$ and few bogus detections above 0.92.} 
    \label{fig:human_dist} 
 \end{figure}
 
-Volunteer classifications were combined using the simplest possible metric; the fraction of volunteers who identified a potential transient is assumed to be an estimate of the probability of that candidate being real. Despite this simple procedure, the results show that volunteers could effectively distinguish between real and bogus classifications. However, the structure of the resulting distribution is strikingly different from that of the machine classifier. Whereas for machine classification, a threshold could be chosen to give a complete but not pure sample, with volunteer classification it is easier to construct a pure sample of candidates which are highly likely to be supernovae, but this sample is far from complete. There are candidates judged `real' by experts even at low probabilities although there were no real candidates assigned $P(real) < 0.04$. 
+Volunteer classifications were combined using the simplest possible metric; the fraction of volunteers who identified a potential transient is assumed to be an estimate of the probability of that candidate being real, denoted $P(real)$. Despite this simple procedure, the results show that volunteers could effectively distinguish between real and bogus classifications. However, the structure of the resulting distribution is strikingly different from that of the machine classifier. Whereas for machine classification, a threshold could be chosen to give a complete but not pure sample, with volunteer classifications it is easier to construct a pure sample of candidates which are highly likely to be supernovae, but this sample is far from complete. There are candidates judged `real' by experts even at low probabilities although there were no real candidates assigned $P(real) < 0.04$. 
 
-
-There are two routes which might be expected to improve this performance. We should expect the accuracy to increase with the number of classifications, though this may not be possible if the goal is rapid transient detection. Much work has been done in other projects to improve on this naive combination of volunteer votes (see, for example, \citet{Schwamb12, Marshall16}). However, such solutions have not yet been shown to be generalisable between projects, and so each requires substantial effort in data analysis. They may also depend on large numbers of volunteers classifying each subject. Instead of pursuing this route, therefore, we combine human and machine classifications hoping to benefit from the different capabilities of both sets of classifiers. 
+There are two routes which might be expected to improve this performance.  First, we could improve on the naive combination of volunteer votes described above.  To this end citizen science projects typically explore methods to weight volunteer contributions (see, \citet{Schwamb12, Marshall16}).  Second, given that we have a human and machine score for every detection we seek a combination of the two in the hope of benefiting from the different capabilities of both.
 
 \subsection{Combining human and machines} 
 
-Figure \ref{fig:combo_train} shows the combination of human and machine classifications. It is immediately apparent from the figure that no single threshold on either machine or human classification can outperform the combination of the two. This is an important result; it is the first time that the benefits of combining classification from both machines and volunteers has been clearly demonstrated using data from a real astronomical system. 
+Figure \ref{fig:combo_train} shows the combination of human and machine classifications. It is immediately apparent from the figure that no single threshold on either machine or human classification can outperform the combination of the two. This is an important result; it is the first time that the benefits of combining classification from both machines and volunteers has been clearly demonstrated using data from a live astronomical survey. 
 
 \begin{figure}
    %\vspace{200pt}
    %\includegraphics[width=84mm]{figs/human_v_machine_train.pdf}
-   \includegraphics[width=84mm]{figs/human_v_machine_20160712-20160718.pdf}
-   \caption{The $P(real)$ from Supernova Hunters against the machine $P(real)$ for detected 
+   \includegraphics[width=84mm]{figs/human_v_machine_20160712-20160718_1.pdf}
+   \caption{The $P(real)$ from Supernova Hunters against the machine $P(real)$ for 3384 detected 
             objects between MJD 57570 and MJD 57586.  $P(real)$ and $h(x)$ are combined by projecting the data onto 
              the solid black line in the euclidean sense.  For a given value of $\tau$ the background colour map
-            shows the probability that an example chosen at random with combined score abouve tau will be real; an
-            empirical measure of P(real) for our combination of method.  The dashed black line shows the 90\% probability contour.}
+            shows the probability that an example chosen at random with combined score above $\tau$ will be real; an
+            empirical measure of P(real) for our combination method.  The dashed black line shows the 90\% probability contour.}
    \label{fig:combo_train} 
 \end{figure}
 
@@ -175,34 +174,41 @@ Figure \ref{fig:combo_train} shows the combination of human and machine classifi
 
 % The SVM  maximises the distance between populations of first `real' (and `asteroid') classifications and second `bogus' classifications, using only probability estimates from humans and machines as input. It was trained on the data discussed above, and the resulting score displayed as grayscale in figure \ref{fig:combo_train}. It was then tested on data processedsed between MJD 57587 and MJD 57607, with results shown in \ref{fig:combo:test}. This test shows that the combined classification performs well, and figures \ref{fig:roc} shows a comparison of the combined results for this test dataset with machine and human classifications on their own.
 
-How should the two independent classifications be combined?  We simply apply a decision boundary of the form $\tau = \sqrt{P(real)^2 + h(x)^2}$ on the 2D surface, where $0\leq\tau\leq1$.  For a constant value of $\tau$ a candidate is classified as bogus if $\sqrt{P(real)^2 + h(x)^2} <= \tau$ and classified real otherwise.  This is equivalent to projecting the data onto $P(real)=h(x)$ producing a new scalar score for each detection (see Figure.~\ref{fig:combo_hist}).  Figure.~\ref{fig:combo_hist} shows the distribution of the resulting combined scores.  This distribution maintains the purity at high combined scores that we see from human classifications, but also allows a better trade-off between purity and completeness.  As an independent test we apply this same method to data between MJD 57587 and MJD 57627 in
-Figure.~\ref{fig:combo_test}.  Between MJD 57609 and MJD 57615 we relaxed our cut on $h(x)$ from 0.436 to 0.3 uploading any objects passing this cut to Supernova Hunters.  This resulted in the recovery of SN 2016fev, a Type Ia supernova that would have been automatically rejected with $h(x)$=0.39, but which received a $P(real)$ of 1.0 from Supernova Hunters.  The performance of the combination method on this data set is reported in Tables~\ref{tab:roc_fpr} and ~\ref{tab:roc_mdr} and the Reciever Operator Charateristic (ROC) Curve and Purity-Completeness (Precision-Recall) Curves are shown in Fig.~\ref{fig:roc}.
+How should the two independent classifications be combined?  We simply apply a decision boundary of the form $\tau = (x + y)/2$ on the 2D surface, where $0\leq\tau\leq1$.  For a constant value of $\tau$ a candidate is classified as bogus if $[h(x)+P(real)]/2 <= \tau$ and classified real otherwise.  This is equivalent to projecting the data onto $P(real)=h(x)$ producing a new scalar score for each detection and classifying candidates as bogus if the combined score is less than or equal to $\tau$.  
+%Figure~\ref{fig:combo_hist} shows the distribution of the resulting combined scores.  This distribution maintains the purity at high combined scores that we see from human classifications, but also allows a better trade-off between purity and completeness.  
 
-\begin{figure}
-   %\vspace{200pt}
-   %\includegraphics[width=84mm]{figs/human_v_machine_train.pdf}
-   \includegraphics[width=84mm]{figs/combo_hist.pdf}
-   \caption{Histogram showing the distribution of data resulting from the combination of human and machine classifications.}
-   \label{fig:combo_hist} 
-\end{figure}
+As an independent test we apply this same method to data between MJD 57587 and MJD 57627 in
+Figure~\ref{fig:combo_test}.  Between MJD 57609 and MJD 57615 we relaxed our cut on $h(x)$ from 0.436 to 0.3 uploading any objects passing this cut to Supernova Hunters.  This resulted in the recovery of SN 2016fev, a Type Ia supernova that would have been automatically rejected with $h(x)$=0.39, but which received a $P(real)$ of 1.0 from Supernova Hunters.  
+%The performance of the combination method on this data set is reported in Tables~\ref{tab:roc_fpr} and ~\ref{tab:roc_mdr} and the Reciever Operator Charateristic (ROC) Curve and Purity-Completeness (Precision-Recall) Curves are shown in Figure~\ref{fig:roc}.
+The performance of the combination method on this data set is shown in the Receiver Operator Characteristic (ROC) Curve and Purity-Completeness (Precision-Recall) Curves plotted in Figure~\ref{fig:roc}.
+
+% \begin{figure}
+%    %\vspace{200pt}
+%    %\includegraphics[width=84mm]{figs/human_v_machine_train.pdf}
+%    \includegraphics[width=84mm]{figs/combo_hist.pdf}
+%    \caption{Histogram showing the distribution of data resulting from the combination of human and machine classifications.}
+%    \label{fig:combo_hist} 
+% \end{figure}
 
 \begin{figure}
    %\vspace{200pt}
    %\includegraphics[width=84mons of first `real' (and `asteroid') classifications and second `bogus' classifications, using only probability estimates from humans and machines as input. It was trained on the data discussed above, and the resulting score displayed as grayscale in figure \ref{fig:combo_trainm]{figs/human_v_machine_test.pdf}
-   \includegraphics[width=84mm]{figs/human_v_machine_20160725-20160829.pdf}
-   \caption{The same as ~\ref{fig:combo_train} but on a new sample of 10908 objects detected between
-            MJD 57587 and MJD 57627.  Between we relaxed our cut on $h(x)$ to 0.3 which allowed us to recover a supernova with $h(x)$=0.39, but achieved a $P(real)$=1.0 from Supernova Hunters.  The background colour map is the same empirical $P(real)$ as Figure.~\ref{fig:combo_train} but underestimates the probability at each value of $\tau$ for this data set, perhaps suggesting an improvement in the classification ability of volunteers over time.}
+   \includegraphics[width=84mm]{figs/human_v_machine_20160725-20160829_1.pdf}
+   \caption{The same as Figure~\ref{fig:combo_train} but on a new sample of 10908 objects detected between
+            MJD 57587 and MJD 57627.  For one week during this period we relaxed our cut on $h(x)$ to 0.3 which allowed us to recover a supernova with $h(x)$=0.39, but which achieved a $P(real)$=1.0 from Supernova Hunters.  The background colour map is the same empirical $P(real)$ as Figure~\ref{fig:combo_train} but underestimates the probability at each value of $\tau$ for this data set, perhaps suggesting an improvement in the classification ability of volunteers over time.}
    \label{fig:combo_test} 
 \end{figure}
 
 \begin{figure*}
    %\vspace{200pt}
    \begin{minipage}{160mm}
-   \includegraphics[trim=40mm 10mm 40mm 20mm,clip,width=160mm]{figs/combo_swap_roc.png}
+   %\includegraphics[trim=30mm 5mm 40mm 20mm,clip,width=160mm]{figs/combo_swap_meta_roc.pdf}
+   %\includegraphics[trim=0mm 10mm 0mm 0mm,clip,width=160mm]{figs/combo_swap_meta_roc.pdf}
+     \includegraphics[trim=35mm 35mm 35mm 35mm,clip,width=160mm]{figs/roc.pdf}
     %\includegraphics{figs/combo_swap_roc.pdf}
-   \caption{left: ROC curve showing performance measured on the test data in ~\ref{fig:combo_test} for human (red), machine (yellow) and
-            the combination of human and machine classifications (blue).  right: The equivalent Purity-Completeness curve.  Both
-            plots show that the combination always outperforms humans and the machine individually.  SWAP (green) makes more efficient use of the human classifications and allows an significant improvement over the simplest method of combining volunteer votes.  Combining this improved SWAP score with the machine once again leads to better performance.} 
+   \caption{Left: ROC curve showing performance measured on data in Figure~\ref{fig:combo_test} for human (red), machine (yellow) and
+            the combination of human and machine classifications (blue).  Right: The equivalent Purity-Completeness curve.  Both
+            plots show that the combination always outperforms humans and the machine individually.} 
    \label{fig:roc} 
    \end{minipage}
 \end{figure*}
@@ -217,20 +223,6 @@ Figure.~\ref{fig:combo_test}.  Between MJD 57609 and MJD 57615 we relaxed our cu
 % \caption{Missed detection rate recorded for a choice of false positive rates, based on expert classifications.  Figures in brackets take detections automatically rejected by the machine classifier into account and assuming that all real detections are promoted which is approximately true.}\label{tab:roc}
 % \end{table}
 
-\begin{table*}
-\begin{minipage}{120mm}
-\centering
-\begin{tabular}{|c|c|c|c|c|c|}
-FPR & Human & Machine & Combination & SWAP & Combined SWAP\\
-1\% & 73.9\% & 90.1\% & 58.7\% & 59.9\% & 48.3\% \\
-5\% & 56.3\% & 69.7\% & 35.8\% & 34.6\% & 24.3\%\\
-10\% & 45.6\% & 46.7\% & 23.8\% & 26.2\% & 15.3\%\\
-\end{tabular}
-\caption{Missed detection rate recorded for a choice of false positive rates, based on expert classifications.}
-\label{tab:roc_fpr}
-\end{minipage}
-\end{table*}
-
 %XXXXXXXX Calculate FPR for a variety of missed detection rates XXXXXX
 
 % \begin{table}
@@ -243,42 +235,112 @@ FPR & Human & Machine & Combination & SWAP & Combined SWAP\\
 % \caption{False positive rate recorded for a choice of missed detection rates, based on expert classifications.  Figures in brackets take detections automatically rejected by the machine classifier into account.}\label{tab:roc}
 % \end{table}
 
+For any choice of false positive rate, the combination of classifications produced a lower missed detection rate. Equally, for any required purity or completeness the combination provides a better trade-off. 
+
+We have chosen to implement one of the simplest methods for combining human and machine classifications to demonstrate how they complement one another, but it is easy to think of more complex combination methods. For example we trained a linear SVM on the data presented in Figure~\ref{fig:combo_train} and found, unsurprisingly, that the performance measured on the data in Figure~\ref{fig:combo_test} was typically within 1\% of the values reported in Tables~\ref{tab:roc_fpr} and ~\ref{tab:roc_mdr}.  Although the gains in this example are negligible, if we wish to incorporate additional information from an ensemble of machine classifiers for example, and the input space becomes higher dimensional, such methods become important.  It is unlikely that the combination method presented here will work for higher dimensional data, but we can expect that an SVM may take advantage of the additional information.
+
+\subsection{Improving $P(real)$ with SWAP} 
+We also expect to gain from improving $P(real)$ or $h(x)$.  To demonstrate this we implemented the Space Warps Analysis Pipeline (SWAP) \citep{Marshall16}, an algorithm designed to improve the sample of good gravitational lens candidates from the Space Warps\footnote{\url{https://spacewarps.org}} citizen science project in images from the Canada--–France--–Hawaii Telescope Legacy Survey (CFHTLS) \citep{Gwyn12}.  SWAP does not treat all classifiers equally, but quantifies the value of their contribution in terms of the information gained.  SWAP assigns a software \emph{agent} to individual citizen scientists and classifications are weighted based on each volunteer's past performance measured on gold standard data.  The agent maintains a confusion matrix that monitors the fraction of gold standard data correctly or incorrectly classified by a volunteer for each class (``LENS'' or ``NOT'' in the case of Space Warps), see \citet{Marshall16} for details.   We use the online implementation of SWAP considering each classification in turn.  
+%The only modifications we make to the original SWAP are that our gold standard labels are ``real'' and ``bogus'' rather than ``LENS'' or ``NOT'' and our initialisation, specifically the prior probability that each detection is a real supernova $\rho_0$, which we take to be 0.01.  We set the initial confusion matrix for the $i-$th volunteer to:
+We make several small adjustments to the original SWAP  implementation.  First, our gold standard labels are ``real'' and ``bogus'' rather than ``LENS'' or ``NOT''.  Second, we set the prior probability that each detection is a real supernova $\rho_0$ to be 0.01, roughly the ratio between real and bogus detections uploaded to Supernova Hunters.  Finally, in our analysis we do not set rejection and detection thresholds, instead we continue to require that at least seven volunteers classify each subject.  As in \citet{Marshall16} we set the initial confusion matrix for the $i-$th volunteer to:\\
+
+ $\bm{M}^i = \begin{bmatrix}
+                        0.5&0.5\\
+                        0.5&0.5 \\
+                        \end{bmatrix}$.\\
+\\
+This initialisation of the confusion matrix corresponds to that of a random classifier, but will be quickly modified as we observe classifications of gold standard data by this volunteer.  The results of applying SWAP to the citizen scientist classifications on data between MJD 57587 and MJD 57627 (Figure~\ref{fig:combo_test}) are shown as the purple line in Figure~\ref{fig:roc_1}.  Compared with the human performance in Figure~\ref{fig:roc}, SWAP considerably improves $P(real)$.  By combining this improved score from human classifications with the machine, using the same method as above, we once again observe an improvement in the measured performance (pink line from Figure~\ref{fig:roc}).  In fact, apart from a small exception at about 97\% purity and 25\% completeness (likely an artefact of the specific data set) the combination outperforms all previous methods for classifying this data set, demonstrating that an improvement in either $P(real)$ or $h(x)$ can lead to valuable performance gains when combined.  SWAP combined with the machine produces at least a $\sim10$\% improvement over the all other methods tested so far for any figure of merit in Tables~\ref{tab:roc_fpr} and ~\ref{tab:roc_mdr}.
+
+\begin{figure*}
+   %\vspace{200pt}
+   \begin{minipage}{160mm}
+   %\includegraphics[trim=30mm 5mm 40mm 20mm,clip,width=160mm]{figs/combo_swap_meta_roc.pdf}
+   %\includegraphics[trim=0mm 10mm 0mm 0mm,clip,width=160mm]{figs/combo_swap_meta_roc.pdf}
+     \includegraphics[trim=35mm 35mm 35mm 35mm,clip,width=160mm]{figs/roc_1.pdf}
+    %\includegraphics{figs/combo_swap_roc.pdf}
+   \caption{Left: ROC curve for different approaches to classification.  Right: The corresponding Purity-Completeness curves.  The blue lines are the same as in Figure~\ref{fig:roc} showing the simple combination of the machine with the basic human score described in Section~\ref{sec:perform}.  The purple line shows the results of implementing SWAP, which improves on the basic human score (red line in Figure~\ref{fig:roc}).  Combining this improved score with the machine produces the pink line.  Running separate instances of SWAP on metadata splits (magnitude in our case) produces better results again.  The yellow line shows the best performance achieved in this work resulting from the combination of the machine and the scores from the SWAP implementation using metadata splits.}
+   \label{fig:roc_1} 
+   \end{minipage}
+\end{figure*}
+
+\subsection{SWAP with metadata splits.}
+Intuitively we might suspect that citizen scientists perform differently on detections with varying degrees of signal-to-noise.   In general, citizen scientists are very good at recovering bright supernovae but find it more and more difficult as detections get closer to the detection limit.
+
 \begin{table*}
 \begin{minipage}{120mm}
 \centering
-\begin{tabular}{|c|c|c|c|c|c|}
-MDR & Human & Machine & Combination & SWAP & Combined SWAP\\
-1\% & 92.5\% & 85.9\% & 69.3\% & 100\% & 59.6\%\\
-5\% & 75.1\% & 52.8\% & 41.8\% & 100\% & 25.5\%\\
-10\% & 53.8.8\% & 39.1\% & 26.5\% & 40.9\% & 16.5\%\\
+\begin{tabular}{l|c c c c }
+Magnitude range     & $13\leq m < 18$ & $18\leq m < 19$ & $19\leq m < 20$ & $20\leq m < 23$ \\
+\hline
+Number of objects  & 927 & 2821 & 4118 & 3043 \\
+\end{tabular}
+\caption{Number of PS1 detections per magnitude bin for objects detected between
+            MJD 57587 and MJD 57627.
+}\label{tab:mag_bins}
+\end{minipage}
+\end{table*}
+
+
+\begin{figure}
+   %\vspace{200pt}
+   \includegraphics[trim=22mm 2mm 20mm 10mm,clip,width=90mm]{figs/users_meta_swap_13-18.png}
+   \caption{Confusion matrix elements for volunteers classifying detections from Figure~\ref{fig:combo_test} with apparent magnitude $13\leq m < 18$.  Each point represents an individual volunteer, where the size of the point corresponds to the quantity of gold standard data in this magnitude bin classified by the volunteer.  Many volunteers tend to lie high in the top right of the ``Astute'' region, a perfect classifier would lie at (1,1).  This shows that citizen scientists can accurately classify high signal-to-noise real and bogus detections.}
+   \label{fig:13-18} 
+\end{figure}
+
+\begin{figure}
+   %\vspace{200pt}
+   \includegraphics[trim=22mm 2mm 20mm 10mm,clip,width=90mm]{figs/users_meta_swap_20.png}
+   \caption{Similar to Figure~\ref{fig:13-18} but for detections with apparent magnitude $19\leq m < 20$.  In this case volunteers are further from the top right and tend towards ``Pessimistic'' or ``Optimistic'' classifiers.}
+   \label{fig:20} 
+\end{figure}
+
+To continue our investigation of the effect of improving $P(real)$ on the combination and in an attempt to take advantage of the differences in human performance across the apparent magnitude distribution we split the detections from Figure~\ref{fig:combo_test} into magnitude bins and run a separate SWAP instance on each bin.  The magnitude bins are defined in Table~\ref{tab:mag_bins} along with the quantity of data in each.  Figure~\ref{fig:13-18} and Figure~\ref{fig:20} show the SWAP confusion matrix elements plotted on the unit plane for the 3158 volunteers participating in the project for different bins.  The size of the point corresponds to the quantity of gold standard data classified by that volunteer.  Most volunteers have submitted only a few classifications and cannot been seen on the plot.  Clearly volunteers are more ``Astute'' at classifying brighter sources, but this information is lost in the basic SWAP implementation.  A volunteer's classification can now be weighted according to the magnitude bin that a given detection falls in.  This results in a simple modification of the SWAP calculation of $P(real)$ and we plot its performance as the green line in Figure~\ref{fig:roc_1} which is an improvement on the basic SWAP implementation.  Yet again the combination with the machine improves on all previous approaches (yellow line in Figure~\ref{fig:roc_1}).  Table~\ref{tab:roc_fpr} and Table~\ref{tab:roc_mdr} compare specific figures of merit for each of the approaches to classification we have explored.  
+
+In this case we are taking advantage of additional “metadata” that is available for each detection and assuming that it has some effect on classifiers behaviour. There are other metadata parameters we could explore such as seeing and proximity to a catalogued galaxy.  We also expect that humans and machines are good at classifying different types of images.  In our case the CNN is good at classifying detections around 20-th magnitude, but often misclassifies detections brighter than 17 mags.  This is because the training set is dominated by fainter detections.  The machine has not been able to learn a function that accurately maps between the pixels and the classification for bright examples because it has not ``seen'' many during training.  It would be interesting to incorporate the machine into this SWAP analysis, treating it just as another volunteer.  We leave a study of addtional metadata parameters and the effects of incorporating machines into SWAP to future work.
+\begin{table*}
+\begin{minipage}{140mm}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+       &             &               &                 &           & combined  &        SWAP        &combined SWAP\\
+FPR & human & machine & combined & SWAP & SWAP & metadata split &  metadata split\\
+\hline
+1\% & 73.9\% & 90.1\% & 58.7\% & 59.9\% & 48.3\% & 54.4\% & 42.8\%\\
+5\% & 56.3\% & 69.7\% & 35.8\% & 34.6\% & 24.3\%&29.9\%&20.6\%\\
+10\% & 45.6\% & 46.7\% & 23.8\% & 26.2\% & 15.3\%&20.4\%&11.1\%\\
+\end{tabular}
+\caption{Missed detection rate recorded for a choice of false positive rates, based on expert classifications.}
+\label{tab:roc_fpr}
+\end{minipage}
+\end{table*}
+
+\begin{table*}
+\begin{minipage}{140mm}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+       &             &               &                 &           & combined  &        SWAP        &combined SWAP\\
+MDR & human & machine & combined & SWAP & SWAP & metadata split &  metadata split\\
+\hline
+1\% & 92.5\% & 85.9\% & 69.3\% & 100\% & 59.6\% & 100\% & 63.3\% \\
+5\% & 75.1\% & 52.8\% & 41.8\% & 100\% & 25.5\%& 49.6\% & 26.3\%\\
+10\% & 53.8\% & 39.1\% & 26.5\% & 40.9\% & 16.5\%& 16.5\% & 12.2\%\\
 \end{tabular}
 \caption{False positive rate recorded for a selection of missed detection rates, based on expert classifications.
 }\label{tab:roc_mdr}
 \end{minipage}
 \end{table*}
 
-For any choice of false positive rate, the combination of classifications produced a lower missed detection rate. Equally, for any required purity or completeness the combination provides a better trade-off. 
-
-We have chosen to implement one of the simplest methods for combining human and machine classifications to demonstrate how they complement one another, but it is easy to think of more complex combination methods. For example we trained a linear SVM on the data presented in Figure~\ref{fig:combo_train} and found, unsurprisingly, that the performance measured on the data in Figure~\ref{fig:combo_test} was typically within 1\% of the values reported in Tables~\ref{tab:roc_fpr} and ~\ref{tab:roc_mdr}.  Although the gains in this example are negligible, if we wish to incorporate additional information and the input space becomes higher dimensional such methods become important.  It is unlikely that the combination method presented here will work for this higher dimensional representation, but we can expect that an SVM may gain from the added information.
-
-We also expect to gain from improved $P(real)$ or $h(x)$.  To demonstrate this we implemented the Space Warps Analysis Pipeline (SWAP) \citep{Marshall15}, an algorithm designed to improve the sample of good gravitational lens candidates from the Space Warps \footnote{\url{https://spacewarps.org}} citizen science project in images from the Canada--–France--–Hawaii Telescope Legacy Survey (CFHTLS) \citep{Gwyn12}.  SWAP assigns a software \emph{agent} to individual citizen scientists and classifications are weighted based on each volunteer's past performance measured on gold standard data and tracked by the agent.  The agent maintains a confusion matrix that monitors the fraction of gold standard data correctly or incorrectly classified by a volunteer for each class (``LENS'' or ``NOT'' in the case of Space Warps), see \citet{Marshall15} for details.   We use the online implementation of SWAP considering each classification in turn.  The only modifications we make to the original SWAP is that our gold standard labels are ``real'' and ``bogus'' rather than ``LENS'' or ``NOT'' and our initialisation, specifically the prior probability that each detection is a real supernova $\rho_0$, which we take to be 0.01 and the initial confusion matrix for the $i-$th volunteer which we set to:\\
-
- $\bm{M}^i = \begin{bmatrix}
-                        0.5&0.5\\
-                        0.5&0.5 \\
-                        \end{bmatrix}.$\\
-\\
-This initialisation of the confusion matrix corresponds to that of a random classifier, but will be quickly modified as we observe classifications of gold standard data by this volunteer.  The results of applying SWAP to the citizen scientist classifications on data between MJD 57587 and MJD 57627 (Figure~\ref{fig:combo_test}) are shown as the green line in Figure~\ref{fig:roc}.  SWAP considerably improves $P(real)$.  By combining this improved score from human classifications with the machine, using the same method as above, we once again observe an improvement in the measured performance (purple line from Figure~\ref{fig:roc}).  In fact, except for a small exception at about 97\% purity and 25\% completeness (likely an artefact of the specific data set) the combination out performs all previous methods for classifying this data set, demonstrating that an improvement in either $P(real)$ or $h(x)$ can lead to valuable performance gains when combined.  SWAP combined with the machine produces at least a $\sim10$\% improvement over the next best method for any figure of merit from Tables~\ref{tab:roc_fpr} and ~\ref{tab:roc_mdr}.
-
 \section{Conclusions}
 \label{sec:conclusions}
 
+In this paper we introduced a new citizen science project, Supernova Hunters built entirely with the off-the-shelf Zooniverse Project Builder\footnote{\url{https://www.zooniverse.org/lab}} requiring no custom features or additional development.  The project aims to classify detections of potential supernova candidates from the Pan-STARRS Survey for Transients either as real transients or bogus detections of image processing or instrumentation artefacts.  To be uploaded to the Supernova Hunters project a detection must first pass a series of cuts based on catalogue information and secondly be promoted by our machine learning algorithm, a Convolutional Neural Network. With this approach we expect that only about 5\% of the false positives passing the catalogue cuts make it into the project, greatly reducing the number of objects we ask volunteers to screen.  Citizen scientists excel at mining this data for a very pure sample of high $P(real)$ supernova candidates, typically those of higher signal-to-noise and offset from a galaxy.  But compared with expert labels many less obvious candidates are missed.  Rather than immediately consider methods of weighting classifications of individual citizen scientists, we instead applied a simple combination of the scores provided by humans and machines.  We showed the new combined score achieved better performance than either individually for any choice of purity or completeness.
 
-In this paper we introduced a new citizen science project, Supernova Hunters built entirely with the off-the-shelf Zooniverse Project Builder \footnote{\url{https://www.zooniverse.org/lab}} requiring no custom features or additional development.  The project aims to classify detections of potential supernova candidates from the Pan-STARRS Survey for Transients either as real transients or bogus detections of image processing or instrumentation artefacts.  To be uploaded to the Supernova Hunters project a detection must first pass a series of cuts based on catalogue information and secondly be promoted by our machine learning algorithm, a Convolutional Neural Network. With this approach we expect that only about 5\% of the false positives passing the catalogue cuts make it into the project, greatly reducing the number of objects we ask volunteers to screen.  Citizen scientists excel at mining this data for a very pure sample of high $P(real)$ supernova candidates, typically those of higher signal-to-noise and offset from a galaxy.  But compared with expert labels many less obvious candidates are missed.  Rather than immediately consider methods of weighting classifications of individual citizen scientists, we instead applied a simple combination of the scores provided by humans and machines.  We showed the new combined score achieved better performance than either individually for any choice of purity or completeness.
+We expect that there are many ways to improve.  As an example we generalised the Space Warps Analysis Pipeline (SWAP) to Supernova Hunters and applied it to the volunteer classifications and again combined the resulting scores with those from the machine.  We found that this resulted in a $\sim10$\% gain compared to the next best method.  To further improve $P(real)$ we could invest more effort into educating citizen scientists to identify more subtle artefact indicators.  This could help address the many bogus detections with $P(real)>0.5$, but relatively few real detections below 0.5 in Figure~\ref{fig:human_dist}.  The current machine classifier was trained at the beginning of the PSST survey and the algorithm was specifically chosen to learn from the limited amount of training data available.  Given the large volume of data accumulated since, we could train more sophisticated algorithms that can learn more complex relationships between the features, though extracting robust labels for this additional data is a challenge that still needs to be addressed. 
 
-We expect that there are many ways to improve.  As an example we generalised the Space Warps Analysis Pipeline (SWAP) to Supernova Hunters and applied it to the volunteer classifications and again combined the resulting scores with those form the machine.  We found that this resulted in $~10$\% gains compared to the next best method.  To further improve $P(real)$ we could invest more effort into educating citizen scientists to identify more subtle artefact indicators, there are many bogus detections with $P(real)>0.5$, but relatively few real detections below 0.5 in Figure~\ref{fig:human_dist}.  The current machine classifier was trained at the beginning of the PSST survey and the algorithm was specifically chosen to learn from the limited amount of training data available.  Given the large volume of data accumulated since, we could train more sophisticated algorithms that can learn more complex relationships between the features, though extracting robust labels for this additional data is a challenge that still needs to be addressed. 
+This effort offers hope for dealing with the large data volumes from all sky surveys such as LSST, ATLAS \citep{Tonry16} and Pan-STARRS2.  We used machines to reject the vast majority of false positives and then combined the machine hypotheses with classifications from a few thousand citizen scientists for the remaining candidates.  With Supernova Hunters we have not actively sought additional citizen scientists, beyond the $\sim30000$ volunteers on the Zooniverse beta testing e-mail list, who were asked to review the project before launch.  New volunteers must ``discover'' the project on the Zooniverse projects page to participate.  Given that we could actively seek the participation of $\sim 10^6$ registered Zooniverse volunteers and assuming that 10\% chose to participate, given the current classification rate we could achieve $\sim 750000$ classifications per night, or 0.75 classifications for the $\sim 10^6$ transient alerts expected from LSST at the beginning of the survey \citep{Ridgway14}.  If the false positive rate is an order of magnitude more than the transient alert rate (perhaps overly pessimistic given the expected $\sim$ 500-2200 false positives per field per visit \citep{Becker13} with a $5\sigma$ detection threshold) and assuming we can discard 90\% of those with machine learning we can expect to achieve 0.375 citizen science classifications per promoted detection.  If 10 classifications are required per detection before considering it classified, we are roughly two orders of magnitude short.  Making up this deficit may be achievable with continued improvements to difference imaging \citep{Zackay16}, automated real-bogus classification, encouraging greater participation from a growing community of citizen scientists and more efficient use of their classifications.
 
-This offers hope for dealing with the large data volumes from all sky surveys such as LSST, ATLAS and Pan-STARRS2.  We used machines to reject the vast majority of false positives and then combined the machine hypotheses with classifications from a few thousand citizen scientists for the remaining candidates.  With Supernova Hunters we have not actively sought additional citizen scientists, beyond the $\sim30000$ volunteers on the Zooniverse beta testing e-mail list, who were asked to review the project before launch, volunteers must ``discover'' the project on the Zooniverse projects page to participate.  Given that we could actively seek the participation of $\sim 10^6$ registered Zooniverse volunteers and assuming that 10\% chose to participate, given the current classification rate we could achieve $\sim 750000$ classifications per night, or 0.75 classifications for the $\sim 10^6$ transient alerts expected from LSST at the beginning of the survey \citep{Ridgway14}.  If the false positive rate is an order of magnitude more than the transient alert rate (perhaps overly pessimistic given the expected $\sim$ 500-2200 false positives per field per visit \citep{Becker13} with a $5\sigma$ detection threshold) and assuming we can discard 90\% of those with machine learning we can expect to achieve 0.375 citizen science classifications per promoted detection.  If 10 classifications are required per detection before considering it classified, we are roughly two orders of magnitude short.  With continued improvements to difference imaging \citep{Zackay16}, automated real-bogus classification, encouraging greater participation from a growing community of citizen scientists and more efficient use of their classifications, making up this deficit may be achievable.
+\section*{Acknowledgments}
+The Pan-STARRS1 Surveys (PS1) have been made possible through contributions of the Institute for Astronomy, the University of Hawaii, the Pan-STARRS Project Office, the Max-Planck Society and its participating institutes, the Max Planck Institute for Astronomy, Heidelberg and the Max Planck Institute for Extraterrestrial Physics, Garching, The Johns Hopkins University, Durham University, the University of Edinburgh, Queen's University Belfast, the Harvard-Smithsonian Center for Astrophysics, the Las Cumbres Observatory Global Telescope Network Incorporated, the National Central University of Taiwan, the Space Telescope Science Institute, the National Aeronautics and Space Administration under Grant No. NNX08AR22G issued through the Planetary Science Division of the NASA Science Mission Directorate, the National Science Foundation under Grant No. AST-1238877, the University of Maryland, and Eotvos Lorand University (ELTE) and the Los Alamos National Laboratory.
 
 \bibliographystyle{mnras} 
 \bibliography{ps1_real_bogus}

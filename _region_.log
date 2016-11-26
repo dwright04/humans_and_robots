@@ -1,0 +1,2428 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.7.8)  21 NOV 2016 17:27
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode\nofiles\PassOptionsToPackage{active,tightpage,auctex}{preview}\A
+tBeginDocument{\ifx\ifPreview\undefined\RequirePackage[displaymath,floats,graph
+ics,textmath,sections,footnotes]{preview}[2004/11/05]\fi} \input _region_.tex
+(./_region_.tex  !name(blank.tex) (./mnras.cls
+Document Class: mnras 2015/05/22\ v3.0\ LaTeX2e MNRAS document class
+MNRAS document style v3.0, released 2015/05/22
+
+Package mnras Warning: Unknown option `a4paper' on input line 113.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count79
+\Gm@cntv=\count80
+\c@Gm@tempcnt=\count81
+\Gm@bindingoffset=\dimen102
+\Gm@wd@mp=\dimen103
+\Gm@odd@mp=\dimen104
+\Gm@even@mp=\dimen105
+\Gm@layoutwidth=\dimen106
+\Gm@layoutheight=\dimen107
+\Gm@layouthoffset=\dimen108
+\Gm@layoutvoffset=\dimen109
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2015/02/21 v2.0a fixes to LaTeX (obsolete)
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen110
+\Hy@linkcounter=\count82
+\Hy@pagecounter=\count83
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count84
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count85
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen111
+\Fld@menulength=\count86
+\Field@Width=\dimen112
+\Fld@charsize=\dimen113
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+
+
+Package hyperref Warning: Option `pdfpagelabels' is turned off
+(hyperref)                because \thepage is undefined.
+
+\c@Item=\count87
+\c@Hfootnote=\count88
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count89
+\c@bookmark@seq@number=\count90
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip41
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 123.
+\math@groups=\toks16
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/cmsy/b/n on input line 276.
+\symbmisymbols=\mathgroup4
+\SFB@measure=\dimen114
+\realparindent=\skip42
+\c@part=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\@indentskip=\skip43
+\smallindent=\skip44
+\@footindent=\skip45
+\@leftskip=\skip46
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip47
+\bibsep=\skip48
+LaTeX Info: Redefining \cite on input line 694.
+
+
+/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty:795: LaTeX Error
+: \makeindex undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.795 \renewcommand\makeindex
+                             {\NAT@makeindex
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@NAT@ctr=\count97
+)
+\c@table=\count98
+\c@figure=\count99
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen117
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen118
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count101
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count102
+\leftroot@=\count103
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count104
+\DOTSCASE@=\count105
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen119
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count106
+\c@MaxMatrixCols=\count107
+\dotsspace@=\muskip11
+\c@parentequation=\count108
+\dspbrk@lvl=\count109
+\tag@help=\toks18
+\row@=\count110
+\column@=\count111
+\maxfields@=\count112
+\andhelp@=\toks19
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/preview/preview.sty
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+
+
+Package preview Warning: Your document class has a bad definition
+ of \endfigure, most likely
+ \let\endfigure=\end@float
+ which has now been changed to
+ \def\endfigure{\end@float}
+ because otherwise subsequent changes to \end@float
+ (like done by several packages changing float behaviour)
+ can't take effect on \endfigure.
+ Please complain to your document class author.
+
+
+Package preview Warning: Your document class has a bad definition
+ of \endtable, most likely
+ \let\endtable=\end@float
+ which has now been changed to
+ \def\endtable{\end@float}
+ because otherwise subsequent changes to \end@float
+ (like done by several packages changing float behaviour)
+ can't take effect on \endtable.
+ Please complain to your document class author.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen126
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/preview/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count113
+\hfuzz=\dimen127
+(/usr/local/texlive/2015/texmf-dist/tex/latex/preview/prauctex.cfg))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/preview/prfootnotes.def)
+\pr@snippet=\count114
+\pr@box=\box28
+\pr@output=\toks22
+
+Preview: Fontsize 9pt
+Preview: PDFoutput 1
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=504.0pt
+* \textheight=682.0pt
+* \oddsidemargin=-30.0pt
+* \evensidemargin=-30.0pt
+* \topmargin=0.0pt
+* \headheight=14.0pt
+* \headsep=15.0pt
+* \topskip=9.0pt
+* \footskip=22.0pt
+* \marginparwidth=48.0pt
+* \marginparsep=6.0pt
+* \columnsep=24.0pt
+* \skip\footins=19.5pt plus 12.0pt minus 1.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box29
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+Package hyperref Info: Link coloring ON on input line 37.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count115
+)
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count116
+\scratchdimen=\dimen128
+\scratchbox=\box30
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen129
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ !name(blank.tex) !offset(-3) 
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Missing character: There is no â in font cmti8!
+Missing character: There is no € in font cmti8!
+Missing character: There is no ™ in font cmti8!
+
+./_region_.tex:58: Preview: Snippet 1 started.
+<-><->
+      
+l.58 \section
+             {Introduction}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+./_region_.tex:58: Preview: Snippet 1 ended.(404685+0x15728640).
+<-><->
+      
+l.58 \section{Introduction}
+                           
+Not a real error.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+
+Package natbib Warning: Citation `Ivezic08' on page 1 undefined on input line 6
+0.
+
+
+Package natbib Warning: Citation `Bloom12' on page 1 undefined on input line 60
+.
+
+
+Package natbib Warning: Citation `Brink13' on page 1 undefined on input line 60
+.
+
+
+Package natbib Warning: Citation `Goldstein15' on page 1 undefined on input lin
+e 60.
+
+
+Package natbib Warning: Citation `duBuisson15' on page 1 undefined on input lin
+e 60.
+
+
+Package natbib Warning: Citation `Donalek08' on page 1 undefined on input line 
+60.
+
+
+Package natbib Warning: Citation `Romano06' on page 1 undefined on input line 6
+0.
+
+
+Package natbib Warning: Citation `Bailey07' on page 1 undefined on input line 6
+0.
+
+
+Package natbib Warning: Citation `Banko01' on page 1 undefined on input line 60
+.
+
+
+Package natbib Warning: Citation `Smith11' on page 1 undefined on input line 65
+.
+
+
+Package natbib Warning: Citation `Campbell15' on page 1 undefined on input line
+ 65.
+
+
+Package natbib Warning: Citation `Rau09' on page 1 undefined on input line 65.
+
+
+Package natbib Warning: Citation `Law09' on page 1 undefined on input line 65.
+
+
+Package natbib Warning: Citation `Keller07' on page 1 undefined on input line 6
+5.
+
+
+Package natbib Warning: Citation `Marshall16' on page 1 undefined on input line
+ 65.
+
+
+LaTeX Warning: Reference `firstpage' on page 1 undefined on input line 66.
+
+
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 66.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+
+
+LaTeX Warning: Reference `sec:method' on page 2 undefined on input line 70.
+
+
+LaTeX Warning: Reference `sec:perform' on page 2 undefined on input line 70.
+
+
+LaTeX Warning: Reference `sec:conclusions' on page 2 undefined on input line 70
+.
+
+./_region_.tex:73: Preview: Snippet 2 started.
+<-><->
+      
+l.73 \section
+             {Method}
+Not a real error.
+
+./_region_.tex:73: Preview: Snippet 2 ended.(404685+0x15728640).
+<-><->
+      
+l.73 \section{Method}
+                     
+Not a real error.
+
+[2
+
+]
+./_region_.tex:75: Preview: Snippet 3 started.
+<-><->
+      
+l.75 \subsection
+                {Pan-STARRS1}
+Not a real error.
+
+./_region_.tex:75: Preview: Snippet 3 ended.(404685+0x15728640).
+<-><->
+      
+l.75 \subsection{Pan-STARRS1}
+                             
+Not a real error.
+
+[3
+
+]
+
+Package natbib Warning: Citation `Kaiser10' on page 2 undefined on input line 8
+2.
+
+./_region_.tex:82: Preview: Snippet 4 started.
+<-><->
+      
+l.82 ...r \citep{Kaiser10} and 60 detectors with $
+                                                  4800\time 4800$ pixels, co...
+
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 4 ended.(380108+0x1212408).
+<-><->
+      
+l.82 ...10} and 60 detectors with $4800\time 4800$
+                                                   pixels, constructed from ...
+
+Not a real error.
+
+[4]
+./_region_.tex:82: Preview: Snippet 5 started.
+<-><->
+      
+l.82 ...4800\time 4800$ pixels, constructed from $
+                                                  10\mu m$ pixels subtending...
+
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 5 ended.(380108+114688x1505499).
+<-><->
+      
+l.82 ...e 4800$ pixels, constructed from $10\mu m$
+                                                   pixels subtending 0.258 a...
+
+Not a real error.
+
+[5]
+
+Package natbib Warning: Citation `Magnier13' on page 2 undefined on input line 
+82.
+
+./_region_.tex:82: Preview: Snippet 6 started.
+<-><->
+      
+l.82 ... of 3.3 deg.  The filter set consists of $
+                                                  g_{P1}$, $r_{P1}$, $i_{P1}...
+
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 6 ended.(253951+114688x932535).
+<-><->
+      
+l.82 ... deg.  The filter set consists of $g_{P1}$
+                                                  , $r_{P1}$, $i_{P1}$, $z_{...
+
+Not a real error.
+
+[6]
+./_region_.tex:82: Preview: Snippet 7 started.
+<-><->
+      
+l.82 ...g.  The filter set consists of $g_{P1}$, $
+                                                  r_{P1}$, $i_{P1}$, $z_{P1}...
+
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 7 ended.(253951+65538x916996).
+<-><->
+      
+l.82 ... filter set consists of $g_{P1}$, $r_{P1}$
+                                                  , $i_{P1}$, $z_{P1}$ (simi...
+
+Not a real error.
+
+[7]
+./_region_.tex:82: Preview: Snippet 8 started.
+<-><->
+      
+l.82 ...lter set consists of $g_{P1}$, $r_{P1}$, $
+                                                  i_{P1}$, $z_{P1}$ (similar...
+
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 8 ended.(389185+65538x850909).
+<-><->
+      
+l.82 ...t consists of $g_{P1}$, $r_{P1}$, $i_{P1}$
+                                                  , $z_{P1}$ (similar to SDS...
+
+Not a real error.
+
+[8]
+./_region_.tex:82: Preview: Snippet 9 started.
+<-><->
+      
+l.82 ...onsists of $g_{P1}$, $r_{P1}$, $i_{P1}$, $
+                                                  z_{P1}$ (similar to SDSS \...
+
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 9 ended.(253951+65538x925415).
+<-><->
+      
+l.82 ... of $g_{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$
+                                                   (similar to SDSS \textit{...
+
+Not a real error.
+
+[9]
+
+Package natbib Warning: Citation `York00' on page 2 undefined on input line 82.
+
+
+./_region_.tex:82: Preview: Snippet 10 started.
+<-><->
+      
+l.82 ...r to SDSS \textit{griz} \citep{York00}), $
+                                                  y_{P1}$ extending
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 10 ended.(253951+114688x942025).
+<-><->
+      
+l.82 ...SS \textit{griz} \citep{York00}), $y_{P1}$
+                                                   extending
+Not a real error.
+
+[10]
+./_region_.tex:83: Preview: Snippet 11 started.
+<-><->
+      
+l.83 redward of $
+                 z_{P1}$ and the ``wide'' $w_{P1}$-band filter extending ove...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 11 ended.(253951+65538x925415).
+<-><->
+      
+l.83 redward of $z_{P1}$
+                         and the ``wide'' $w_{P1}$-band filter extending ove...
+
+Not a real error.
+
+[11]
+./_region_.tex:83: Preview: Snippet 12 started.
+<-><->
+      
+l.83 redward of $z_{P1}$ and the ``wide'' $
+                                           w_{P1}$-band filter extending ove...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 12 ended.(253951+65538x1077933).
+<-><->
+      
+l.83 redward of $z_{P1}$ and the ``wide'' $w_{P1}$
+                                                  -band filter extending ove...
+
+Not a real error.
+
+[12]
+./_region_.tex:83: Preview: Snippet 13 started.
+<-><->
+      
+l.83 ...de'' $w_{P1}$-band filter extending over $
+                                                  g_{P1}$ to $i_{P1}$ \citep...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 13 ended.(253951+114688x932535).
+<-><->
+      
+l.83 ..._{P1}$-band filter extending over $g_{P1}$
+                                                   to $i_{P1}$ \citep{Tonry1...
+
+Not a real error.
+
+[13]
+./_region_.tex:83: Preview: Snippet 14 started.
+<-><->
+      
+l.83 ...$-band filter extending over $g_{P1}$ to $
+                                                  i_{P1}$ \citep{Tonry12b}. ...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 14 ended.(389185+65538x850909).
+<-><->
+      
+l.83 ...filter extending over $g_{P1}$ to $i_{P1}$
+                                                   \citep{Tonry12b}.  Betwee...
+
+Not a real error.
+
+[14]
+
+Package natbib Warning: Citation `Tonry12b' on page 2 undefined on input line 8
+3.
+
+./_region_.tex:83: Preview: Snippet 15 started.
+<-><->
+      
+l.83 ...ons of the 10 Medium Deep fields and the $
+                                                  3\pi$ survey allocated 56\...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 15 ended.(380108+0x671215).
+<-><->
+      
+l.83 ...f the 10 Medium Deep fields and the $3\pi$
+                                                   survey allocated 56\% obs...
+
+Not a real error.
+
+[15]
+./_region_.tex:83: Preview: Snippet 16 started.
+<-><->
+      
+l.83 ...ion with 4 exposures per year in each of $
+                                                  g_{P1}$, $r_{P1}$, $i_{P1}...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 16 ended.(253951+114688x932535).
+<-><->
+      
+l.83 ...h 4 exposures per year in each of $g_{P1}$
+                                                  , $r_{P1}$, $i_{P1}$, $z_{...
+
+Not a real error.
+
+[16]
+./_region_.tex:83: Preview: Snippet 17 started.
+<-><->
+      
+l.83 ... exposures per year in each of $g_{P1}$, $
+                                                  r_{P1}$, $i_{P1}$, $z_{P1}...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 17 ended.(253951+65538x916996).
+<-><->
+      
+l.83 ...res per year in each of $g_{P1}$, $r_{P1}$
+                                                  , $i_{P1}$, $z_{P1}$ and $...
+
+Not a real error.
+
+[17]
+./_region_.tex:83: Preview: Snippet 18 started.
+<-><->
+      
+l.83 ... per year in each of $g_{P1}$, $r_{P1}$, $
+                                                  i_{P1}$, $z_{P1}$ and $y_{...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 18 ended.(389185+65538x850909).
+<-><->
+      
+l.83 ...ar in each of $g_{P1}$, $r_{P1}$, $i_{P1}$
+                                                  , $z_{P1}$ and $y_{P1}$ fo...
+
+Not a real error.
+
+[18]
+./_region_.tex:83: Preview: Snippet 19 started.
+<-><->
+      
+l.83 ...in each of $g_{P1}$, $r_{P1}$, $i_{P1}$, $
+                                                  z_{P1}$ and $y_{P1}$ for e...
+
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 19 ended.(253951+65538x925415).
+<-><->
+      
+l.83 ... of $g_{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$
+                                                   and $y_{P1}$ for each poi...
+
+Not a real error.
+
+[19]
+./_region_.tex:83: Preview: Snippet 20 started.
+<-><->
+      
+l.83 ..._{P1}$, $r_{P1}$, $i_{P1}$, $z_{P1}$ and $
+                                                  y_{P1}$ for each pointing.
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 20 ended.(253951+114688x942025).
+<-><->
+      
+l.83 ... $r_{P1}$, $i_{P1}$, $z_{P1}$ and $y_{P1}$
+                                                   for each pointing.
+Not a real error.
+
+[20]
+./_region_.tex:85: Preview: Snippet 21 started.
+<-><->
+      
+l.85 The $
+          3\pi$ survey was completed in mid-2014 and since then the telescop...
+
+Not a real error.
+
+./_region_.tex:85: Preview: Snippet 21 ended.(380108+0x671215).
+<-><->
+      
+l.85 The $3\pi$
+                survey was completed in mid-2014 and since then the telescop...
+
+Not a real error.
+
+[21]
+./_region_.tex:85: Preview: Snippet 22 started.
+<-><->
+      
+l.85 ... The NASA PSNSC survey is similar to the $
+                                                  3\pi$ survey but optimised...
+
+Not a real error.
+
+./_region_.tex:85: Preview: Snippet 22 ended.(380108+0x671215).
+<-><->
+      
+l.85 ...NASA PSNSC survey is similar to the $3\pi$
+                                                   survey but optimised for ...
+
+Not a real error.
+
+[22]
+./_region_.tex:85: Preview: Snippet 23 started.
+<-><->
+      
+l.85 ...or NEO discoveries.  Observations are in $
+                                                  w_{P1}$ in dark time and c...
+
+Not a real error.
+
+./_region_.tex:85: Preview: Snippet 23 ended.(253951+65538x1077933).
+<-><->
+      
+l.85 ...discoveries.  Observations are in $w_{P1}$
+                                                   in dark time and combinat...
+
+Not a real error.
+
+[23]
+./_region_.tex:85: Preview: Snippet 24 started.
+<-><->
+      
+l.85 ...w_{P1}$ in dark time and combinations of $
+                                                  i_{P1}$, $z_{P1}$ and $y_{...
+
+Not a real error.
+
+./_region_.tex:85: Preview: Snippet 24 ended.(389185+65538x850909).
+<-><->
+      
+l.85 ... in dark time and combinations of $i_{P1}$
+                                                  , $z_{P1}$ and $y_{P1}$ du...
+
+Not a real error.
+
+[24]
+./_region_.tex:85: Preview: Snippet 25 started.
+<-><->
+      
+l.85 ... dark time and combinations of $i_{P1}$, $
+                                                  z_{P1}$ and $y_{P1}$ durin...
+
+Not a real error.
+
+./_region_.tex:85: Preview: Snippet 25 ended.(253951+65538x925415).
+<-><->
+      
+l.85 ...ime and combinations of $i_{P1}$, $z_{P1}$
+                                                   and $y_{P1}$ during brigh...
+
+Not a real error.
+
+[25]
+./_region_.tex:85: Preview: Snippet 26 started.
+<-><->
+      
+l.85 ...d combinations of $i_{P1}$, $z_{P1}$ and $
+                                                  y_{P1}$ during bright time...
+
+Not a real error.
+
+./_region_.tex:85: Preview: Snippet 26 ended.(253951+114688x942025).
+<-><->
+      
+l.85 ...nations of $i_{P1}$, $z_{P1}$ and $y_{P1}$
+                                                   during bright time.  The ...
+
+Not a real error.
+
+[26]
+
+Package natbib Warning: Citation `Huber15a' on page 2 undefined on input line 8
+5.
+
+
+Package natbib Warning: Citation `Inserra13' on page 2 undefined on input line 
+85.
+
+
+Package natbib Warning: Citation `Denneau13' on page 2 undefined on input line 
+87.
+
+./_region_.tex:87: Preview: Snippet 27 started.
+<-><->
+      
+l.87 ...idual exposures are differenced with the $
+                                                  3\pi$ all-sky reference st...
+
+Not a real error.
+
+./_region_.tex:87: Preview: Snippet 27 ended.(380108+0x671215).
+<-><->
+      
+l.87 ... exposures are differenced with the $3\pi$
+                                                   all-sky reference stack a...
+
+Not a real error.
+
+[27]
+./_region_.tex:89: Preview: Snippet 28 started.
+<-><->
+      
+l.89 ...tections and rejecting detections within $
+                                                  \pm 5$ degrees galactic la...
+
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 28 ended.(380108+54612x774594).
+<-><->
+      
+l.89 ...ns and rejecting detections within $\pm 5$
+                                                   degrees galactic latitiud...
+
+Not a real error.
+
+[28]
+./_region_.tex:89: Preview: Snippet 29 started.
+<-><->
+      
+l.89 ...within 0.5 arcsec and the rms scatter is $
+                                                  <$ 0.25 arcsec.  Post-inge...
+
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 29 ended.(324977+30065x471492).
+<-><->
+      
+l.89 ...thin 0.5 arcsec and the rms scatter is $<$
+                                                   0.25 arcsec.  Post-ingest...
+
+Not a real error.
+
+[29]
+./_region_.tex:93: Preview: Snippet 30 started.
+<-><->
+      
+l.93 \subsection
+                {Convolutional Neural Network}
+Not a real error.
+
+./_region_.tex:93: Preview: Snippet 30 ended.(409600+0x15728640).
+<-><->
+      
+l.93 \subsection{Convolutional Neural Network}
+                                              
+Not a real error.
+
+[30
+
+]
+
+Package natbib Warning: Citation `Wright16' on page 2 undefined on input line 9
+8.
+
+
+Package natbib Warning: Citation `Wright15' on page 2 undefined on input line 9
+8.
+
+./_region_.tex:100: Preview: Snippet 31 started.
+<-><->
+      
+l.100 ... set for this classifier was drawn from $
+                                                  3\pi$ survey data between ...
+
+Not a real error.
+
+./_region_.tex:100: Preview: Snippet 31 ended.(380108+0x671215).
+<-><->
+      
+l.100 ...for this classifier was drawn from $3\pi$
+                                                   survey data between 1st J...
+
+Not a real error.
+
+[31]
+
+Package natbib Warning: Citation `Ngiam11' on page 2 undefined on input line 10
+2.
+
+
+Package natbib Warning: Citation `Coates11' on page 2 undefined on input line 1
+02.
+
+./_region_.tex:102: Preview: Snippet 32 started.
+<-><->
+      
+l.102 ...re or \textit{hypothesis} is a function $
+                                                  h(x)$ of the input feature...
+
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 32 ended.(442368+147456x1164396).
+<-><->
+      
+l.102 ... \textit{hypothesis} is a function $h(x)$
+                                                   of the input feature repr...
+
+Not a real error.
+
+[32]
+./_region_.tex:102: Preview: Snippet 33 started.
+<-><->
+      
+l.102 ...)$ of the input feature representation, $
+                                                  x$ (the output of the conv...
+
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 33 ended.(253951+0x343608).
+<-><->
+      
+l.102 ... of the input feature representation, $x$
+                                                   (the output of the convol...
+
+Not a real error.
+
+[33]
+./_region_.tex:102: Preview: Snippet 34 started.
+<-><->
+      
+l.102 ...ch we take as the machine equivalent of $
+                                                  P(real)$ below.  Candidate...
+
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 34 ended.(442368+147456x2026758).
+<-><->
+      
+l.102 ...ke as the machine equivalent of $P(real)$
+                                                   below.  Candidates scorin...
+
+Not a real error.
+
+[34]
+./_region_.tex:102: Preview: Snippet 35 started.
+<-><->
+      
+l.102 ...of $P(real)$ below.  Candidates scoring $
+                                                  \leq 0.436$ are automatica...
+
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 35 ended.(384654+89742x2020680).
+<-><->
+      
+l.102 ...$ below.  Candidates scoring $\leq 0.436$
+                                                   are automatically rejecte...
+
+Not a real error.
+
+[35]
+./_region_.tex:102: Preview: Snippet 36 started.
+<-><->
+      
+l.102 ...an screening.  The decision boundary on $
+                                                  h(x)$ was chosen such that...
+
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 36 ended.(442368+147456x1164396).
+<-><->
+      
+l.102 ...reening.  The decision boundary on $h(x)$
+                                                   was chosen such that for ...
+
+Not a real error.
+
+[36]
+./_region_.tex:102: Preview: Snippet 37 started.
+<-><->
+      
+l.102 ...expect a missed detection rate (MDR) of $
+                                                  \sim5.2$\% based on
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 37 ended.(380108+0x1414476).
+<-><->
+      
+l.102 ... missed detection rate (MDR) of $\sim5.2$
+                                                  \% based on
+Not a real error.
+
+[37]
+
+LaTeX Warning: Reference `firstpage' on page 2 undefined on input line 104.
+
+
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 104.
+
+./_region_.tex:105: Preview: Snippet 38 started.
+<-><->
+      
+l.105 \subsection
+                 {Citizen Science Platform}
+Not a real error.
+
+./_region_.tex:105: Preview: Snippet 38 ended.(409600+0x15728640).
+<-><->
+      
+l.105 \subsection{Citizen Science Platform}
+                                           
+Not a real error.
+
+[38
+
+]
+./_region_.tex:109: Preview: Snippet 39 started.
+<-><->
+      
+l.109 \begin{figure*}
+                     
+Not a real error.
+
+<figs/sn_hunters.png, id=135, 1465.475pt x 493.845pt>
+File: figs/sn_hunters.png Graphic file (type png)
+
+<use figs/sn_hunters.png>
+Package pdftex.def Info: figs/sn_hunters.png used on input line 112.
+(pdftex.def)             Requested size: 398.33858pt x 134.22911pt.
+
+./_region_.tex:117: Preview: Snippet 39 ended.(6612080+6349936x26105517).
+<-><->
+      
+l.117 \end{figure*}
+                   
+Not a real error.
+
+[39
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.117 \end{figure*}
+                   
+
+ <./figs/sn_hunters.png>]
+
+LaTeX Warning: Reference `fig:sn_hunters' on page 3 undefined on input line 119
+.
+
+
+LaTeX Warning: Reference `sec:ps1' on page 3 undefined on input line 119.
+
+./_region_.tex:119: Preview: Snippet 40 started.
+<-><->
+      
+l.119 ... artefact types we expect.  Once a week $
+                                                  \sim5200$ new subjects are...
+
+Not a real error.
+
+./_region_.tex:119: Preview: Snippet 40 ended.(380108+0x1852290).
+<-><->
+      
+l.119 ... types we expect.  Once a week $\sim5200$
+                                                   new subjects are uploaded...
+
+Not a real error.
+
+[40]
+./_region_.tex:119: Preview: Snippet 41 started.
+<-><->
+      
+l.119 ...to existing volunteers via email\footnote
+                                                  {Though enthusiasm for the...
+
+Not a real error.
+
+./_region_.tex:119: Preview: Snippet 41 ended.(503968+0x273063).
+<-><->
+      
+l.119 ...cantly \emph{ahead} of this email alert!}
+                                                  . We require at least seve...
+
+Not a real error.
+
+[41]
+./_region_.tex:119: Preview: Snippet 42 started.
+<-><->
+      
+l.119 ...ect.  Since launch the project averages $
+                                                  \sim23000$ classifications...
+
+Not a real error.
+
+./_region_.tex:119: Preview: Snippet 42 ended.(380108+0x2155392).
+<-><->
+      
+l.119 ...e launch the project averages $\sim23000$
+                                                   classifications in the fi...
+
+Not a real error.
+
+[42]
+./_region_.tex:119: Preview: Snippet 43 started.
+<-><->
+      
+l.119 ...24 hours after the data is released and $
+                                                  \sim8300$ classifications ...
+
+Not a real error.
+
+./_region_.tex:119: Preview: Snippet 43 ended.(380108+0x1852290).
+<-><->
+      
+l.119 ...after the data is released and $\sim8300$
+                                                   classifications in the fo...
+
+Not a real error.
+
+[43]
+./_region_.tex:119: Preview: Snippet 44 started.
+<-><->
+      
+l.119 ...lly retired. High confidence (typically $
+                                                  P(real)>0.8$) supernova ca...
+
+Not a real error.
+
+./_region_.tex:119: Preview: Snippet 44 ended.(442368+147456x3609624).
+<-><->
+      
+l.119 ... High confidence (typically $P(real)>0.8$
+                                                  ) supernova candidates are...
+
+Not a real error.
+
+[44]
+
+Package natbib Warning: Citation `Mattila16' on page 3 undefined on input line 
+119.
+
+
+Package natbib Warning: Citation `Gal-Yam12' on page 3 undefined on input line 
+119.
+
+
+Package natbib Warning: Citation `Smartt15' on page 3 undefined on input line 1
+19.
+
+./_region_.tex:122: Preview: Snippet 45 started.
+<-><->
+      
+l.122 \section
+              {Performance}
+Not a real error.
+
+./_region_.tex:122: Preview: Snippet 45 ended.(404685+0x15728640).
+<-><->
+      
+l.122 \section{Performance}
+                           
+Not a real error.
+
+[45
+
+]
+
+LaTeX Warning: Reference `sec:cnn' on page 3 undefined on input line 125.
+
+
+LaTeX Warning: Reference `fig:machine_dist' on page 3 undefined on input line 1
+25.
+
+./_region_.tex:130: Preview: Snippet 46 started.
+<-><->
+      
+l.130 \begin{figure}
+                    
+Not a real error.
+
+<figs/machine_hist.pdf, id=168, 540.78912pt x 401.46863pt>
+File: figs/machine_hist.pdf Graphic file (type pdf)
+
+<use figs/machine_hist.pdf>
+Package pdftex.def Info: figs/machine_hist.pdf used on input line 132.
+(pdftex.def)             Requested size: 239.00314pt x 177.43086pt.
+
+./_region_.tex:139: Preview: Snippet 46 ended.(17759366+0x15728640).
+<-><->
+      
+l.139 \end{figure}
+                  
+Not a real error.
+
+[46
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.139 \end{figure}
+                  
+
+ <./figs/machine_hist.pdf>]
+./_region_.tex:143: Preview: Snippet 47 started.
+<-><->
+      
+l.143 ...erformance, candidates which exceed the $
+                                                  h(x) = 0.436$ threshold we...
+
+Not a real error.
+
+./_region_.tex:143: Preview: Snippet 47 ended.(442368+147456x3353466).
+<-><->
+      
+l.143 ...andidates which exceed the $h(x) = 0.436$
+                                                   threshold were also class...
+
+Not a real error.
+
+[47]
+
+LaTeX Warning: Reference `fig:human_dist' on page 3 undefined on input line 143
+.
+
+./_region_.tex:145: Preview: Snippet 48 started.
+<-><->
+      
+l.145 \begin{figure}
+                    
+Not a real error.
+
+<figs/human_hist.pdf, id=213, 530.56342pt x 409.23985pt>
+File: figs/human_hist.pdf Graphic file (type pdf)
+
+<use figs/human_hist.pdf>
+Package pdftex.def Info: figs/human_hist.pdf used on input line 147.
+(pdftex.def)             Requested size: 239.00314pt x 184.34981pt.
+
+
+LaTeX Warning: Reference `fig:machine_dist' on page 3 undefined on input line 1
+51.
+
+
+LaTeX Warning: Reference `fig:machine_dist' on page 3 undefined on input line 1
+51.
+
+./_region_.tex:153: Preview: Snippet 48 ended.(16931213+0x15728640).
+<-><->
+      
+l.153 \end{figure}
+                  
+Not a real error.
+
+[48
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.153 \end{figure}
+                  
+
+ <./figs/human_hist.pdf>]
+./_region_.tex:155: Preview: Snippet 49 started.
+<-><->
+      
+l.155 ...y of that candidate being real, denoted $
+                                                  P(real)$. Despite this sim...
+
+Not a real error.
+
+./_region_.tex:155: Preview: Snippet 49 ended.(442368+147456x2026758).
+<-><->
+      
+l.155 ...t candidate being real, denoted $P(real)$
+                                                  . Despite this simple proc...
+
+Not a real error.
+
+[49]
+./_region_.tex:155: Preview: Snippet 50 started.
+<-><->
+      
+l.155 ... there were no real candidates assigned $
+                                                  P(real) < 0.04$.
+Not a real error.
+
+./_region_.tex:155: Preview: Snippet 50 ended.(442368+147456x3912726).
+<-><->
+      
+l.155 ...real candidates assigned $P(real) < 0.04$
+                                                  .
+Not a real error.
+
+[50]
+
+Package natbib Warning: Citation `Schwamb12' on page 3 undefined on input line 
+158.
+
+
+Package natbib Warning: Citation `Marshall16' on page 3 undefined on input line
+ 158.
+
+./_region_.tex:160: Preview: Snippet 51 started.
+<-><->
+      
+l.160 \subsection
+                 {Combining human and machines}
+Not a real error.
+
+./_region_.tex:160: Preview: Snippet 51 ended.(409600+114688x15728640).
+<-><->
+      
+l.160 \subsection{Combining human and machines}
+                                               
+Not a real error.
+
+[51
+
+]
+
+LaTeX Warning: Reference `fig:combo_train' on page 3 undefined on input line 16
+2.
+
+./_region_.tex:164: Preview: Snippet 52 started.
+<-><->
+      
+l.164 \begin{figure}
+                    
+Not a real error.
+
+
+<figs/human_v_machine_20160712-20160718.pdf, id=264, 501.37941pt x 409.23985pt>
+File: figs/human_v_machine_20160712-20160718.pdf Graphic file (type pdf)
+<use figs/human_v_machine_20160712-20160718.pdf>
+Package pdftex.def Info: figs/human_v_machine_20160712-20160718.pdf used on inp
+ut line 167.
+(pdftex.def)             Requested size: 239.00314pt x 195.07784pt.
+
+./_region_.tex:174: Preview: Snippet 52 ended.(19571238+0x15728640).
+<-><->
+      
+l.174 \end{figure}
+                  
+Not a real error.
+
+[52
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.174 \end{figure}
+                  
+
+ <./figs/human_v_machine_20160712-20160718.pdf>]
+./_region_.tex:182: Preview: Snippet 53 started.
+<-><->
+      
+l.182 ...y apply a decision boundary of the form $
+                                                  \tau = (x + y)/2$ on the 2...
+
+Not a real error.
+
+./_region_.tex:182: Preview: Snippet 53 ended.(442368+147456x3624639).
+<-><->
+      
+l.182 ...n boundary of the form $\tau = (x + y)/2$
+                                                   on the 2D surface, where ...
+
+Not a real error.
+
+[53]
+./_region_.tex:182: Preview: Snippet 54 started.
+<-><->
+      
+l.182 ...u = (x + y)/2$ on the 2D surface, where $
+                                                  0\leq\tau\leq1$.  For a co...
+
+Not a real error.
+
+./_region_.tex:182: Preview: Snippet 54 ended.(384654+89742x2557183).
+<-><->
+      
+l.182 ...on the 2D surface, where $0\leq\tau\leq1$
+                                                  .  For a constant value of...
+
+Not a real error.
+
+[54]
+./_region_.tex:182: Preview: Snippet 55 started.
+<-><->
+      
+l.182 ...leq\tau\leq1$.  For a constant value of $
+                                                  \tau$ a candidate is class...
+
+Not a real error.
+
+./_region_.tex:182: Preview: Snippet 55 ended.(253951+0x334435).
+<-><->
+      
+l.182 ...au\leq1$.  For a constant value of $\tau$
+                                                   a candidate is classified...
+
+Not a real error.
+
+[55]
+./_region_.tex:182: Preview: Snippet 56 started.
+<-><->
+      
+l.182 ...$ a candidate is classified as bogus if $
+                                                  [h(x)+P(real)]/2 <= \tau$ ...
+
+Not a real error.
+
+./_region_.tex:182: Preview: Snippet 56 ended.(442368+147456x6489253).
+<-><->
+      
+l.182 ...ed as bogus if $[h(x)+P(real)]/2 <= \tau$
+                                                   and classified real other...
+
+Not a real error.
+
+[56]
+./_region_.tex:182: Preview: Snippet 57 started.
+<-><->
+      
+l.182 ... equivalent to projecting the data onto $
+                                                  P(real)=h(x)$ producing a ...
+
+Not a real error.
+
+./_region_.tex:182: Preview: Snippet 57 ended.(442368+147456x3999426).
+<-><->
+      
+l.182 ...o projecting the data onto $P(real)=h(x)$
+                                                   producing a new scalar sc...
+
+Not a real error.
+
+[57]
+
+LaTeX Warning: Reference `fig:combo_hist' on page 3 undefined on input line 182
+.
+
+
+LaTeX Warning: Reference `fig:combo_test' on page 3 undefined on input line 183
+.
+
+./_region_.tex:183: Preview: Snippet 58 started.
+<-><->
+      
+l.183 ...609 and MJD 57615 we relaxed our cut on $
+                                                  h(x)$ from 0.436 to 0.3 up...
+
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 58 ended.(442368+147456x1164396).
+<-><->
+      
+l.183 ...nd MJD 57615 we relaxed our cut on $h(x)$
+                                                   from 0.436 to 0.3 uploadi...
+
+Not a real error.
+
+[58]
+./_region_.tex:183: Preview: Snippet 59 started.
+<-><->
+      
+l.183 ...d have been automatically rejected with $
+                                                  h(x)$=0.39, but which rece...
+
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 59 ended.(442368+147456x1164396).
+<-><->
+      
+l.183 ...e been automatically rejected with $h(x)$
+                                                  =0.39, but which received ...
+
+Not a real error.
+
+[59]
+./_region_.tex:183: Preview: Snippet 60 started.
+<-><->
+      
+l.183 ... with $h(x)$=0.39, but which received a $
+                                                  P(real)$ of 1.0 from Super...
+
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 60 ended.(442368+147456x2026758).
+<-><->
+      
+l.183 ...(x)$=0.39, but which received a $P(real)$
+                                                   of 1.0 from Supernova Hun...
+
+Not a real error.
+
+[60]
+
+LaTeX Warning: Reference `tab:roc_fpr' on page 3 undefined on input line 183.
+
+
+LaTeX Warning: Reference `tab:roc_mdr' on page 3 undefined on input line 183.
+
+
+LaTeX Warning: Reference `fig:roc' on page 3 undefined on input line 183.
+
+./_region_.tex:185: Preview: Snippet 61 started.
+<-><->
+      
+l.185 \begin{figure}
+                    
+Not a real error.
+
+<figs/combo_hist.pdf, id=341, 530.56342pt x 409.23985pt>
+File: figs/combo_hist.pdf Graphic file (type pdf)
+
+<use figs/combo_hist.pdf>
+Package pdftex.def Info: figs/combo_hist.pdf used on input line 188.
+(pdftex.def)             Requested size: 239.00314pt x 184.34981pt.
+
+./_region_.tex:191: Preview: Snippet 61 ended.(14834061+0x15728640).
+<-><->
+      
+l.191 \end{figure}
+                  
+Not a real error.
+
+[61
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.191 \end{figure}
+                  
+
+ <./figs/combo_hist.pdf>]
+./_region_.tex:193: Preview: Snippet 62 started.
+<-><->
+      
+l.193 \begin{figure}
+                    
+Not a real error.
+
+
+<figs/human_v_machine_20160725-20160829.pdf, id=381, 501.37941pt x 409.23985pt>
+File: figs/human_v_machine_20160725-20160829.pdf Graphic file (type pdf)
+<use figs/human_v_machine_20160725-20160829.pdf>
+Package pdftex.def Info: figs/human_v_machine_20160725-20160829.pdf used on inp
+ut line 196.
+(pdftex.def)             Requested size: 239.00314pt x 195.07784pt.
+
+
+LaTeX Warning: Reference `fig:combo_train' on page 3 undefined on input line 19
+8.
+
+
+LaTeX Warning: Reference `fig:combo_train' on page 3 undefined on input line 19
+8.
+
+
+LaTeX Warning: Reference `fig:combo_train' on page 3 undefined on input line 19
+8.
+
+
+LaTeX Warning: Reference `fig:combo_train' on page 3 undefined on input line 19
+8.
+
+./_region_.tex:200: Preview: Snippet 62 ended.(20124653+0x15728640).
+<-><->
+      
+l.200 \end{figure}
+                  
+Not a real error.
+
+[62
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.200 \end{figure}
+                  
+
+ <./figs/human_v_machine_20160725-20160829.pdf>]
+./_region_.tex:202: Preview: Snippet 63 started.
+<-><->
+      
+l.202 \begin{figure*}
+                     
+Not a real error.
+
+<figs/combo_swap_roc.pdf, id=433, 1299.9566pt x 637.78278pt>
+File: figs/combo_swap_roc.pdf Graphic file (type pdf)
+
+<use figs/combo_swap_roc.pdf>
+Package pdftex.def Info: figs/combo_swap_roc.pdf used on input line 205.
+(pdftex.def)             Requested size: 455.24408pt x 234.17267pt.
+
+
+LaTeX Warning: Reference `fig:combo_test' on page 3 undefined on input line 209
+.
+
+
+LaTeX Warning: Reference `fig:combo_test' on page 3 undefined on input line 209
+.
+
+./_region_.tex:212: Preview: Snippet 63 ended.(10214711+9952566x29834876).
+<-><->
+      
+l.212 \end{figure*}
+                   
+Not a real error.
+
+[63
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.212 \end{figure*}
+                   
+
+ <./figs/combo_swap_roc.pdf>]
+./_region_.tex:224: Preview: Snippet 64 started.
+<-><->
+      
+l.224 \begin{table*}
+                    
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 64 ended.(2377501+2115356x22376157).
+<-><->
+      
+l.236 \end{table*}
+                  
+Not a real error.
+
+[64
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.236 \end{table*}
+                  
+
+]
+./_region_.tex:250: Preview: Snippet 65 started.
+<-><->
+      
+l.250 \begin{table*}
+                    
+Not a real error.
+
+./_region_.tex:262: Preview: Snippet 65 ended.(2428473+2166329x22376157).
+<-><->
+      
+l.262 \end{table*}
+                  
+Not a real error.
+
+[65
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.262 \end{table*}
+                  
+
+]
+
+LaTeX Warning: Reference `fig:combo_train' on page 3 undefined on input line 26
+6.
+
+
+LaTeX Warning: Reference `fig:combo_test' on page 3 undefined on input line 266
+.
+
+
+LaTeX Warning: Reference `tab:roc_fpr' on page 3 undefined on input line 266.
+
+
+LaTeX Warning: Reference `tab:roc_mdr' on page 3 undefined on input line 266.
+
+
+LaTeX Warning: Reference `firstpage' on page 3 undefined on input line 267.
+
+
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 267.
+
+./_region_.tex:268: Preview: Snippet 66 started.
+<-><->
+      
+l.268 We also expect to gain from improved $
+                                            P(real)$ or $h(x)$.  To demonstr...
+
+Not a real error.
+
+./_region_.tex:268: Preview: Snippet 66 ended.(442368+147456x2026758).
+<-><->
+      
+l.268 ...so expect to gain from improved $P(real)$
+                                                   or $h(x)$.  To demonstrat...
+
+Not a real error.
+
+[66]
+./_region_.tex:268: Preview: Snippet 67 started.
+<-><->
+      
+l.268 ...pect to gain from improved $P(real)$ or $
+                                                  h(x)$.  To demonstrate thi...
+
+Not a real error.
+
+./_region_.tex:268: Preview: Snippet 67 ended.(442368+147456x1164396).
+<-><->
+      
+l.268 ...to gain from improved $P(real)$ or $h(x)$
+                                                  .  To demonstrate this we ...
+
+Not a real error.
+
+[67]
+
+Package natbib Warning: Citation `Marshall16' on page 4 undefined on input line
+ 268.
+
+./_region_.tex:268: Preview: Snippet 68 started.
+<-><->
+      
+l.268 ... candidates from the Space Warps\footnote
+                                                  {\url{https://spacewarps.o...
+
+Not a real error.
+
+./_region_.tex:268: Preview: Snippet 68 ended.(503968+0x273063).
+<-><->
+      
+l.268 ...ps\footnote{\url{https://spacewarps.org}}
+                                                   citizen science project i...
+
+Not a real error.
+
+[68]
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+
+Package natbib Warning: Citation `Gwyn12' on page 4 undefined on input line 268
+.
+
+
+Package natbib Warning: Citation `Marshall16' on page 4 undefined on input line
+ 268.
+
+./_region_.tex:268: Preview: Snippet 69 started.
+<-><->
+      
+l.268 ...that each detection is a real supernova $
+                                                  \rho_0$, which we take to ...
+
+Not a real error.
+
+./_region_.tex:268: Preview: Snippet 69 ended.(253951+114688x585337).
+<-><->
+      
+l.268 ...ch detection is a real supernova $\rho_0$
+                                                  , which we take to be 0.01...
+
+Not a real error.
+
+[69]
+./_region_.tex:268: Preview: Snippet 70 started.
+<-><->
+      
+l.268 ...et the initial confusion matrix for the $
+                                                  i-$th volunteer which to:\\
+Not a real error.
+
+./_region_.tex:268: Preview: Snippet 70 ended.(389185+54612x678926).
+<-><->
+      
+l.268 ...the initial confusion matrix for the $i-$
+                                                  th volunteer which to:\\
+Not a real error.
+
+[70]
+./_region_.tex:270: Preview: Snippet 71 started.
+<-><->
+      
+l.270  $
+        \bm{M}^i = \begin{bmatrix}
+Not a real error.
+
+./_region_.tex:273: Preview: Snippet 71 ended.(868352+573440x4617668).
+<-><->
+      
+l.273                         \end{bmatrix}$
+                                            .\\
+Not a real error.
+
+[71]
+
+LaTeX Warning: Reference `fig:combo_test' on page 4 undefined on input line 275
+.
+
+
+LaTeX Warning: Reference `fig:roc' on page 4 undefined on input line 275.
+
+./_region_.tex:275: Preview: Snippet 72 started.
+<-><->
+      
+l.275 ...f{fig:roc}.  SWAP considerably improves $
+                                                  P(real)$.  By combining th...
+
+Not a real error.
+
+./_region_.tex:275: Preview: Snippet 72 ended.(442368+147456x2026758).
+<-><->
+      
+l.275 ...c}.  SWAP considerably improves $P(real)$
+                                                  .  By combining this impro...
+
+Not a real error.
+
+[72]
+
+LaTeX Warning: Reference `fig:roc' on page 4 undefined on input line 275.
+
+./_region_.tex:275: Preview: Snippet 73 started.
+<-><->
+      
+l.275 ...nstrating that an improvement in either $
+                                                  P(real)$ or $h(x)$ can lea...
+
+Not a real error.
+
+./_region_.tex:275: Preview: Snippet 73 ended.(442368+147456x2026758).
+<-><->
+      
+l.275 ...g that an improvement in either $P(real)$
+                                                   or $h(x)$ can lead to val...
+
+Not a real error.
+
+[73]
+./_region_.tex:275: Preview: Snippet 74 started.
+<-><->
+      
+l.275 ...t an improvement in either $P(real)$ or $
+                                                  h(x)$ can lead to valuable...
+
+Not a real error.
+
+./_region_.tex:275: Preview: Snippet 74 ended.(442368+147456x1164396).
+<-><->
+      
+l.275 ...improvement in either $P(real)$ or $h(x)$
+                                                   can lead to valuable perf...
+
+Not a real error.
+
+[74]
+./_region_.tex:275: Preview: Snippet 75 started.
+<-><->
+      
+l.275 ...ed with the machine produces at least a $
+                                                  \sim10$\% improvement over...
+
+Not a real error.
+
+./_region_.tex:275: Preview: Snippet 75 ended.(380108+0x1246086).
+<-><->
+      
+l.275 ... the machine produces at least a $\sim10$
+                                                  \% improvement over the ne...
+
+Not a real error.
+
+[75]
+
+LaTeX Warning: Reference `tab:roc_fpr' on page 4 undefined on input line 275.
+
+
+LaTeX Warning: Reference `tab:roc_mdr' on page 4 undefined on input line 275.
+
+./_region_.tex:277: Preview: Snippet 76 started.
+<-><->
+      
+l.277 \section
+              {Conclusions}
+Not a real error.
+
+./_region_.tex:277: Preview: Snippet 76 ended.(404685+0x15728640).
+<-><->
+      
+l.277 \section{Conclusions}
+                           
+Not a real error.
+
+[76
+
+]
+./_region_.tex:281: Preview: Snippet 77 started.
+<-><->
+      
+l.281 ...shelf Zooniverse Project Builder\footnote
+                                                  {\url{https://www.zooniver...
+
+Not a real error.
+
+./_region_.tex:281: Preview: Snippet 77 ended.(503968+0x273063).
+<-><->
+      
+l.281 ...ote{\url{https://www.zooniverse.org/lab}}
+                                                   requiring no custom featu...
+
+Not a real error.
+
+[77]
+./_region_.tex:281: Preview: Snippet 78 started.
+<-><->
+      
+l.281 ...his data for a very pure sample of high $
+                                                  P(real)$ supernova candida...
+
+Not a real error.
+
+./_region_.tex:281: Preview: Snippet 78 ended.(442368+147456x2026758).
+<-><->
+      
+l.281 ... for a very pure sample of high $P(real)$
+                                                   supernova candidates, typ...
+
+Not a real error.
+
+[78]
+./_region_.tex:283: Preview: Snippet 79 started.
+<-><->
+      
+l.283 ...hine.  We found that this resulted in a $
+                                                  \sim10$\% gain compared to...
+
+Not a real error.
+
+./_region_.tex:283: Preview: Snippet 79 ended.(380108+0x1246086).
+<-><->
+      
+l.283 ...We found that this resulted in a $\sim10$
+                                                  \% gain compared to the ne...
+
+Not a real error.
+
+[79]
+./_region_.tex:283: Preview: Snippet 80 started.
+<-><->
+      
+l.283 ...e next best method.  To further improve $
+                                                  P(real)$ we could invest m...
+
+Not a real error.
+
+./_region_.tex:283: Preview: Snippet 80 ended.(442368+147456x2026758).
+<-><->
+      
+l.283 ...est method.  To further improve $P(real)$
+                                                   we could invest more effo...
+
+Not a real error.
+
+[80]
+./_region_.tex:283: Preview: Snippet 81 started.
+<-><->
+      
+l.283 ...s, there are many bogus detections with $
+                                                  P(real)>0.5$, but relative...
+
+Not a real error.
+
+./_region_.tex:283: Preview: Snippet 81 ended.(442368+147456x3609624).
+<-><->
+      
+l.283 ... many bogus detections with $P(real)>0.5$
+                                                  , but relatively few real ...
+
+Not a real error.
+
+[81]
+
+LaTeX Warning: Reference `fig:human_dist' on page 4 undefined on input line 283
+.
+
+
+Package natbib Warning: Citation `Tonry16' on page 4 undefined on input line 28
+5.
+
+./_region_.tex:285: Preview: Snippet 82 started.
+<-><->
+      
+l.285 ...ditional citizen scientists, beyond the $
+                                                  \sim30000$ volunteers on t...
+
+Not a real error.
+
+./_region_.tex:285: Preview: Snippet 82 ended.(380108+0x2155392).
+<-><->
+      
+l.285 ...itizen scientists, beyond the $\sim30000$
+                                                   volunteers on the Zoonive...
+
+Not a real error.
+
+[82]
+./_region_.tex:285: Preview: Snippet 83 started.
+<-><->
+      
+l.285 ...ould actively seek the participation of $
+                                                  \sim 10^6$ registered Zoon...
+
+Not a real error.
+
+./_region_.tex:285: Preview: Snippet 83 ended.(503968+0x1519149).
+<-><->
+      
+l.285 ...ely seek the participation of $\sim 10^6$
+                                                   registered Zooniverse vol...
+
+Not a real error.
+
+[83]
+./_region_.tex:285: Preview: Snippet 84 started.
+<-><->
+      
+l.285 ...nt classification rate we could achieve $
+                                                  \sim 750000$ classificatio...
+
+Not a real error.
+
+./_region_.tex:285: Preview: Snippet 84 ended.(380108+0x2458494).
+<-><->
+      
+l.285 ...ation rate we could achieve $\sim 750000$
+                                                   classifications per night...
+
+Not a real error.
+
+[84]
+./_region_.tex:285: Preview: Snippet 85 started.
+<-><->
+      
+l.285 ... night, or 0.75 classifications for the $
+                                                  \sim 10^6$ transient alert...
+
+Not a real error.
+
+./_region_.tex:285: Preview: Snippet 85 ended.(503968+0x1519149).
+<-><->
+      
+l.285 ... 0.75 classifications for the $\sim 10^6$
+                                                   transient alerts expected...
+
+Not a real error.
+
+[85]
+
+Package natbib Warning: Citation `Ridgway14' on page 4 undefined on input line 
+285.
+
+./_region_.tex:285: Preview: Snippet 86 started.
+<-><->
+      
+l.285 ...s overly pessimistic given the expected $
+                                                  \sim$ 500-2200 false posit...
+
+Not a real error.
+
+./_region_.tex:285: Preview: Snippet 86 ended.(219587+0x471492).
+<-><->
+      
+l.285 ...rly pessimistic given the expected $\sim$
+                                                   500-2200 false positives ...
+
+Not a real error.
+
+[86]
+
+Package natbib Warning: Citation `Becker13' on page 4 undefined on input line 2
+85.
+
+./_region_.tex:285: Preview: Snippet 87 started.
+<-><->
+      
+l.285 ...field per visit \citep{Becker13} with a $
+                                                  5\sigma$ detection thresho...
+
+Not a real error.
+
+./_region_.tex:285: Preview: Snippet 87 ended.(380108+0x670896).
+<-><->
+      
+l.285 ...r visit \citep{Becker13} with a $5\sigma$
+                                                   detection threshold) and ...
+
+Not a real error.
+
+[87]
+
+Package natbib Warning: Citation `Zackay16' on page 4 undefined on input line 2
+85.
+
+
+LaTeX Warning: Reference `firstpage' on page 4 undefined on input line 286.
+
+
+LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 286.
+
+./_region_.tex:287: Preview: Snippet 88 started.
+<-><->
+      
+l.287 \section
+              *{Acknowledgments}
+Not a real error.
+
+./_region_.tex:287: Preview: Snippet 88 ended.(404685+0x15728640).
+<-><->
+      
+l.287 \section*{Acknowledgments}
+                                
+Not a real error.
+
+[88]
+No file _region_.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
+
+LaTeX Warning: Reference `firstpage' on page 5 undefined on input line 293.
+
+
+LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 293.
+
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 293.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 293.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
+ ) 
+Here is how much of TeX's memory you used:
+ 7375 strings out of 493089
+ 103739 string characters out of 6134843
+ 207180 words of memory out of 5000000
+ 10728 multiletter control sequences out of 15000+600000
+ 20411 words of font info for 75 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,11n,34p,2074b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on _region_.pdf (88 pages, 1478909 bytes).
+PDF statistics:
+ 618 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+

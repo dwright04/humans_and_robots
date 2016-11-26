@@ -3,46 +3,58 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: blank.aux
 The style file: mnras.bst
 Database file #1: ps1_real_bogus.bib
+Repeated entry---line 1220 of file ps1_real_bogus.bib
+ : @article{Marshall16
+ :                    ,
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 25 entries,
+"ArXiv e-prints" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Wright16
+while executing---line 1822 of file mnras.bst
+Warning--empty journal in Wright16
+"ArXiv e-prints" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Wright16
+while executing---line 1822 of file mnras.bst
+You've used 35 entries,
             2881 wiz_defined-function locations,
-            938 strings with 23641 characters,
-and the built_in function-call counts, 11606 in all, are:
-= -- 929
-> -- 800
-< -- 27
-+ -- 371
-- -- 102
-* -- 1502
-:= -- 1736
+            1020 strings with 29402 characters,
+and the built_in function-call counts, 15726 in all, are:
+= -- 1259
+> -- 1070
+< -- 42
++ -- 509
+- -- 126
+* -- 2048
+:= -- 2358
 add.period$ -- 0
-call.type$ -- 25
-change.case$ -- 50
-chr.to.int$ -- 25
-cite$ -- 25
-duplicate$ -- 601
-empty$ -- 660
-format.name$ -- 182
-if$ -- 2022
+call.type$ -- 35
+change.case$ -- 70
+chr.to.int$ -- 35
+cite$ -- 36
+duplicate$ -- 824
+empty$ -- 897
+format.name$ -- 242
+if$ -- 2719
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 25
-newline$ -- 89
-num.names$ -- 147
-pop$ -- 172
+missing$ -- 35
+newline$ -- 120
+num.names$ -- 199
+pop$ -- 227
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 140
 quote$ -- 0
-skip$ -- 339
+skip$ -- 469
 stack$ -- 0
-substring$ -- 644
-swap$ -- 271
-text.length$ -- 105
+substring$ -- 847
+swap$ -- 358
+text.length$ -- 146
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 225
-warning$ -- 0
-while$ -- 163
+type$ -- 315
+warning$ -- 1
+while$ -- 227
 width$ -- 0
-write$ -- 267
+write$ -- 370
+(There were 3 error messages)

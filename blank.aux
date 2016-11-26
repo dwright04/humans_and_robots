@@ -18,17 +18,21 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{Ivezic08}
 \citation{Bloom12,Brink13,Goldstein15,duBuisson15,Donalek08,Romano06,Bailey07}
+\citation{Banko01}
 \citation{Smith11}
 \citation{Campbell15}
 \citation{Rau09,Law09}
+\citation{Keller07}
+\citation{Marshall16}
 \newlabel{firstpage}{{}{1}{}{Doc-Start}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
 \citation{Kaiser10}
 \citation{Magnier13}
 \citation{York00}
 \citation{Tonry12b}
-\citation{Huber15a}
+\citation{Huber15a,Inserra13}
 \citation{Denneau13}
+\citation{Wright16}
 \citation{Wright15}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Method}{2}{section.2}}
 \newlabel{sec:method}{{2}{2}{Method}{section.2}{}}
@@ -38,61 +42,84 @@
 \newlabel{sec:cnn}{{2.2}{2}{Convolutional Neural Network}{subsection.2.2}{}}
 \citation{Ngiam11}
 \citation{Coates11}
+\citation{Mattila16}
+\citation{Gal-Yam12}
+\citation{Smartt15}
+\citation{Schwamb12,Marshall16}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Citizen Science Platform}{3}{subsection.2.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Performance}{3}{section.3}}
 \newlabel{sec:perform}{{3}{3}{Performance}{section.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Combining human and machines}{3}{subsection.3.1}}
-\citation{Bloom12}
-\citation{Brink13}
-\citation{Goldstein15}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Screenshot showing the classification interface presented to citizen scientists. The left most image is the new \textit  {target} image taken recently. In the centre is the equivalent $3\pi $ \textit  {reference} image and on the right is the \textit  {difference} image. Volunteers are asked to decide whether or not they think the detection in the green crosshairs in the difference image is a detection of a real transient.}}{4}{figure.1}}
-\newlabel{fig:sn_hunters}{{1}{4}{Screenshot showing the classification interface presented to citizen scientists. The left most image is the new \textit {target} image taken recently. In the centre is the equivalent $3\pi $ \textit {reference} image and on the right is the \textit {difference} image. Volunteers are asked to decide whether or not they think the detection in the green crosshairs in the difference image is a detection of a real transient}{figure.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The distribution of hypotheses, $h(x)$ from the current 3$\pi $ machine classifier for detected objects between MJD 57570 and MJD 57586. The light green shows the distribution of objects with $P(real) \leq 0.436$ which are automatically rejected. The remaining objects promoted for human screening even at high values of $h(x)$ contains many false positives.}}{4}{figure.2}}
-\newlabel{fig:machine_dist}{{2}{4}{The distribution of hypotheses, $h(x)$ from the current 3$\pi $ machine classifier for detected objects between MJD 57570 and MJD 57586. The light green shows the distribution of objects with $P(real) \leq 0.436$ which are automatically rejected. The remaining objects promoted for human screening even at high values of $h(x)$ contains many false positives}{figure.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The distribution of $P(real)$ from Supernova Hunters for objects detected between MJD 57570 and MJD 57586. Compared with the machine $P(real)$ in \nobreakspace  {}\ref  {fig:machine_dist} the objects at the extremes are pure. There are very few real detections with $P(real) < 0.04$ and few bogus detections above 0.92.}}{4}{figure.3}}
-\newlabel{fig:human_dist}{{3}{4}{The distribution of $P(real)$ from Supernova Hunters for objects detected between MJD 57570 and MJD 57586. Compared with the machine $P(real)$ in ~\ref {fig:machine_dist} the objects at the extremes are pure. There are very few real detections with $P(real) < 0.04$ and few bogus detections above 0.92}{figure.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Missed detection rate recorded for a choice of false positive rates, based on expert classifications.}}{4}{table.1}}
-\newlabel{tab:roc_fpr}{{1}{4}{Missed detection rate recorded for a choice of false positive rates, based on expert classifications}{table.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The $P(real)$ from Supernova Hunters against the machine $P(real)$ for detected objects between MJD 57570 and MJD 57586. $P(real)$ and $h(x)$ are combined by projecting the data onto the solid black line in the euclidean sense. For a given value of $\tau $ the background colour map shows the probability that an example chosen at random with combined score abouve tau will be real; an empirical measure of P(real) for our combination of method. The dashed black line shows the 90\% probability contour.}}{5}{figure.4}}
-\newlabel{fig:combo_train}{{4}{5}{The $P(real)$ from Supernova Hunters against the machine $P(real)$ for detected objects between MJD 57570 and MJD 57586. $P(real)$ and $h(x)$ are combined by projecting the data onto the solid black line in the euclidean sense. For a given value of $\tau $ the background colour map shows the probability that an example chosen at random with combined score abouve tau will be real; an empirical measure of P(real) for our combination of method. The dashed black line shows the 90\% probability contour}{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Histogram showing the distribution of data resulting from the combination of human and machine classifications.}}{5}{figure.5}}
-\newlabel{fig:combo_hist}{{5}{5}{Histogram showing the distribution of data resulting from the combination of human and machine classifications}{figure.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces False positive rate recorded for a choice of missed detection rates, based on expert classifications. }}{5}{table.2}}
-\newlabel{tab:roc_mdr}{{2}{5}{False positive rate recorded for a choice of missed detection rates, based on expert classifications}{table.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The same as \nobreakspace  {}\ref  {fig:combo_train} but on a new sample of 10908 objects detected between MJD 57587 and MJD 57627. Between we relaxed our cut on $h(x)$ to 0.3 which allowed us to recover a supernova with $h(x)$=0.39, but achieved a $P(real)$=1.0 from Supernova Hunters. The background colour map is the same empirical $P(real)$ as Figure.\nobreakspace  {}\ref  {fig:combo_train} but underestimates the probability at each value of $\tau $ for this data set, perhaps suggesting an improvement in the classification ability of volunteers over time.}}{5}{figure.6}}
-\newlabel{fig:combo_test}{{6}{5}{The same as ~\ref {fig:combo_train} but on a new sample of 10908 objects detected between MJD 57587 and MJD 57627. Between we relaxed our cut on $h(x)$ to 0.3 which allowed us to recover a supernova with $h(x)$=0.39, but achieved a $P(real)$=1.0 from Supernova Hunters. The background colour map is the same empirical $P(real)$ as Figure.~\ref {fig:combo_train} but underestimates the probability at each value of $\tau $ for this data set, perhaps suggesting an improvement in the classification ability of volunteers over time}{figure.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{5}{section.4}}
-\newlabel{sec:conclusions}{{4}{5}{Conclusions}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The classification interface presented to citizen scientists. The left most image is the \textit  {target} image taken during the previous week. In the centre is the equivalent $3\pi $ \textit  {reference} image and on the right is the \textit  {difference} image. Volunteers are asked to decide whether or not they think the detection in the green crosshairs in the difference image is a detection of a real transient.}}{4}{figure.1}}
+\newlabel{fig:sn_hunters}{{1}{4}{The classification interface presented to citizen scientists. The left most image is the \textit {target} image taken during the previous week. In the centre is the equivalent $3\pi $ \textit {reference} image and on the right is the \textit {difference} image. Volunteers are asked to decide whether or not they think the detection in the green crosshairs in the difference image is a detection of a real transient}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The distribution of hypotheses, $h(x)$ from the current 3$\pi $ machine classifier for detected objects between MJD 57570 and MJD 57586. The light green shows the distribution of objects with $h(x) \leq 0.436$ which are automatically rejected. The remaining objects promoted for human screening even at high values of $h(x)$ contains many false positives. The first interval has a frequency of 12428, but the plot is truncated for clarity.}}{4}{figure.2}}
+\newlabel{fig:machine_dist}{{2}{4}{The distribution of hypotheses, $h(x)$ from the current 3$\pi $ machine classifier for detected objects between MJD 57570 and MJD 57586. The light green shows the distribution of objects with $h(x) \leq 0.436$ which are automatically rejected. The remaining objects promoted for human screening even at high values of $h(x)$ contains many false positives. The first interval has a frequency of 12428, but the plot is truncated for clarity}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Combining human and machines}{4}{subsection.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The distribution of $P(real)$ from Supernova Hunters for objects detected between MJD 57570 and MJD 57586. Compared with the machine $h(x)$ in Figure\nobreakspace  {}\ref  {fig:machine_dist} the objects at the extremes are pure. There are no real detections with $P(real) < 0.04$ and few bogus detections above 0.92.}}{4}{figure.3}}
+\newlabel{fig:human_dist}{{3}{4}{The distribution of $P(real)$ from Supernova Hunters for objects detected between MJD 57570 and MJD 57586. Compared with the machine $h(x)$ in Figure~\ref {fig:machine_dist} the objects at the extremes are pure. There are no real detections with $P(real) < 0.04$ and few bogus detections above 0.92}{figure.3}{}}
 \citation{Marshall16}
+\citation{Gwyn12}
+\citation{Marshall16}
+\citation{Marshall16}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The $P(real)$ from Supernova Hunters against the machine $P(real)$ for 3384 detected objects between MJD 57570 and MJD 57586. $P(real)$ and $h(x)$ are combined by projecting the data onto the solid black line in the euclidean sense. For a given value of $\tau $ the background colour map shows the probability that an example chosen at random with combined score above $\tau $ will be real; an empirical measure of P(real) for our combination method. The dashed black line shows the 90\% probability contour.}}{5}{figure.4}}
+\newlabel{fig:combo_train}{{4}{5}{The $P(real)$ from Supernova Hunters against the machine $P(real)$ for 3384 detected objects between MJD 57570 and MJD 57586. $P(real)$ and $h(x)$ are combined by projecting the data onto the solid black line in the euclidean sense. For a given value of $\tau $ the background colour map shows the probability that an example chosen at random with combined score above $\tau $ will be real; an empirical measure of P(real) for our combination method. The dashed black line shows the 90\% probability contour}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Improving $P(real)$ with SWAP}{5}{subsection.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The same as Figure\nobreakspace  {}\ref  {fig:combo_train} but on a new sample of 10908 objects detected between MJD 57587 and MJD 57627. For one week during this period we relaxed our cut on $h(x)$ to 0.3 which allowed us to recover a supernova with $h(x)$=0.39, but which achieved a $P(real)$=1.0 from Supernova Hunters. The background colour map is the same empirical $P(real)$ as Figure\nobreakspace  {}\ref  {fig:combo_train} but underestimates the probability at each value of $\tau $ for this data set, perhaps suggesting an improvement in the classification ability of volunteers over time.}}{5}{figure.5}}
+\newlabel{fig:combo_test}{{5}{5}{The same as Figure~\ref {fig:combo_train} but on a new sample of 10908 objects detected between MJD 57587 and MJD 57627. For one week during this period we relaxed our cut on $h(x)$ to 0.3 which allowed us to recover a supernova with $h(x)$=0.39, but which achieved a $P(real)$=1.0 from Supernova Hunters. The background colour map is the same empirical $P(real)$ as Figure~\ref {fig:combo_train} but underestimates the probability at each value of $\tau $ for this data set, perhaps suggesting an improvement in the classification ability of volunteers over time}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Left: ROC curve showing performance measured on data in Figure\nobreakspace  {}\ref  {fig:combo_test} for human (red), machine (yellow) and the combination of human and machine classifications (blue). Right: The equivalent Purity-Completeness curve. Both plots show that the combination always outperforms humans and the machine individually.}}{6}{figure.6}}
+\newlabel{fig:roc}{{6}{6}{Left: ROC curve showing performance measured on data in Figure~\ref {fig:combo_test} for human (red), machine (yellow) and the combination of human and machine classifications (blue). Right: The equivalent Purity-Completeness curve. Both plots show that the combination always outperforms humans and the machine individually}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}SWAP with metadata splits.}{6}{subsection.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{6}{section.4}}
+\newlabel{sec:conclusions}{{4}{6}{Conclusions}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Left: ROC curve for different approaches to classification. Right: The corresponding Purity-Completeness curves. The blue lines are the same as in Figure\nobreakspace  {}\ref  {fig:roc} showing the simple combination of the machine with the basic human score described in Section\nobreakspace  {}\ref  {sec:perform}. The purple line shows the results of implementing SWAP, which improves on the basic human score (red line in Figure\nobreakspace  {}\ref  {fig:roc}). Combining this improved score with the machine produces the pink line. Running separate instances of SWAP on metadata splits (magnitude in our case) produces better results again. The yellow line shows the best performance achieved in this work resulting from the combination of the machine and the scores from the SWAP implementation using metadata splits.}}{7}{figure.7}}
+\newlabel{fig:roc_1}{{7}{7}{Left: ROC curve for different approaches to classification. Right: The corresponding Purity-Completeness curves. The blue lines are the same as in Figure~\ref {fig:roc} showing the simple combination of the machine with the basic human score described in Section~\ref {sec:perform}. The purple line shows the results of implementing SWAP, which improves on the basic human score (red line in Figure~\ref {fig:roc}). Combining this improved score with the machine produces the pink line. Running separate instances of SWAP on metadata splits (magnitude in our case) produces better results again. The yellow line shows the best performance achieved in this work resulting from the combination of the machine and the scores from the SWAP implementation using metadata splits}{figure.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Number of PS1 detections per magnitude bin for objects detected between MJD 57587 and MJD 57627. }}{7}{table.1}}
+\newlabel{tab:mag_bins}{{1}{7}{Number of PS1 detections per magnitude bin for objects detected between MJD 57587 and MJD 57627}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Missed detection rate recorded for a choice of false positive rates, based on expert classifications.}}{7}{table.2}}
+\newlabel{tab:roc_fpr}{{2}{7}{Missed detection rate recorded for a choice of false positive rates, based on expert classifications}{table.2}{}}
+\citation{Tonry16}
 \citation{Ridgway14}
 \citation{Becker13}
 \citation{Zackay16}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces False positive rate recorded for a selection of missed detection rates, based on expert classifications. }}{8}{table.3}}
+\newlabel{tab:roc_mdr}{{3}{8}{False positive rate recorded for a selection of missed detection rates, based on expert classifications}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Confusion matrix elements for volunteers classifying detections from Figure\nobreakspace  {}\ref  {fig:combo_test} with apparent magnitude $13\leq m < 18$. Each point represents an individual volunteer, where the size of the point corresponds to the quantity of gold standard data in this magnitude bin classified by the volunteer. Many volunteers tend to lie high in the top right of the ``Astute'' region, a perfect classifier would lie at (1,1). This shows that citizen scientists can accurately classify high signal-to-noise real and bogus detections.}}{8}{figure.8}}
+\newlabel{fig:13-18}{{8}{8}{Confusion matrix elements for volunteers classifying detections from Figure~\ref {fig:combo_test} with apparent magnitude $13\leq m < 18$. Each point represents an individual volunteer, where the size of the point corresponds to the quantity of gold standard data in this magnitude bin classified by the volunteer. Many volunteers tend to lie high in the top right of the ``Astute'' region, a perfect classifier would lie at (1,1). This shows that citizen scientists can accurately classify high signal-to-noise real and bogus detections}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Similar to Figure\nobreakspace  {}\ref  {fig:13-18} but for detections with apparent magnitude $19\leq m < 20$. In this case volunteers are further from the top right and tend towards ``Pessimistic'' or ``Optimistic'' classifiers.}}{8}{figure.9}}
+\newlabel{fig:20}{{9}{8}{Similar to Figure~\ref {fig:13-18} but for detections with apparent magnitude $19\leq m < 20$. In this case volunteers are further from the top right and tend towards ``Pessimistic'' or ``Optimistic'' classifiers}{figure.9}{}}
 \bibstyle{mnras}
 \bibdata{ps1_real_bogus}
 \bibcite{Bailey07}{{1}{2007}{{{Bailey} et~al.}}{{{Bailey}, {Aragon}, {Romano}, {Thomas}, {Weaver} \& {Wong}}}}
-\bibcite{Becker13}{{2}{2013}{{{Becker} et~al.}}{{{Becker}, {Krughoff}, {Connolly} et~al.}}}
-\bibcite{Bloom12}{{3}{2012}{{{Bloom} et~al.}}{{{Bloom} et~al.,}}}
-\bibcite{Brink13}{{4}{2013}{{{Brink} et~al.}}{{{Brink}, {Richards}, {Poznanski}, {Bloom}, {Rice}, {Negahban} \& {Wainwright}}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces left: ROC curve showing performance measured on the test data in \nobreakspace  {}\ref  {fig:combo_test} for human (red), machine (yellow) and the combination of human and machine classifications (blue). right: The equivalent Purity-Completeness curve. Both plots show that the combination always outperforms humans or the machine individually.}}{6}{figure.7}}
-\newlabel{fig:roc}{{7}{6}{left: ROC curve showing performance measured on the test data in ~\ref {fig:combo_test} for human (red), machine (yellow) and the combination of human and machine classifications (blue). right: The equivalent Purity-Completeness curve. Both plots show that the combination always outperforms humans or the machine individually}{figure.7}{}}
-\bibcite{Campbell15}{{5}{2015}{{{Campbell} et~al.}}{{{Campbell} et~al.,}}}
-\bibcite{Coates11}{{6}{2011}{{{Coates} et~al.}}{{{Coates}, {Lee} \& {Ng}}}}
-\bibcite{Denneau13}{{7}{2013}{{{Denneau} et~al.}}{{{Denneau} et~al.,}}}
-\bibcite{Donalek08}{{8}{2008}{{{Donalek} et~al.}}{{{Donalek}, {Mahabal}, {Djorgovski}, {Marney}, {Drake}, {Glikman}, {Graham} \& {Williams}}}}
-\bibcite{Goldstein15}{{9}{2015}{{{Goldstein} et~al.}}{{{Goldstein} et~al.,}}}
-\bibcite{Huber15a}{{10}{2015}{{{Huber} et~al.}}{{{Huber} et~al.,}}}
-\bibcite{Ivezic08}{{11}{2008}{{{Ivezi{\'c}} et~al.}}{{{Ivezi{\'c}} et~al.,}}}
-\bibcite{Kaiser10}{{12}{2010}{{{Kaiser} et~al.}}{{{Kaiser} et~al.,}}}
-\bibcite{Law09}{{13}{2009}{{{Law} et~al.}}{{{Law} et~al.,}}}
-\bibcite{Magnier13}{{14}{2013}{{{Magnier} et~al.}}{{{Magnier} et~al.,}}}
-\bibcite{Marshall16}{{15}{2016}{{{Marshall} et~al.}}{{{Marshall} et~al.,}}}
-\bibcite{Ngiam11}{{16}{2011}{{{Ngiam} et~al.}}{{{Ngiam}, {Chen}, {Bhaskar}, Koh \& Ng}}}
-\bibcite{Rau09}{{17}{2009}{{{Rau} et~al.}}{{{Rau} et~al.,}}}
-\bibcite{Ridgway14}{{18}{2014}{{{Ridgway} et~al.}}{{{Ridgway}, {Matheson}, {Mighell}, {Olsen} \& {Howell}}}}
-\bibcite{Romano06}{{19}{2006}{{{Romano} et~al.}}{{{Romano}, {Aragon} \& {Ding}}}}
-\bibcite{Smith11}{{20}{2011}{{{Smith} et~al.}}{{{Smith} et~al.,}}}
-\bibcite{Tonry12b}{{21}{2012}{{{Tonry} et~al.}}{{{Tonry} et~al.,}}}
-\bibcite{Wright15}{{22}{2015}{{{Wright} et~al.}}{{{Wright} et~al.,}}}
-\bibcite{York00}{{23}{2000}{{{York} et~al.}}{{{York} et~al.,}}}
-\bibcite{Zackay16}{{24}{2016}{{{Zackay} et~al.}}{{{Zackay}, {Ofek} \& {Gal-Yam}}}}
-\bibcite{duBuisson15}{{25}{2015}{{{du Buisson} et~al.}}{{{du Buisson}, {Sivanandam}, {Bassett} \& {Smith}}}}
+\bibcite{Banko01}{{2}{2001}{{Banko \& Brill}}{{Banko \& Brill}}}
+\bibcite{Becker13}{{3}{2013}{{{Becker} et~al.}}{{{Becker}, {Krughoff}, {Connolly} et~al.}}}
+\bibcite{Bloom12}{{4}{2012}{{{Bloom} et~al.}}{{{Bloom} et~al.,}}}
+\bibcite{Brink13}{{5}{2013}{{{Brink} et~al.}}{{{Brink}, {Richards}, {Poznanski}, {Bloom}, {Rice}, {Negahban} \& {Wainwright}}}}
+\bibcite{Campbell15}{{6}{2015}{{{Campbell} et~al.}}{{{Campbell} et~al.,}}}
+\bibcite{Coates11}{{7}{2011}{{{Coates} et~al.}}{{{Coates}, {Lee} \& {Ng}}}}
+\bibcite{Denneau13}{{8}{2013}{{{Denneau} et~al.}}{{{Denneau} et~al.,}}}
+\bibcite{Donalek08}{{9}{2008}{{{Donalek} et~al.}}{{{Donalek}, {Mahabal}, {Djorgovski}, {Marney}, {Drake}, {Glikman}, {Graham} \& {Williams}}}}
+\bibcite{Gal-Yam12}{{10}{2012}{{{Gal-Yam}}}{{{Gal-Yam}}}}
+\bibcite{Goldstein15}{{11}{2015}{{{Goldstein} et~al.}}{{{Goldstein} et~al.,}}}
+\bibcite{Gwyn12}{{12}{2012}{{{Gwyn}}}{{{Gwyn}}}}
+\bibcite{Huber15a}{{13}{2015}{{{Huber} et~al.}}{{{Huber} et~al.,}}}
+\bibcite{Inserra13}{{14}{2013}{{{Inserra} et~al.}}{{{Inserra} et~al.,}}}
+\bibcite{Ivezic08}{{15}{2008}{{{Ivezi{\'c}} et~al.}}{{{Ivezi{\'c}} et~al.,}}}
+\bibcite{Kaiser10}{{16}{2010}{{{Kaiser} et~al.}}{{{Kaiser} et~al.,}}}
+\bibcite{Keller07}{{17}{2007}{{{Keller} et~al.}}{{{Keller} et~al.,}}}
+\bibcite{Law09}{{18}{2009}{{{Law} et~al.}}{{{Law} et~al.,}}}
+\bibcite{Magnier13}{{19}{2013}{{{Magnier} et~al.}}{{{Magnier} et~al.,}}}
+\bibcite{Marshall16}{{20}{2016}{{{Marshall} et~al.}}{{{Marshall} et~al.,}}}
+\bibcite{Mattila16}{{21}{2016}{{{Mattila} et~al.}}{{{Mattila} et~al.,}}}
+\bibcite{Ngiam11}{{22}{2011}{{{Ngiam} et~al.}}{{{Ngiam}, {Chen}, {Bhaskar}, Koh \& Ng}}}
+\bibcite{Rau09}{{23}{2009}{{{Rau} et~al.}}{{{Rau} et~al.,}}}
+\bibcite{Ridgway14}{{24}{2014}{{{Ridgway} et~al.}}{{{Ridgway}, {Matheson}, {Mighell}, {Olsen} \& {Howell}}}}
+\bibcite{Romano06}{{25}{2006}{{{Romano} et~al.}}{{{Romano}, {Aragon} \& {Ding}}}}
+\bibcite{Schwamb12}{{26}{2012}{{{Schwamb} et~al.}}{{{Schwamb} et~al.,}}}
+\bibcite{Smartt15}{{27}{2015}{{{Smartt} et~al.}}{{{Smartt} et~al.,}}}
+\bibcite{Smith11}{{28}{2011}{{{Smith} et~al.}}{{{Smith} et~al.,}}}
+\bibcite{Tonry12b}{{29}{2012}{{{Tonry} et~al.}}{{{Tonry} et~al.,}}}
+\bibcite{Tonry16}{{30}{2016}{{{Tonry} et~al.}}{{{Tonry}, {Denneau}, {Stalder}, {Heinze}, {Sherstyuk}, {Rest}, {Smith} \& {Smartt}}}}
+\bibcite{Wright15}{{31}{2015}{{{Wright} et~al.}}{{{Wright} et~al.,}}}
+\bibcite{Wright16}{{32}{prep}{{{Wright} et~al.}}{{{Wright} et~al.,}}}
+\bibcite{York00}{{33}{2000}{{{York} et~al.}}{{{York} et~al.,}}}
+\bibcite{Zackay16}{{34}{2016}{{{Zackay} et~al.}}{{{Zackay}, {Ofek} \& {Gal-Yam}}}}
+\bibcite{duBuisson15}{{35}{2015}{{{du Buisson} et~al.}}{{{du Buisson}, {Sivanandam}, {Bassett} \& {Smith}}}}
